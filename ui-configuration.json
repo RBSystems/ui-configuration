@@ -16,7 +16,7 @@
         },
         {
           "name": "ChromeCast",
-          "icon": "airplay"
+          "icon": "cast"
         }
 	],
     "outputdevices": [
