@@ -22,14 +22,18 @@
     "outputdevices": [
       {
         "name": "D2",
-	"icon": "tv",
+	    "icon": "tv",
         "inputs": [
-         "Overflow",
-         "HDMIIn",
-         "AppleTV",
-         "ChromeCast"
+            "Overflow",
+            "HDMIIn",
+            "AppleTV",
+            "ChromeCast"
         ],
-        "defaultinput": "AppleTV"
+        "defaultinput": "AppleTV",
+	    "audiodevices": [
+		    "D2"
+	    ],
+        "defaultaudio": "D2"  
       }
     ],
     "features": [
