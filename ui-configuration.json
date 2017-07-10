@@ -31,9 +31,25 @@
                 ],
                 "defaultinput": "AppleTV",
 	            "audiodevices": [
-		            "D2"
+		            "D2",
+                    "DSP1"
 	            ],
                 "defaultaudio": "D2"  
+            },
+            {
+                "name": "D3",
+	            "icon": "tv",
+                "inputs": [
+                    "Overflow",
+                    "AppleTV",
+                    "ChromeCast"
+                ],
+                "defaultinput": "AppleTV",
+	            "audiodevices": [
+		            "D3",
+                    "DSP1"
+	            ],
+                "defaultaudio": "D3"  
             }
         ],
         "features": [
