@@ -39,7 +39,7 @@
                     			"AppleTV",
                     			"ChromeCast"
                 		],
-                		"defaultinput": "AppleTV",
+                		"defaultinput": "AppleTV"
             		}
         	],
 		"audio": [
