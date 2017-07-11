@@ -1,78 +1,51 @@
 {
 	"ITB-1101-CP1": {
-        	"ui": "circle-default",
+       	"ui": "circle-default",
 		"inputdevices": [
 	 		{
-                		"name": "Overflow",
-                		"icon": "settings_input_antenna"
-            		},
-            		{
-                		"name": "HDMIIn",
-                		"icon": "settings_input_hdmi"
-            		},
-            		{
-                		"name": "AppleTV",
-                		"icon": "airplay"
-            		},
-            		{
-                		"name": "ChromeCast",
-                		"icon": "cast"
-            		}
+              	"name": "Overflow",
+               	"icon": "settings_input_antenna"
+			},
+           	{
+               	"name": "HDMIIn",
+               	"icon": "settings_input_hdmi"
+           	},
+           	{
+               	"name": "AppleTV",
+               	"icon": "airplay"
+           	},
+           	{
+               	"name": "ChromeCast",
+               	"icon": "cast"
+           	}
 		],
-        	"displays": [
-            		{
-                		"name": "D2",
-	        		"icon": "tv",
-                		"inputs": [
-                    			"Overflow",
-                    			"HDMIIn",
-                    			"AppleTV",
-                    			"ChromeCast"
-                		],
-                		"defaultinput": "AppleTV"  
-            		},
-            		{
-                		"name": "D3",
-	        		"icon": "tv",
-                		"inputs": [
-                    			"Overflow",
-                    			"AppleTV",
-                    			"ChromeCast"
-                		],
-                		"defaultinput": "AppleTV"
-            		}
-        	],
+       	"displays": [
+           	{
+              	"name": "D4",
+	       		"icon": "tv",
+               	"inputs": [
+                	"Overflow",
+                   	"HDMIIn",
+                   	"AppleTV",
+                   	"ChromeCast"
+               	],
+               	"defaultinput": "AppleTV"  
+            }
+       	],
 		"audio": [
 			{
 				"displays": [
-					"D2"
+					"D4"
 				],
 				"audiodevices": [
-					"D2"
-				]
-			},
-			{
-				"displays": [
-					"D3"
-				],
-				"audiodevices": [
-					"D3"
-				]
-			},
-			{
-				"displays": [
-					"D2",
-					"D3"
-				],
-				"audiodevices": [
-					"DSP1"
+					"D4"
 				]
 			}
 		],
-        	"features": [
-            		"display-to-all",
-            		"power-off-all",
-            		"group-input"
-        	]
+        "features": [
+           	"display-to-all",
+           	"power-off-all",
+           	"group-input"
+		]	
 	}
 }
