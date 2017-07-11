@@ -40,7 +40,6 @@
                     			"ChromeCast"
                 		],
                 		"defaultinput": "AppleTV",
-                		"defaultaudio": "D3"  
             		}
         	],
 		"audio": [
@@ -49,7 +48,7 @@
 					"D2"
 				],
 				"audiodevices": [
-					"D2",
+					"D2"
 				]
 			},
 			{
@@ -57,7 +56,7 @@
 					"D3"
 				],
 				"audiodevices": [
-					"D3",
+					"D3"
 				]
 			},
 			{
@@ -66,7 +65,7 @@
 					"D3"
 				],
 				"audiodevices": [
-					"DSP1",
+					"DSP1"
 				]
 			}
 		],
