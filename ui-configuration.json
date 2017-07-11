@@ -1,61 +1,62 @@
 {
-    "ITB-1101-CP1": {
-        "ui": "circle-default",
-	    "inputdevices": [
-	        {
-                "name": "Overflow",
-                "icon": "settings_input_antenna"
-            },
-            {
-                "name": "HDMIIn",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "AppleTV",
-                "icon": "airplay"
-            },
-            {
-                "name": "ChromeCast",
-                "icon": "cast"
-            }
-	    ],
-        "outputdevices": [
-            {
-                "name": "D2",
-	            "icon": "tv",
-                "inputs": [
-                    "Overflow",
-                    "HDMIIn",
-                    "AppleTV",
-                    "ChromeCast"
-                ],
-                "defaultinput": "AppleTV",
-	            "audiodevices": [
-		            "D2",
-                    "DSP1"
-	            ],
-                "defaultaudio": "D2"  
-            },
-            {
-                "name": "D3",
-	            "icon": "tv",
-                "inputs": [
-                    "Overflow",
-                    "AppleTV",
-                    "ChromeCast"
-                ],
-                "defaultinput": "AppleTV",
-	            "audiodevices": [
-		            "D3",
-                    "DSP1"
-	            ],
-                "defaultaudio": "D3"  
-            }
-        ],
-        "features": [
-            "display-to-all",
-            "power-off-all",
-            "group-input"
-        ]
-    }
+	"ITB-1101-CP1": {
+        	"ui": "circle-default",
+		"inputdevices": [
+	 		{
+                		"name": "Overflow",
+                		"icon": "settings_input_antenna"
+            		},
+            		{
+                		"name": "HDMIIn",
+                		"icon": "settings_input_hdmi"
+            		},
+            		{
+                		"name": "AppleTV",
+                		"icon": "airplay"
+            		},
+            		{
+                		"name": "ChromeCast",
+                		"icon": "cast"
+            		}
+		],
+        	"displays": [
+            		{
+                		"name": "D2",
+	        		"icon": "tv",
+                		"inputs": [
+                    			"Overflow",
+                    			"HDMIIn",
+                    			"AppleTV",
+                    			"ChromeCast"
+                		],
+                		"defaultinput": "AppleTV"  
+            		},
+            		{
+                		"name": "D3",
+	        		"icon": "tv",
+                		"inputs": [
+                    			"Overflow",
+                    			"AppleTV",
+                    			"ChromeCast"
+                		],
+                		"defaultinput": "AppleTV",
+                		"defaultaudio": "D3"  
+            		}
+        	],
+		"audiodevices": [
+			{
+				"name": "DSP1",
+				"defaultinput": "AppleTV",
+				"defaultvolume": 30
+			},
+			{
+				"name": "D3"
+			}
+		],
+        	"features": [
+            		"display-to-all",
+            		"power-off-all",
+            		"group-input"
+        	]
+	}
 }
