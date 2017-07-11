@@ -43,16 +43,33 @@
                 		"defaultaudio": "D3"  
             		}
         	],
-		"audiodevices": [
+		"audio": [
 			{
-				"name": "DSP1",
-				"defaultinput": "AppleTV",
-				"defaultvolume": 30
+				"displays": [
+					"D2"
+				],
+				"audiodevices": [
+					"D2",
+				]
 			},
 			{
-				"name": "D3"
+				"displays": [
+					"D3"
+				],
+				"audiodevices": [
+					"D3",
+				]
+			},
+			{
+				"displays": [
+					"D2",
+					"D3"
+				],
+				"audiodevices": [
+					"DSP1",
+				]
 			}
-		],
+		]
         	"features": [
             		"display-to-all",
             		"power-off-all",
