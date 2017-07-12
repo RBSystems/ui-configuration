@@ -97,4 +97,82 @@
            	"group-input"
 		]	
 	}
+	"ITB-1106B-CP1": {
+       	"ui": "circle-default",
+		"inputdevices": [
+	 		{
+              	"name": "HDMIWest",
+               	"icon": "settings_input_hdmi"
+			},
+           	{
+               	"name": "Via1",
+               	"icon": "settings_input_antenna"
+           	}
+		],
+       	"displays": [
+           	{
+              	"name": "D1",
+	       		"icon": "videocam",
+               	"inputs": [
+                   	"HDMIWest",
+					"Via1"
+               	],
+               	"defaultinput": "Via1"  
+            }
+       	],
+		"audio": [
+			{
+				"displays": [
+					"D1"
+				],
+				"audiodevices": [
+					"D1"
+				]
+			}
+		],
+        "features": [
+           	"display-to-all",
+           	"power-off-all",
+           	"group-input"
+		]	
+	},
+	"ITB-1106B-CP2": {
+       	"ui": "circle-default",
+		"inputdevices": [
+	 		{
+              	"name": "HDMISouth",
+               	"icon": "settings_input_hdmi"
+			},
+           	{
+               	"name": "Via2",
+               	"icon": "settings_input_antenna"
+           	}
+		],
+       	"displays": [
+           	{
+              	"name": "D2",
+	       		"icon": "tv",
+               	"inputs": [
+                   	"HDMISouth",
+					"Via2"
+               	],
+               	"defaultinput": "Via2"  
+            }
+       	],
+		"audio": [
+			{
+				"displays": [
+					"D2"
+				],
+				"audiodevices": [
+					"D2"
+				]
+			}
+		],
+        "features": [
+           	"display-to-all",
+           	"power-off-all",
+           	"group-input"
+		]	
+	}
 }
