@@ -96,7 +96,7 @@
            	"power-off-all",
            	"group-input"
 		]	
-	}
+	},
 	"ITB-1106B-CP1": {
        	"ui": "circle-default",
 		"inputdevices": [
