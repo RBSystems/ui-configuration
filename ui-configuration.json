@@ -123,6 +123,14 @@
            	{
                	"name": "Via1",
                	"icon": "settings_input_antenna"
+           	},
+	 		{
+              	"name": "HDMISouth",
+               	"icon": "settings_input_hdmi"
+			},
+           	{
+               	"name": "Via2",
+               	"icon": "settings_input_antenna"
            	}
 		],
        	"displays": [
@@ -169,6 +177,14 @@
 			},
            	{
                	"name": "Via2",
+               	"icon": "settings_input_antenna"
+           	},
+	 		{
+              	"name": "HDMIWest",
+               	"icon": "settings_input_hdmi"
+			},
+           	{
+               	"name": "Via1",
                	"icon": "settings_input_antenna"
            	}
 		],
