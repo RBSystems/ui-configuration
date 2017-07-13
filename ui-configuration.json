@@ -40,6 +40,14 @@
 				"audiodevices": [
 					"D4"
 				]
+			},
+			{
+				"displays": [
+					"dta"
+				],
+				"audiodevices": [
+					"DSP1"
+				]
 			}
 		],
         "features": [
