@@ -97,6 +97,14 @@
 				"audiodevices": [
 					"D2"
 				]
+			},
+			{
+				"displays": [
+					"dta"
+				],
+				"audiodevices": [
+					"DSP1"
+				]
 			}
 		],
         "features": [
@@ -132,6 +140,14 @@
 			{
 				"displays": [
 					"D1"
+				],
+				"audiodevices": [
+					"DSP1"
+				]
+			},
+			{
+				"displays": [
+					"dta"
 				],
 				"audiodevices": [
 					"DSP1"
@@ -174,6 +190,14 @@
 				],
 				"audiodevices": [
 					"D2"
+				]
+			},
+			{
+				"displays": [
+					"dta"
+				],
+				"audiodevices": [
+					"DSP1"
 				]
 			}
 		],
