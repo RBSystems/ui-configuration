@@ -1,262 +1,270 @@
 {
-	"ITB-1101-CP1": {
-       	"ui": "circle-default",
-		"inputdevices": [
-	 		{
-              	"name": "Overflow",
-               	"icon": "settings_input_antenna"
-			},
-           	{
-               	"name": "HDMIIn",
-               	"icon": "settings_input_hdmi"
-           	},
-           	{
-               	"name": "AppleTV",
-               	"icon": "airplay"
-           	},
-           	{
-               	"name": "ChromeCast",
-               	"icon": "cast"
-           	}
-		],
-       	"displays": [
-           	{
-              	"name": "D4",
-	       		"icon": "tv",
-               	"inputs": [
-                	"Overflow",
-                   	"HDMIIn",
-                   	"AppleTV",
-                   	"ChromeCast"
-               	],
-               	"defaultinput": "AppleTV"  
+    "ITB-1101-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "Overflow",
+                "icon": "settings_input_antenna"
+            },
+            {
+                "name": "HDMIIn",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "ChromeCast",
+                "icon": "cast"
             }
-       	],
-		"audio": [
-			{
-				"displays": [
-					"D4"
-				],
-				"audiodevices": [
-					"D4"
-				]
-			},
-			{
-				"displays": [
-					"dta"
-				],
-				"audiodevices": [
-					"DSP1"
-				]
-			}
-		],
+        ],
+        "displays": [{
+            "name": "D4",
+            "icon": "tv",
+            "inputs": [
+                "Overflow",
+                "HDMIIn",
+                "AppleTV",
+                "ChromeCast"
+            ],
+            "defaultinput": "AppleTV"
+        }],
+        "audio": [{
+                "displays": [
+                    "D4"
+                ],
+                "audiodevices": [
+                    "D4"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
         "features": [
-           	"display-to-all",
-           	"power-off-all",
-           	"group-input"
-		]	
-	},
-	"ITB-1101-CP2": {
-       	"ui": "circle-default",
-		"inputdevices": [
-	 		{
-              	"name": "Overflow",
-               	"icon": "settings_input_antenna"
-			},
-           	{
-               	"name": "HDMIIn",
-               	"icon": "settings_input_hdmi"
-           	},
-           	{
-               	"name": "AppleTV",
-               	"icon": "airplay"
-           	},
-           	{
-               	"name": "ChromeCast",
-               	"icon": "cast"
-           	}
-		],
-       	"displays": [
-           	{
-              	"name": "D2",
-	       		"icon": "tv",
-               	"inputs": [
-                	"Overflow",
-                   	"HDMIIn",
-                   	"AppleTV",
-                   	"ChromeCast"
-               	],
-               	"defaultinput": "AppleTV"  
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
+    "ITB-1101-CP2": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "Overflow",
+                "icon": "settings_input_antenna"
+            },
+            {
+                "name": "HDMIIn",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "ChromeCast",
+                "icon": "cast"
             }
-       	],
-		"audio": [
-			{
-				"displays": [
-					"D2"
-				],
-				"audiodevices": [
-					"D2"
-				]
-			},
-			{
-				"displays": [
-					"dta"
-				],
-				"audiodevices": [
-					"DSP1"
-				]
-			}
-		],
+        ],
+        "displays": [{
+            "name": "D2",
+            "icon": "tv",
+            "inputs": [
+                "Overflow",
+                "HDMIIn",
+                "AppleTV",
+                "ChromeCast"
+            ],
+            "defaultinput": "AppleTV"
+        }],
+        "audio": [{
+                "displays": [
+                    "D2"
+                ],
+                "audiodevices": [
+                    "D2"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
         "features": [
-           	"display-to-all",
-           	"power-off-all",
-           	"group-input"
-		]	
-	},
-	"ITB-1106B-CP1": {
-       	"ui": "circle-default",
-		"inputdevices": [
-	 		{
-              	"name": "HDMIWest",
-               	"icon": "settings_input_hdmi"
-			},
-           	{
-               	"name": "Via1",
-               	"icon": "settings_input_antenna"
-           	},
-	 		{
-              	"name": "HDMISouth",
-               	"icon": "settings_input_hdmi"
-			},
-           	{
-               	"name": "Via2",
-               	"icon": "settings_input_antenna"
-           	}
-		],
-       	"displays": [
-           	{
-              	"name": "D1",
-	       		"icon": "videocam",
-               	"inputs": [
-                   	"HDMIWest",
-					"Via1"
-               	],
-               	"defaultinput": "Via1"  
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
+    "ITB-1106B-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "HDMIWest",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "Via1",
+                "icon": "settings_input_antenna"
+            },
+            {
+                "name": "HDMISouth",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "Via2",
+                "icon": "settings_input_antenna"
             }
-       	],
-		"audio": [
-			{
-				"displays": [
-					"D1"
-				],
-				"audiodevices": [
-					"DSP1"
-				]
-			},
-			{
-				"displays": [
-					"dta"
-				],
-				"audiodevices": [
-					"DSP1"
-				]
-			}
-		],
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "videocam",
+            "inputs": [
+                "HDMIWest",
+                "Via1"
+            ],
+            "defaultinput": "Via1"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
         "features": [
-           	"display-to-all",
-           	"power-off-all",
-           	"group-input"
-		]	
-	},
-	"ITB-1106B-CP2": {
-       	"ui": "circle-default",
-		"inputdevices": [
-	 		{
-              	"name": "HDMISouth",
-               	"icon": "settings_input_hdmi"
-			},
-           	{
-               	"name": "Via2",
-               	"icon": "settings_input_antenna"
-           	},
-	 		{
-              	"name": "HDMIWest",
-               	"icon": "settings_input_hdmi"
-			},
-           	{
-               	"name": "Via1",
-               	"icon": "settings_input_antenna"
-           	}
-		],
-       	"displays": [
-           	{
-              	"name": "D2",
-	       		"icon": "tv",
-               	"inputs": [
-                   	"HDMISouth",
-					"Via2"
-               	],
-               	"defaultinput": "Via2"  
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
+    "ITB-1106B-CP2": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "HDMISouth",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "Via2",
+                "icon": "settings_input_antenna"
+            },
+            {1110
+                "name": "HDMIWest",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "Via1",
+                "icon": "settings_input_antenna"
             }
-       	],
-		"audio": [
-			{
-				"displays": [
-					"D2"
-				],
-				"audiodevices": [
-					"D2"
-				]
-			},
-			{
-				"displays": [
-					"dta"
-				],
-				"audiodevices": [
-					"DSP1"
-				]
-			}
-		],
+        ],
+        "displays": [{
+            "name": "D2",
+            "icon": "tv",
+            "inputs": [
+                "HDMISouth",
+                "Via2"
+            ],
+            "defaultinput": "Via2"
+        }],
+        "audio": [{
+                "displays": [
+                    "D2"
+                ],
+                "audiodevices": [
+                    "D2"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
         "features": [
-           	"display-to-all",
-           	"power-off-all",
-           	"group-input"
-		]	
-	},
-	"ITB-1110-CP1": {
-       	"ui": "circle-default",
-		"inputdevices": [
-	 		{
-              	"name": "PC1",
-               	"icon": "computer"
-			},
-           	{
-               	"name": "IPTV",
-               	"icon": "live_tv"
-           	}
-		],
-       	"displays": [
-           	{
-              	"name": "D1",
-	       		"icon": "tv",
-               	"inputs": [
-					"PC1",
-					"IPTV"
-               	],
-               	"defaultinput": "PC1"  
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
+    "ITB-1110-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "PC1",
+                "icon": "computer"
+            },
+            {
+                "name": "IPTV",
+                "icon": "live_tv"
             }
-       	],
-		"audio": [
-			{
-				"displays": [
-					"D1"
-				],
-				"audiodevices": [
-					"D1"
-				]
-			}
-		],
-		"features": [
-		]
-	}
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "PC1",
+                "IPTV"
+            ],
+            "defaultinput": "PC1"
+        }],
+        "audio": [{
+            "displays": [
+                "D1"
+            ],
+            "audiodevices": [
+                "D1"
+            ]
+        }],
+        "features": []
+    },"ITB-1112-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "HDMI3",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "HDMI2",
+                "HDMI3"
+            ],
+            "defaultinput": "HDMI3"
+        }],
+        "audio": [{
+            "displays": [
+                "D1"
+            ],
+            "audiodevices": [
+                "D1"
+            ]
+        }],
+        "features": []
+    }
+
 }
