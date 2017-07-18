@@ -267,7 +267,7 @@
         }],
         "features": []
     },
-    "ITB-1006-CP2": {
+    "ITB-1006-CP1": {
         "ui": "circle-default",
         "inputdevices": [{
                 "name": "HDMIIn",
