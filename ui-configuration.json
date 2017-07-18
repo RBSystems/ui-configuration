@@ -305,7 +305,7 @@
             },
             {
                 "name": "Table",
-                "icon": "table"
+                "icon": "byu_table_input"
             }
         ],
         "displays": [{
@@ -331,7 +331,7 @@
         "ui": "circle-default",
         "inputdevices": [{
             "name": "Table",
-            "icon": "table"
+            "icon": "byu_table_input"
         }],
         "displays": [{
             "name": "D1",
