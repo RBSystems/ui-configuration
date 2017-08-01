@@ -105,6 +105,59 @@
             "group-input"
         ]
     },
+    "ITB-1101-CP3": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "Overflow",
+                "icon": "settings_input_antenna"
+            },
+            {
+                "name": "HDMIIn",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "ChromeCast",
+                "icon": "cast"
+            }
+        ],
+        "displays": [{
+            "name": "D3",
+            "icon": "tv",
+            "inputs": [
+                "Overflow",
+                "HDMIIn",
+                "AppleTV",
+                "ChromeCast"
+            ],
+            "defaultinput": "AppleTV"
+        }],
+        "audio": [{
+                "displays": [
+                    "D3"
+                ],
+                "audiodevices": [
+                    "D3"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
+        "features": [
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
     "ITB-1106B-CP1": {
         "ui": "circle-default",
         "inputdevices": [{
