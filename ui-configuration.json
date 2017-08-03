@@ -2,11 +2,11 @@
     "ITB-1101-CP1": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Overflow",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
-                "name": "HDMIIn",
+                "name": "PC1",
                 "icon": "settings_input_hdmi"
             },
             {
@@ -22,8 +22,8 @@
             "name": "D4",
             "icon": "tv",
             "inputs": [
-                "Overflow",
-                "HDMIIn",
+                "VIA1",
+                "PC1",
                 "AppleTV",
                 "ChromeCast"
             ],
@@ -55,11 +55,11 @@
     "ITB-1101-CP2": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Overflow",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
-                "name": "HDMIIn",
+                "name": "PC1",
                 "icon": "settings_input_hdmi"
             },
             {
@@ -75,8 +75,8 @@
             "name": "D2",
             "icon": "tv",
             "inputs": [
-                "Overflow",
-                "HDMIIn",
+                "VIA1",
+                "PC1",
                 "AppleTV",
                 "ChromeCast"
             ],
@@ -108,11 +108,11 @@
     "ITB-1101-CP4": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Overflow",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
-                "name": "HDMIIn",
+                "name": "PC1",
                 "icon": "settings_input_hdmi"
             },
             {
@@ -128,8 +128,8 @@
             "name": "D3",
             "icon": "tv",
             "inputs": [
-                "Overflow",
-                "HDMIIn",
+                "VIA1",
+                "PC1",
                 "AppleTV",
                 "ChromeCast"
             ],
