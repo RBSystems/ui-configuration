@@ -76,7 +76,6 @@
             "icon": "tv",
             "inputs": [
                 "VIA1",
-                "PC1",
                 "AppleTV",
                 "ChromeCast"
             ],
