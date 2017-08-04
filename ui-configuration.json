@@ -75,9 +75,10 @@
             "name": "D2",
             "icon": "tv",
             "inputs": [
-                "VIA1",
                 "AppleTV",
-                "ChromeCast"
+                "ChromeCast",
+				"PC1",
+                "VIA1"
             ],
             "defaultinput": "AppleTV"
         }],
