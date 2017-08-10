@@ -204,7 +204,6 @@
             }
         ],
         "features": [
-            "display-to-all",
             "power-off-all",
             "group-input"
         ]
@@ -255,7 +254,6 @@
             }
         ],
         "features": [
-            "display-to-all",
             "power-off-all",
             "group-input"
         ]
