@@ -2,12 +2,12 @@
     "ITB-1101-CP1": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Overflow",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
-                "name": "HDMIIn",
-                "icon": "settings_input_hdmi"
+                "name": "PC1",
+                "icon": "desktop_windows"
             },
             {
                 "name": "AppleTV",
@@ -22,8 +22,8 @@
             "name": "D4",
             "icon": "tv",
             "inputs": [
-                "Overflow",
-                "HDMIIn",
+                "VIA1",
+                "PC1",
                 "AppleTV",
                 "ChromeCast"
             ],
@@ -55,12 +55,12 @@
     "ITB-1101-CP2": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Overflow",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
-                "name": "HDMIIn",
-                "icon": "settings_input_hdmi"
+                "name": "PC1",
+                "icon": "desktop_windows"
             },
             {
                 "name": "AppleTV",
@@ -75,10 +75,10 @@
             "name": "D2",
             "icon": "tv",
             "inputs": [
-                "Overflow",
-                "HDMIIn",
                 "AppleTV",
-                "ChromeCast"
+                "ChromeCast",
+				"PC1",
+                "VIA1"
             ],
             "defaultinput": "AppleTV"
         }],
@@ -88,6 +88,59 @@
                 ],
                 "audiodevices": [
                     "D2"
+                ]
+            },
+            {
+                "displays": [
+                    "dta"
+                ],
+                "audiodevices": [
+                    "DSP1"
+                ]
+            }
+        ],
+        "features": [
+            "display-to-all",
+            "power-off-all",
+            "group-input"
+        ]
+    },
+    "ITB-1101-CP4": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "VIA1",
+                "icon": "settings_input_antenna"
+            },
+            {
+                "name": "PC1",
+                "icon": "desktop_windows"
+            },
+            {
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "ChromeCast",
+                "icon": "cast"
+            }
+        ],
+        "displays": [{
+            "name": "D3",
+            "icon": "tv",
+            "inputs": [
+                "VIA1",
+                "PC1",
+                "AppleTV",
+                "ChromeCast"
+            ],
+            "defaultinput": "AppleTV"
+        }],
+        "audio": [{
+                "displays": [
+                    "D3"
+                ],
+                "audiodevices": [
+                    "D3"
                 ]
             },
             {
