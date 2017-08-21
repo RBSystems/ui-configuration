@@ -340,6 +340,10 @@
 
 	"CTB-410-CP1": {
 		"ui": "circle-defualt"
+	},
+
+	"CTB-410-CP6": {
+		"ui": "circle-defualt"
 	}
 
 }
