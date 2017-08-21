@@ -342,6 +342,22 @@
 		"ui": "circle-defualt"
 	},
 
+	"CTB-410-CP2": {
+		"ui": "circle-defualt",
+		"inputdevices": [{
+			"name": "Via2",
+			"icon": "settings-input-antenna"
+		}],
+		"displays": [{
+			"name": "D2",
+			"icon": "tv",
+			"inputs": [
+				"Via2"
+		],
+		"defaultinput": "Via2"
+	}]
+	},
+
 	"CTB-410-CP6": {
 		"ui": "circle-defualt"
 	}
