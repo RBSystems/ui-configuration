@@ -358,6 +358,10 @@
 	}]
 	},
 
+	"CTB-410-CP3": {
+		"ui": "circle-default"
+	},
+
 	"CTB-410-CP6": {
 		"ui": "circle-defualt"
 	}
