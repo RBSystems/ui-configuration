@@ -366,8 +366,20 @@
 		"ui": "circle-default"
 	},
 
+	"CTB-410-CP5": {
+		"ui": "circle-default"
+	},
+
 	"CTB-410-CP6": {
 		"ui": "circle-defualt"
+	},
+
+	"CTB-410-CP7": {
+		"ui": "circle-defualt"
+	},
+
+	"CTB-410-CP8": {
+		"ui": "circle-default"
 	}
 
 }
