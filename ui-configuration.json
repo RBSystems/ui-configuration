@@ -336,6 +336,10 @@
             "power-off-all",
             "group-input"
         ]
-    }
+    },
+
+	"CTB-410-CP1": {
+		"ui": "circle-defualt"
+	}
 
 }
