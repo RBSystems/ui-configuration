@@ -339,11 +339,11 @@
     },
 
 	"CTB-410-CP1": {
-		"ui": "circle-defualt"
+		"ui": "circle-default"
 	},
 
 	"CTB-410-CP2": {
-		"ui": "circle-defualt",
+		"ui": "circle-default",
 		"inputdevices": [{
 			"name": "Via2",
 			"icon": "settings-input-antenna"
@@ -371,12 +371,12 @@
 	},
 
 	"CTB-410-CP6": {
-		"ui": "circle-defualt",
+		"ui": "circle-default",
 		"inputdevices": []
 	},
 
 	"CTB-410-CP7": {
-		"ui": "circle-defualt"
+		"ui": "circle-default"
 	},
 
 	"CTB-410-CP8": {
