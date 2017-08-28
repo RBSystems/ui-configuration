@@ -1,0 +1,39 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+    "MSRB-123-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "HDMI1",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "VIA1",
+                "icon": "settings_input_antenna"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "HDMI1",
+                "VIA1"
+            ],
+            "defaultinput": "HDMI1"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "D1"
+                ]
+            }
+        ],
+        "features": [
+        ]
+    }
+}
