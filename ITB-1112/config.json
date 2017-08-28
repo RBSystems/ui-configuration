@@ -1,0 +1,39 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+    "ITB-1112-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "HDMI3",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "HDMI2",
+                "HDMI3"
+            ],
+            "defaultinput": "HDMI3"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "D1"
+                ]
+            }
+        ],
+        "features": [
+        ]
+    }
+}

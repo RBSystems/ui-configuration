@@ -1,0 +1,39 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+    "ITB-1006-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "HDMIIn",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "Overflow",
+                "icon": "people"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "HDMIIn",
+                "Overflow"
+            ],
+            "defaultinput": "HDMIIn"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "D1"
+                ]
+            }
+        ],
+        "features": [
+        ]
+    }
+}
