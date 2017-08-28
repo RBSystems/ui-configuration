@@ -1,0 +1,29 @@
+{
+	"apiconfig": {
+		"enabled": false
+	},
+    "ITB-3310-CP2": {
+        "ui": "circle-default",
+        "inputdevices": [{
+            "name": "Table",
+            "icon": "byu_table_input"
+        }],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "Table"
+            ],
+            "defaultinput": "Table"
+        }],
+        "audio": [{
+            "displays": [
+                "D1"
+            ],
+            "audiodevices": [
+                "D1"
+            ]
+        }],
+        "features": []
+    }
+}

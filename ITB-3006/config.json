@@ -1,0 +1,35 @@
+{
+	"apiconfig": {
+		"enabled": false
+	},
+    "ITB-3006-CP2": {
+        "ui": "circle-default",
+        "inputdevices": [{
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "Table",
+                "icon": "byu_table_input"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "Table",
+                "AppleTV"
+            ],
+            "defaultinput": "Table"
+        }],
+        "audio": [{
+            "displays": [
+                "D1"
+            ],
+            "audiodevices": [
+                "D1"
+            ]
+        }],
+        "features": []
+    }
+}
