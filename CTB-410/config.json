@@ -1,0 +1,648 @@
+{
+	"apiconfig": {
+		"enabled": true,
+		"1": "CTB-410-CP1.byu.edu",
+		"2": "CTB-410-CP2.byu.edu",
+		"3": "CTB-410-CP3.byu.edu",
+		"4": "CTB-410-CP4.byu.edu",
+		"5": "CTB-410-CP5.byu.edu",
+		"6": "CTB-410-CP6.byu.edu",
+		"7": "CTB-410-CP7.byu.edu",
+		"8": "CTB-410-CP8.byu.edu",
+		"9": "localhost"
+	},
+	"CTB-410-CP1": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D1",
+			"icon": "videocam",
+			"inputs": [
+				"Via1",
+				"HDMI1"	
+			],
+			"defaultinput": "Via1"
+		}],
+		"audio": [{
+			"displays": [
+				"D1"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all",
+			"power-off-all"
+		]
+	},
+	"CTB-410-CP2": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D2",
+			"icon": "tv",
+			"inputs": [
+				"Via2",
+				"HDMI2"	
+			],
+			"defaultinput": "Via2"
+		}],
+		"audio": [{
+			"displays": [
+				"D2"	
+			],
+			"audiodevices": [
+				"D2"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP3": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D3",
+			"icon": "tv",
+			"inputs": [
+				"Via3",
+				"HDMI3"	
+			],
+			"defaultinput": "Via3"
+		}],
+		"audio": [{
+			"displays": [
+				"D3"	
+			],
+			"audiodevices": [
+				"D3"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP4": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D4",
+			"icon": "tv",
+			"inputs": [
+				"Via4",
+				"HDMI4"	
+			],
+			"defaultinput": "Via4"
+		}],
+		"audio": [{
+			"displays": [
+				"D4"	
+			],
+			"audiodevices": [
+				"D4"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP5": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D5",
+			"icon": "tv",
+			"inputs": [
+				"Via5",
+				"HDMI5"	
+			],
+			"defaultinput": "Via5"
+		}],
+		"audio": [{
+			"displays": [
+				"D5"	
+			],
+			"audiodevices": [
+				"D5"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP6": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D6",
+			"icon": "tv",
+			"inputs": [
+				"Via6",
+				"HDMI6"	
+			],
+			"defaultinput": "Via6"
+		}],
+		"audio": [{
+			"displays": [
+				"D6"	
+			],
+			"audiodevices": [
+				"D6"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP7": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D7",
+			"icon": "tv",
+			"inputs": [
+				"Via7",
+				"HDMI7"	
+			],
+			"defaultinput": "Via7"
+		}],
+		"audio": [{
+			"displays": [
+				"D7"
+			],
+			"audiodevices": [
+				"D7"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	},
+	"CTB-410-CP8": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via6",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via7",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via8",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D8",
+			"icon": "tv",
+			"inputs": [
+				"Via8",
+				"HDMI8"	
+			],
+			"defaultinput": "Via8"
+		}],
+		"audio": [{
+			"displays": [
+				"D8"
+			],
+			"audiodevices": [
+				"D8"	
+			]
+		}, {
+			"displays": [
+				"dta"	
+			],
+			"audiodevices": [
+				"D1"	
+			]
+		}],
+		"features": [
+			"display-top-all"
+		]
+	}
+
+}
