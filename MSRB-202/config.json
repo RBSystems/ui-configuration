@@ -1,0 +1,276 @@
+{
+	"apiconfig": {
+		"enabled": true,
+		"1": "MSRB-202-CP1.byu.edu",
+		"2": "MSRB-202-CP2.byu.edu",
+		"3": "MSRB-202-CP3.byu.edu",
+		"4": "MSRB-202-CP4.byu.edu",
+		"5": "MSRB-202-CP5.byu.edu",
+		"6": "localhost"
+	},
+	"MSRB-202-CP1": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D1",
+			"icon": "tv",
+			"inputs": [
+				"Via1",
+				"HDMI1"	
+			],
+			"defaultinput": "Via1"
+		}],
+		"audio": [{
+			"displays": [
+				"D1"
+			],
+			"audiodevices": [
+				"D1"
+			]
+		}],
+		"features": [
+		]
+	},
+	"MSRB-202-CP2": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D2",
+			"icon": "tv",
+			"inputs": [
+				"Via2",
+				"HDMI2"	
+			],
+			"defaultinput": "Via2"
+		}],
+		"audio": [{
+			"displays": [
+				"D2"
+			],
+			"audiodevices": [
+				"D2"
+			]
+		}],
+		"features": [
+		]
+	},
+	"MSRB-202-CP3": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D3",
+			"icon": "tv",
+			"inputs": [
+				"Via3",
+				"HDMI3"	
+			],
+			"defaultinput": "Via3"
+		}],
+		"audio": [{
+			"displays": [
+				"D3"
+			],
+			"audiodevices": [
+				"D3"
+			]
+		}],
+		"features": [
+		]
+	},
+	"MSRB-202-CP4": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D4",
+			"icon": "tv",
+			"inputs": [
+				"Via4",
+				"HDMI4"	
+			],
+			"defaultinput": "Via4"
+		}],
+		"audio": [{
+			"displays": [
+				"D4"
+			],
+			"audiodevices": [
+				"D4"
+			]
+		}],
+		"features": [
+		]
+	},
+	"MSRB-202-CP5": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "Via1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },{
+            "name": "Via2",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via3",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via4",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        }, {
+            "name": "Via5",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+		}],
+		"displays": [{
+			"name": "D5",
+			"icon": "tv",
+			"inputs": [
+				"Via5",
+				"HDMI5"	
+			],
+			"defaultinput": "Via5"
+		}],
+		"audio": [{
+			"displays": [
+				"D5"
+			],
+			"audiodevices": [
+				"D5"
+			]
+		}],
+		"features": [
+		]
+	}
+}
