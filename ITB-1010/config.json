@@ -8,13 +8,13 @@
     "ITB-1010-CP1": {
         "ui": "circle-default",
         "inputdevices": [{
-            "name": "Via1",
+            "name": "VIA1",
             "icon": "settings_input_antenna"
         }, {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         },{
-            "name": "Via2",
+            "name": "VIA2",
             "icon": "settings_input_antenna"
         }, {
             "name": "HDMI2",
@@ -24,10 +24,10 @@
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "Via1",
+                "VIA1",
                 "HDMI1"
             ],
-            "defaultinput": "Via1"
+            "defaultinput": "VIA1"
         }],
         "audio": [{
                 "displays": [
@@ -54,13 +54,13 @@
     "ITB-1010-CP2": {
         "ui": "circle-default",
         "inputdevices": [{
-            "name": "Via1",
+            "name": "VIA1",
             "icon": "settings_input_antenna"
         }, {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         },{
-            "name": "Via2",
+            "name": "VIA2",
             "icon": "settings_input_antenna"
         }, {
             "name": "HDMI2",
@@ -70,10 +70,10 @@
             "name": "D2",
             "icon": "tv",
             "inputs": [
-                "Via2",
+                "VIA2",
                 "HDMI2"
             ],
-            "defaultinput": "Via2"
+            "defaultinput": "VIA2"
         }],
         "audio": [{
                 "displays": [

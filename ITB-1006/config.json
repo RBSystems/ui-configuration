@@ -7,7 +7,7 @@
         "ui": "circle-default",
         "inputdevices": [
 			{
-                "name": "HDMIIn",
+                "name": "HDMI1",
                 "icon": "settings_input_hdmi"
             },
             {
@@ -19,10 +19,10 @@
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "HDMIIn",
+                "HDMI1",
                 "Overflow"
             ],
-            "defaultinput": "HDMIIn"
+            "defaultinput": "HDMI1"
         }],
         "audio": [{
                 "displays": [
