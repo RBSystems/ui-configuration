@@ -9,18 +9,13 @@
 			{
                 "name": "HDMI1",
                 "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "VIA1",
-                "icon": "settings_input_antenna"
             }
         ],
         "displays": [{
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "HDMI1",
-                "VIA1"
+                "HDMI1"
             ],
             "defaultinput": "HDMI1"
         }],
