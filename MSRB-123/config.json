@@ -23,9 +23,9 @@
             "name": "D1",
             "icon": "tv",
             "inputs": [
-				"HDMI1",
+                "HDMI1",
                 "HDMI2",
-				"HDMI3"
+                "HDMI3"
             ],
             "defaultinput": "HDMI2"
         }],
