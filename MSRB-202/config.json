@@ -16,7 +16,7 @@
         }, {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
-        },
+        }],
 		"displays": [{
 			"name": "D1",
 			"icon": "videocam",
@@ -45,7 +45,7 @@
         }, {
             "name": "HDMI2",
             "icon": "settings_input_hdmi"
-        },
+        }],
 		"displays": [{
 			"name": "D2",
 			"icon": "tv",
@@ -74,7 +74,7 @@
         }, {
             "name": "HDMI3",
             "icon": "settings_input_hdmi"
-        },
+        }],
 		"displays": [{
 			"name": "D3",
 			"icon": "tv",
@@ -103,7 +103,7 @@
         }, {
             "name": "HDMI4",
             "icon": "settings_input_hdmi"
-        },
+        }],
 		"displays": [{
 			"name": "D4",
 			"icon": "tv",
@@ -132,7 +132,7 @@
         }, {
             "name": "HDMI5",
             "icon": "settings_input_hdmi"
-        },
+        }],
 		"displays": [{
 			"name": "D5",
 			"icon": "tv",
