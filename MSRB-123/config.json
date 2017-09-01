@@ -9,15 +9,24 @@
 			{
                 "name": "HDMI1",
                 "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "HDMI3",
+                "icon": "settings_input_hdmi"
             }
         ],
         "displays": [{
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "HDMI1"
+                "HDMI2",
+				"HDMI3"
             ],
-            "defaultinput": "HDMI1"
+            "defaultinput": "HDMI2"
         }],
         "audio": [{
                 "displays": [
