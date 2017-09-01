@@ -1,15 +1,7 @@
 {
 	"apiconfig": {
 		"enabled": true,
-		"1": "CTB-410-CP1.byu.edu",
-		"2": "CTB-410-CP2.byu.edu",
-		"3": "CTB-410-CP3.byu.edu",
-		"4": "CTB-410-CP4.byu.edu",
-		"5": "CTB-410-CP5.byu.edu",
-		"6": "CTB-410-CP6.byu.edu",
-		"7": "CTB-410-CP7.byu.edu",
-		"8": "CTB-410-CP8.byu.edu",
-		"9": "localhost"
+		"1": "CTB-410-CP1.byu.edu"
 	},
 	"CTB-410-CP1": {
 		"ui": "circle-default",
