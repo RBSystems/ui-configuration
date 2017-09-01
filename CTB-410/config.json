@@ -87,7 +87,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all",
+			"display-to-all",
 			"power-off-all"
 		]
 	},
@@ -167,7 +167,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP3": {
@@ -246,7 +246,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP4": {
@@ -325,7 +325,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP5": {
@@ -404,7 +404,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP6": {
@@ -483,7 +483,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP7": {
@@ -562,7 +562,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	},
 	"CTB-410-CP8": {
@@ -641,7 +641,7 @@
 			]
 		}],
 		"features": [
-			"display-top-all"
+			"display-to-all"
 		]
 	}
 
