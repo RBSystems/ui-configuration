@@ -1,6 +1,6 @@
 {
 	"apiconfig": {
-		"enabled": true,
+		"enabled": false,
 		"1": "ITB-1010-CP2.byu.edu",
 		"2": "ITB-1010-CP1.byu.edu",
 		"3": "localhost"
