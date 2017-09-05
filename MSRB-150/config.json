@@ -11,8 +11,8 @@
                 "icon": "settings_input_hdmi"
             },
             {
-                "name": "VIA1",
-                "icon": "settings_input_antenna"
+                "name": "PC1",
+                "icon": "computer"
             }
         ],
         "displays": [{
@@ -20,9 +20,9 @@
             "icon": "tv",
             "inputs": [
                 "HDMI1",
-                "VIA1"
+                "PC1"
             ],
-            "defaultinput": "HDMI1"
+            "defaultinput": "PC1"
         }],
         "audio": [{
                 "displays": [
