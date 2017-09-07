@@ -1,0 +1,39 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+    "TLRB-176-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "HDMI1",
+                "icon": "settings_input_hdmi"
+            },
+            {
+                "name": "PC1",
+                "icon": "computer"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "HDMI1",
+                "PC1"
+            ],
+            "defaultinput": "PC1"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "D1"
+                ]
+            }
+        ],
+        "features": [
+        ]
+    }
+}
