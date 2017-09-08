@@ -9,20 +9,15 @@
 			{
                 "name": "HDMI1",
                 "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "PC1",
-                "icon": "computer"
             }
         ],
         "displays": [{
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "HDMI1",
-                "PC1"
+                "HDMI1"
             ],
-            "defaultinput": "PC1"
+            "defaultinput": "HDMI1"
         }],
         "audio": [{
                 "displays": [
