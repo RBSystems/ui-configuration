@@ -1,0 +1,46 @@
+{
+	"apiconfig": {
+		"enabled": false
+	},
+    "ITB-3016-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "AppleTV",
+                "icon": "airplay"
+            },
+            {
+                "name": "VIA1",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "PC1",
+                "icon": "laptop_mac"
+			},
+			{
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+			}
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "tv",
+            "inputs": [
+                "AppleTV",
+                "VIA1",
+				"PC1",
+				"HDMI2"
+            ],
+            "defaultinput": "AppleTV"
+        }],
+        "audio": [{
+            "displays": [
+                "D1"
+            ],
+            "audiodevices": [
+                "D1"
+            ]
+        }],
+        "features": []
+    }
+}
