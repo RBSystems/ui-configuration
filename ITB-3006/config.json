@@ -5,7 +5,7 @@
     "ITB-3006-CP2": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Via",
+                "name": "AppleTV",
                 "icon": "airplay"
             },
             {
