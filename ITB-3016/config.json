@@ -1,0 +1,14 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+	"ITB-3016-CP1": {
+		"ui": "circle-default",
+		"inputdevices": [],
+		"displays": [],
+		"audio": [],
+		"features": []
+	}
+}
+
