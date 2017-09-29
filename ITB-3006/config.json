@@ -6,7 +6,7 @@
         "ui": "circle-default",
         "inputdevices": [{
                 "name": "Via",
-                "icon": "airplay"
+                "icon": "settings_input_antenna"
             },
             {
                 "name": "Table",
