@@ -3,7 +3,7 @@
 		"enabled": false,
 		"1": "localhost"
 	},
-    "TLRB-172-CP1": {
+    "JFSB-1041S-CP1": {
         "ui": "circle-default",
         "inputdevices": [
 			{
@@ -13,7 +13,7 @@
         ],
         "displays": [{
             "name": "D1",
-            "icon": "tv",
+            "icon": "videocam",
             "inputs": [
                 "HDMI1"
             ],

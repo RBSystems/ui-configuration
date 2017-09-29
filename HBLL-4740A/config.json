@@ -1,0 +1,34 @@
+{
+	"apiconfig": {
+		"enabled": false
+	},
+	"HBLL-4740A-CP1": {
+		"ui": "circle-default",
+        "inputdevices": [{
+           	"name": "VIA1",
+            "icon": "settings_input_antenna"
+        }, {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }],
+		"displays": [{
+			"name": "D1",
+			"icon": "videocam",
+			"inputs": [
+				"VIA1",
+				"HDMI1"	
+			],
+			"defaultinput": "VIA1"
+		}],
+		"audio": [{
+			"displays": [
+				"D1"
+			],
+			"audiodevices": [
+				"D1"
+			]
+		}],
+		"features": [
+		]
+	}
+}
