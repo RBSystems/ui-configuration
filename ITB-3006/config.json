@@ -5,7 +5,7 @@
     "ITB-3006-CP2": {
         "ui": "circle-default",
         "inputdevices": [{
-                "name": "Via",
+                "name": "VIA1",
                 "icon": "settings_input_antenna"
             },
             {
@@ -18,7 +18,7 @@
             "icon": "tv",
             "inputs": [
                 "Table",
-                "AppleTV"
+                "VIA1"
             ],
             "defaultinput": "Table"
         }],
