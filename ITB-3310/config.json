@@ -7,12 +7,17 @@
         "inputdevices": [{
             "name": "Table",
             "icon": "byu_table_input"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
         }],
         "displays": [{
             "name": "D1",
             "icon": "tv",
             "inputs": [
-                "Table"
+                "Table",
+                "Via"
             ],
             "defaultinput": "Table"
         }],
