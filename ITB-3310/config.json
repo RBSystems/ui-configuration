@@ -17,7 +17,7 @@
             "icon": "tv",
             "inputs": [
                 "Table",
-                "Via"
+                "VIA1"
             ],
             "defaultinput": "Table"
         }],
