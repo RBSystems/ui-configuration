@@ -1,49 +1,49 @@
 {
-	"displays": [
+	"presets": [
 		{
-			"displayname": "Danny Flatpanel",
-			"names": [
+			"name": "Danny Flatpanel",
+			"displays": [
 				"D2"
 			],
 			"icon": "tv",
-			"audio": [
+			"audioDevices": [
 				"D2"
 			],
 			"inputs": [
 			]
 		},
 		{
-			"displayname": "Clark/John Flatpanel",
-			"names": [
+			"name": "Clark/John Flatpanel",
+			"displays": [
 				"D3"
 			],
 			"icon": "tv",
-			"audio": [
+			"audioDevices": [
 				"D3"
 			],
 			"inputs": [
 			]
 		},
 		{
-			"displayname": "Joe Flatpanel",
-			"names": [
+			"name": "Joe Flatpanel",
+			"displays": [
 				"D4"
 			],
 			"icon": "tv",
-			"audio": [
+			"audioDevices": [
 				"D4"
 			],
 			"inputs": [
 			]
 		},
 		{
-			"displayname": "40\" Flatpanels",
-			"names": [
+			"name": "40\" Flatpanels",
+			"displays": [
 				"D2",
 				"D4"
 			],
 			"icon": "tv",
-			"audio": [
+			"audioDevices": [
 				"D2",
 				"D4"
 			],
@@ -54,48 +54,48 @@
 	"panels": [
 		{
 			"hostname": "ITB-1101-CP1",
-			"ui": "circle-default",
-			"displays": [
+			"uipath": "/blueberry",
+			"presets": [
 				"Joe Flatpanel",
 				"40\" Flatpanels"
 			],
 			"features": [
 			],
-			"independentAudio": [
+			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP2",
-			"ui": "circle-default",
+			"uipath": "/blueberry",
 			"displays": [
 				"Danny Flatpanel",
 				"40\" Flatpanels"
 			],
 			"features": [
 			],
-			"independentAudio": [
+			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP3",
-			"ui": "circle-default",
+			"uipath": "/blueberry",
 			"displays": [
 				"Clark/John Flatpanel"
 			],
 			"features": [
 			],
-			"independentAudio": [
+			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP4",
-			"ui": "circle-default",
+			"uipath": "/blueberry",
 			"displays": [
 				"Clark/John Flatpanel"
 			],
 			"features": [
 			],
-			"independentAudio": [
+			"independentAudios": [
 			]
 		}
 	]
