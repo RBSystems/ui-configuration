@@ -1,104 +1,102 @@
 {
-	"room": {
-		"displays": [
-			{
-				"displayname": "Danny Flatpanel",
-				"names": [
-					"D2"
-				],
-				"icon": "tv",
-				"audio": [
-					"D2"
-				],
-				"inputs": [
-				]
-			},
-			{
-				"displayname": "Clark/John Flatpanel",
-				"names": [
-					"D3"
-				],
-				"icon": "tv",
-				"audio": [
-					"D3"
-				],
-				"inputs": [
-				]
-			},
-			{
-				"displayname": "Joe Flatpanel",
-				"names": [
-					"D4"
-				],
-				"icon": "tv",
-				"audio": [
-					"D4"
-				],
-				"inputs": [
-				]
-			},
-			{
-				"displayname": "40\" Flatpanels",
-				"names": [
-					"D2",
-					"D4"
-				],
-				"icon": "tv",
-				"audio": [
-					"D2",
-					"D4"
-				],
-				"inputs": [
-				]
-			}
-		],
-		"panels": [
-			{
-				"hostname": "ITB-1101-CP1",
-				"ui": "circle-default",
-				"displays": [
-					"Joe Flatpanel",
-					"40\" Flatpanels"
-				],
-				"features": [
-				],
-				"independentAudio": [
-				]
-			},
-			{
-				"hostname": "ITB-1101-CP2",
-				"ui": "circle-default",
-				"displays": [
-					"Danny Flatpanel",
-					"40\" Flatpanels"
-				],
-				"features": [
-				],
-				"independentAudio": [
-				]
-			},
-			{
-				"hostname": "ITB-1101-CP3",
-				"ui": "circle-default",
-				"displays": [
-					"Clark/John Flatpanel"
-				],
-				"features": [
-				],
-				"independentAudio": [
-				]
-			},
-			{
-				"hostname": "ITB-1101-CP4",
-				"ui": "circle-default",
-				"displays": [
-					"Clark/John Flatpanel"
-				],
-				"features": [
-				],
-				"independentAudio": [
-				]
-			}
-		]
-	}
+	"presets": [
+		{
+			"name": "Danny Flatpanel",
+			"displays": [
+				"D2"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2"
+			],
+			"inputs": [
+			]
+		},
+		{
+			"name": "Clark/John Flatpanel",
+			"displays": [
+				"D3"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D3"
+			],
+			"inputs": [
+			]
+		},
+		{
+			"name": "Joe Flatpanel",
+			"displays": [
+				"D4"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D4"
+			],
+			"inputs": [
+			]
+		},
+		{
+			"name": "40\" Flatpanels",
+			"displays": [
+				"D2",
+				"D4"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2",
+				"D4"
+			],
+			"inputs": [
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "ITB-1101-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Joe Flatpanel",
+				"40\" Flatpanels"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP2",
+			"uipath": "/blueberry",
+			"displays": [
+				"Danny Flatpanel",
+				"40\" Flatpanels"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP3",
+			"uipath": "/blueberry",
+			"displays": [
+				"Clark/John Flatpanel"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP4",
+			"uipath": "/blueberry",
+			"displays": [
+				"Clark/John Flatpanel"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
 }
