@@ -14,11 +14,11 @@
                 "icon": "settings_input_antenna"
             },
 			{
-                "name": "PC1",
+                "name": "HDMI2",
                 "icon": "laptop_mac"
 			},
 			{
-                "name": "HDMI2",
+                "name": "HDMI1",
                 "icon": "settings_input_hdmi"
 			}
         ],
@@ -28,7 +28,7 @@
             "inputs": [
                 "AppleTV",
                 "VIA1",
-				"PC1",
+				"HDMI1",
 				"HDMI2"
             ],
             "defaultinput": "AppleTV"
