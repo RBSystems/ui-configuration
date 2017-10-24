@@ -105,7 +105,7 @@
 			]
 		}
 	],
-    "inputs": [
+    "inputConfiguration": [
         {
             "name": "VIA1",
             "icon": "settings_input_antenna",
