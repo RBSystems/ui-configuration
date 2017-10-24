@@ -106,10 +106,25 @@
 		}
 	],
     "inputs": [
-        "VIA1": "settings_input_antenna",
-        "PC1": "desktop_windows",
-        "AppleTV": "airplay",
-        "ChromeCast": "cast",
-        "HDMI1": "settings_input_hdmi"
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna",
+        {,
+        {
+            "name": "PC1",
+            "icon": "desktop_windows",
+        {,
+        {
+            "name": "AppleTV",
+            "icon": "airplay",
+        {,
+        {
+            "name": "ChromeCast",
+            "icon": "cast",
+        {,
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi",
+        {
     ]
 }
