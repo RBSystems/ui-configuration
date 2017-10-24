@@ -108,23 +108,23 @@
     "inputConfiguration": [
         {
             "name": "VIA1",
-            "icon": "settings_input_antenna",
+            "icon": "settings_input_antenna"
         {,
         {
             "name": "PC1",
-            "icon": "desktop_windows",
+            "icon": "desktop_windows"
         {,
         {
             "name": "AppleTV",
-            "icon": "airplay",
+            "icon": "airplay"
         {,
         {
             "name": "ChromeCast",
-            "icon": "cast",
+            "icon": "cast"
         {,
         {
             "name": "HDMI1",
-            "icon": "settings_input_hdmi",
+            "icon": "settings_input_hdmi"
         {
     ]
 }
