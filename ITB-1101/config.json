@@ -104,5 +104,12 @@
 			"independentAudios": [
 			]
 		}
-	]
+	],
+    "inputs": [
+        "VIA1": "settings_input_antenna",
+        "PC1": "desktop_windows",
+        "AppleTV": "airplay",
+        "ChromeCast": "cast",
+        "HDMI1": "settings_input_hdmi"
+    ]
 }
