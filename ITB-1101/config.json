@@ -16,6 +16,9 @@
 				"D2"
 			],
 			"inputs": [
+                "VIA1",
+                "PC1",
+                "AppleTV"
 			]
 		},
 		{
@@ -62,8 +65,8 @@
 			"hostname": "ITB-1101-CP1",
 			"uipath": "/blueberry",
 			"presets": [
-				"Joe Flatpanel",
-				"40\" Flatpanels"
+				"40\" Flatpanels",
+				"Joe Flatpanel"
 			],
 			"features": [
 			],
@@ -73,7 +76,7 @@
 		{
 			"hostname": "ITB-1101-CP2",
 			"uipath": "/blueberry",
-			"displays": [
+			"presets": [
 				"Danny Flatpanel",
 				"40\" Flatpanels"
 			],
@@ -85,7 +88,7 @@
 		{
 			"hostname": "ITB-1101-CP3",
 			"uipath": "/blueberry",
-			"displays": [
+			"presets": [
 				"Clark/John Flatpanel"
 			],
 			"features": [
@@ -96,7 +99,7 @@
 		{
 			"hostname": "ITB-1101-CP4",
 			"uipath": "/blueberry",
-			"displays": [
+			"presets": [
 				"Clark/John Flatpanel"
 			],
 			"features": [
