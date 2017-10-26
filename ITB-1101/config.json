@@ -18,7 +18,8 @@
 			"inputs": [
                 "VIA1",
                 "PC1",
-                "AppleTV"
+                "AppleTV",
+                "ChromeCast"
 			]
 		},
 		{
@@ -57,6 +58,10 @@
 				"D4"
 			],
 			"inputs": [
+                "ChromeCast",
+                "PC1",
+                "VIA1",
+                "AppleTV"
 			]
 		}
 	],
@@ -68,7 +73,7 @@
 				"40\" Flatpanels",
 				"Joe Flatpanel"
 			],
-			"features": [
+	,		"features": [
 			],
 			"independentAudios": [
 			]
