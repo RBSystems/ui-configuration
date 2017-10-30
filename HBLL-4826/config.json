@@ -1,0 +1,39 @@
+{
+	"apiconfig": {
+		"enabled": false,
+		"1": "localhost"
+	},
+    "HBLL-4826-CP1": {
+        "ui": "circle-default",
+        "inputdevices": [
+			{
+                "name": "HDMI1",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+            }
+        ],
+        "displays": [{
+            "name": "D1",
+            "icon": "videocam",
+            "inputs": [
+                "HDMI1",
+                "HDMI2"
+            ],
+            "defaultinput": "HDMI1"
+        }],
+        "audio": [{
+                "displays": [
+                    "D1"
+                ],
+                "audiodevices": [
+                    "D1"
+                ]
+            }
+        ],
+        "features": [
+        ]
+    }
+}
