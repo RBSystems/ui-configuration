@@ -44,6 +44,10 @@
 				"D4"
 			],
 			"inputs": [
+                "VIA1",
+                "PC1",
+                "AppleTV",
+                "ChromeCast"
 			]
 		},
 		{
