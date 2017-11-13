@@ -72,8 +72,8 @@
 			"hostname": "ITB-1101-CP1",
 			"uipath": "/blueberry",
 			"presets": [
-				"40\" Flatpanels",
-				"Joe Flatpanel"
+				"Joe Flatpanel",
+				"40\" Flatpanels"
 			],
 			"features": [
 			],
