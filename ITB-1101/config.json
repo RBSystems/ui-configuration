@@ -17,9 +17,7 @@
 			],
 			"inputs": [
                 "VIA1",
-                "PC1",
-                "AppleTV",
-                "ChromeCast"
+                "AppleTV"
 			]
 		},
 		{
@@ -74,8 +72,8 @@
 			"hostname": "ITB-1101-CP1",
 			"uipath": "/blueberry",
 			"presets": [
-				"40\" Flatpanels",
-				"Joe Flatpanel"
+				"Joe Flatpanel",
+				"40\" Flatpanels"
 			],
 			"features": [
 			],
@@ -138,5 +136,8 @@
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         }
+    ],
+    "roomWideAudios": [
+        "D2"
     ]
 }
