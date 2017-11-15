@@ -1,0 +1,46 @@
+{
+	"api": [
+		"ITB-1112-CP1.byu.edu"
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI2",
+                "HDMI1"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "ITB-1112-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Flatpanel"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
+}
