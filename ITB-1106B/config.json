@@ -1,8 +1,6 @@
 {
 	"apiconfig": {
-		"enabled": true,
-		"1": "ITB-1106B-CP1.byu.edu",
-		"2": "ITB-1106B-CP2.byu.edu"	
+		"enabled": false
 	},
     "ITB-1106B-CP1": {
         "ui": "circle-default",
