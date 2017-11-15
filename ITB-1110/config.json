@@ -30,7 +30,8 @@
 			],
 			"inputs": [
                 "PC1",
-                "IPTV"
+                "IPTV",
+                "AppleTV"
 			]
 		}
 	],
