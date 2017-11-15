@@ -65,6 +65,7 @@
 				"Projector"
 			],
 			"features": [
+                "display-to-all"
 			],
 			"independentAudios": [
 			]
@@ -76,6 +77,7 @@
 				"Flatpanel"
 			],
 			"features": [
+                "display-to-all"
 			],
 			"independentAudios": [
 			]
