@@ -1,107 +1,86 @@
 {
-	"apiconfig": {
-		"enabled": false
-	},
-    "ITB-1106B-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [{
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "VIA1",
-                "icon": "settings_input_antenna"
-            },
-            {
-                "name": "HDMI2",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "VIA2",
-                "icon": "settings_input_antenna"
-            }
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "videocam",
-            "inputs": [
+	"api": [
+		"ITB-1106B-CP1.byu.edu",
+		"ITB-1106B-CP2.byu.edu"
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "setttings_input_hdmi"
+        },
+        {
+            "name": "VIA2",
+            "icon": "settings_input_antenna"
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D2"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2"
+			],
+			"inputs": [
                 "HDMI1",
-                "VIA1"
-            ],
-            "defaultinput": "VIA1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            },
-            {
-                "displays": [
-                    "dta"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-            "display-to-all",
-            "power-off-all",
-            "group-input"
-        ]
-    },
-    "ITB-1106B-CP2": {
-        "ui": "circle-default",
-        "inputdevices": [{
-                "name": "HDMI2",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "VIA2",
-                "icon": "settings_input_antenna"
-            },
-            {
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "VIA1",
-                "icon": "settings_input_antenna"
-            }
-        ],
-        "displays": [{
-            "name": "D2",
-            "icon": "tv",
-            "inputs": [
+                "VIA1",
                 "HDMI2",
                 "VIA2"
-            ],
-            "defaultinput": "VIA2"
-        }],
-        "audio": [{
-                "displays": [
-                    "D2"
-                ],
-                "audiodevices": [
-                    "D2"
-                ]
-            },
-            {
-                "displays": [
-                    "dta"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-            "display-to-all",
-            "power-off-all",
-            "group-input"
-        ]
-    }
+			]
+		},
+		{
+			"name": "Projector",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1",
+                "HDMI2",
+                "VIA2"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "ITB-1106B-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Projector"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1106B-CP2",
+			"uipath": "/blueberry",
+			"presets": [
+				"Flatpanel"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		}
+	]
 }
