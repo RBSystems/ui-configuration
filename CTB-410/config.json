@@ -103,17 +103,17 @@
 			]
 		},
 		{
-			"name": "Station 1",
+			"name": "Station 8",
 			"displays": [
-				"D1"
+				"D8"
 			],
 			"icon": "tv",
 			"audioDevices": [
-				"D1"
+				"D8"
 			],
 			"inputs": [
-                "HDMI1",
-                "VIA1"
+                "HDMI8",
+                "VIA8"
 			]
 		}
 	],
