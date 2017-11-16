@@ -1,0 +1,286 @@
+{
+	"api": [
+		"CTB-410-CP1.byu.edu"
+	],
+	"presets": [
+		{
+			"name": "Station 1",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1"
+			]
+		},
+		{
+			"name": "Station 2",
+			"displays": [
+				"D2"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2"
+			],
+			"inputs": [
+                "HDMI2",
+                "VIA2"
+			]
+		},
+		{
+			"name": "Station 3",
+			"displays": [
+				"D3"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D3"
+			],
+			"inputs": [
+                "HDMI3",
+                "VIA3"
+			]
+		},
+		{
+			"name": "Station 4",
+			"displays": [
+				"D4"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D4"
+			],
+			"inputs": [
+                "HDMI4",
+                "VIA4"
+			]
+		},
+		{
+			"name": "Station 5",
+			"displays": [
+				"D5"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D5"
+			],
+			"inputs": [
+                "HDMI5",
+                "VIA5"
+			]
+		},
+		{
+			"name": "Station 6",
+			"displays": [
+				"D6"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D6"
+			],
+			"inputs": [
+                "HDMI6",
+                "VIA6"
+			]
+		},
+		{
+			"name": "Station 7",
+			"displays": [
+				"D7"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D7"
+			],
+			"inputs": [
+                "HDMI7",
+                "VIA7"
+			]
+		},
+		{
+			"name": "Station 1",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "CTB-410-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 1"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP2",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 2"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP3",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 3"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP4",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 4"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP5",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 5"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP6",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 6"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP7",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 7"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "CTB-410-CP8",
+			"uipath": "/blueberry",
+			"presets": [
+				"Station 8"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		}
+	],
+    "inputConfiguration": [
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA2",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA3",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA4",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA5",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA6",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI6",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA7",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI7",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA8",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI8",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+        "D1"
+    ]
+}
