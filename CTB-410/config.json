@@ -13,6 +13,7 @@
 				"D1"
 			],
 			"inputs": [
+                "PC1",
                 "HDMI1",
                 "VIA1"
 			]
@@ -215,6 +216,10 @@
 		}
 	],
     "inputConfiguration": [
+        {
+            "name": "PC1",
+            "icon": "computer"
+        },
         {
             "name": "VIA1",
             "icon": "settings_input_antenna"
