@@ -1,0 +1,57 @@
+{
+	"api": [
+		"localhost"
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Projector",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "HDMI2"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "SNLB-165-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Projector"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		},
+    {
+			"hostname": "SNLB-165-CP2",
+			"uipath": "/blueberry",
+			"presets": [
+				"Projector"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
+}
