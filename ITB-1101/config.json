@@ -30,6 +30,8 @@
 				"D3"
 			],
 			"inputs": [
+                "ChromeCast",
+                "AppleTV"
 			]
 		},
 		{
