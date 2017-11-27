@@ -1,34 +1,46 @@
 {
-	"apiconfig": {
-		"enabled": false
-	},
-	"HBLL-4740B-CP1": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA1",
+	"api": [
+		"localhost"
+	],
+    "inputConfiguration": [
+        {
+            "name": "VIA1",
             "icon": "settings_input_antenna"
-        }, {
+        },
+        {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D1",
-			"icon": "videocam",
-			"inputs": [
-				"VIA1",
-				"HDMI1"	
-			],
-			"defaultinput": "VIA1"
-		}],
-		"audio": [{
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Flatpanel",
 			"displays": [
 				"D1"
 			],
-			"audiodevices": [
+			"icon": "tv",
+			"audioDevices": [
 				"D1"
+			],
+			"inputs": [
+                "VIA1",
+                "HDMI1"
 			]
-		}],
-		"features": [
-		]
-	}
+		}
+	],
+	"panels": [
+		{
+			"hostname": "HBLL-4740B-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Flatpanel"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
 }
