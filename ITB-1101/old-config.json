@@ -1,55 +1,79 @@
 {
-    "api": [
+	"api": [
 		"ITB-1101-CP1.byu.edu",
 		"ITB-1101-CP2.byu.edu",
 		"ITB-1101-CP3.byu.edu",
 		"ITB-1101-CP4.byu.edu"
-    ],
-    "displays": [
-        {
-            "name": "D2",
-            "icon": "tv",
-            "inputs": [
+	],
+	"presets": [
+		{
+			"name": "Danny Flatpanel",
+			"displays": [
+				"D2"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2"
+			],
+			"inputs": [
                 "VIA1",
                 "AppleTV"
-            ],
-            "audioDevices": [
-                "D2"
-            ]
-        },
-        {
-            "name": "D3",
-            "icon": "tv",
-            "inputs": [
+			]
+		},
+		{
+			"name": "Clark/John Flatpanel",
+			"displays": [
+				"D3"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D3"
+			],
+			"inputs": [
+			]
+		},
+		{
+			"name": "Joe Flatpanel",
+			"displays": [
+				"D4"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D4"
+			],
+			"inputs": [
                 "VIA1",
                 "PC1",
                 "AppleTV",
                 "ChromeCast"
-            ],
-            "audioDevices": [
-                "D3"
-            ]
-        },
-        {
-            "name": "D4",
-            "icon": "tv",
-            "inputs": [
-                "VIA1",
+			]
+		},
+		{
+			"name": "40\" Flatpanels",
+			"displays": [
+				"D2",
+				"D4"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2",
+				"D4"
+			],
+			"inputs": [
+                "ChromeCast",
                 "PC1",
-                "AppleTV",
-                "ChromeCast"
-            ],
-            "audioDevices": [
-                "D4"
-            ]
-        }
-    ],
-    "panels": [
+                "VIA1",
+                "AppleTV"
+			]
+		}
+	],
+	"panels": [
 		{
 			"hostname": "ITB-1101-CP1",
 			"uipath": "/blueberry",
-			"displays": [
-                "D3"
+			"presets": [
+				"Joe Flatpanel",
+				"40\" Flatpanels"
 			],
 			"features": [
                 "display-to-all"
@@ -60,8 +84,9 @@
 		{
 			"hostname": "ITB-1101-CP2",
 			"uipath": "/blueberry",
-			"displays": [
-                "D2"
+			"presets": [
+				"Danny Flatpanel",
+				"40\" Flatpanels"
 			],
 			"features": [
                 "display-to-all"
@@ -72,16 +97,26 @@
 		{
 			"hostname": "ITB-1101-CP3",
 			"uipath": "/blueberry",
-			"displays": [
-                "D4"
+			"presets": [
+				"Clark/John Flatpanel"
 			],
 			"features": [
-                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP4",
+			"uipath": "/blueberry",
+			"presets": [
+				"Clark/John Flatpanel"
+			],
+			"features": [
 			],
 			"independentAudios": [
 			]
 		}
-    ],
+	],
     "inputConfiguration": [
         {
             "name": "VIA1",
