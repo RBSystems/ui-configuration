@@ -1,34 +1,42 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "localhost"
-	},
-    "MCKB-341-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [
-			{
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-            }
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "videocam",
-            "inputs": [
+	"api": [
+		"localhost"
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "HDMI1"
-            ],
-            "defaultinput": "HDMI1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-        ]
-    }
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "MCKB-341-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Flatpanel"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
 }
+
