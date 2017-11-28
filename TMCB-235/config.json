@@ -12,7 +12,7 @@
     ],
 	"presets": [
 		{
-			"name": "Flatpanel",
+			"name": "Projector",
 			"displays": [
 				"D1"
 			],
