@@ -23,7 +23,9 @@
 			],
             "shareableDisplays": [
                 "D3"
-            ]
+            ],
+			"independentAudioDevices": [
+			]
 		},
 		{
 			"name": "Clark/John Flatpanel",
@@ -39,7 +41,9 @@
                 "AppleTV"
 			],
             "shareableDisplays": [
-            ]
+            ],
+			"independentAudioDevices": [
+			]
 		},
 		{
 			"name": "Joe Flatpanel",
@@ -57,7 +61,9 @@
                 "ChromeCast"
 			],
             "shareableDisplays": [
-            ]
+            ],
+			"independentAudioDevices": [
+			]
 		}
 	],
 	"panels": [
@@ -67,8 +73,6 @@
 			"presets": "Joe Flatpanel",
 			"features": [
                 "share"
-			],
-			"independentAudios": [
 			]
 		},
 		{
@@ -77,8 +81,6 @@
 			"presets": "Danny Flatpanel",
 			"features": [
                 "share"
-			],
-			"independentAudios": [
 			]
 		},
 		{
@@ -86,8 +88,6 @@
 			"uipath": "/blueberry",
 			"presets": "Clark/John Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		},
 		{
@@ -95,8 +95,6 @@
 			"uipath": "/blueberry",
 			"presets": "Clark/John Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
 	],
