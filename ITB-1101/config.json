@@ -16,7 +16,10 @@
 				"D2"
 			],
 			"inputs": [
-                "AppleTV"
+                "AppleTV",
+                "VIA1",
+                "PC1",
+                "ChromeCast"
 			]
 		},
 		{
