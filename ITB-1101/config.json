@@ -20,7 +20,10 @@
                 "VIA1",
                 "PC1",
                 "ChromeCast"
-			]
+			],
+            "shareableDisplays": [
+                "D3"
+            ]
 		},
 		{
 			"name": "Clark/John Flatpanel",
@@ -34,7 +37,9 @@
 			"inputs": [
                 "ChromeCast",
                 "AppleTV"
-			]
+			],
+            "shareableDisplays": [
+            ]
 		},
 		{
 			"name": "Joe Flatpanel",
@@ -50,25 +55,9 @@
                 "PC1",
                 "AppleTV",
                 "ChromeCast"
-			]
-		},
-		{
-			"name": "40\" Flatpanels",
-			"displays": [
-				"D2",
-				"D4"
 			],
-			"icon": "tv",
-			"audioDevices": [
-				"D2",
-				"D4"
-			],
-			"inputs": [
-                "ChromeCast",
-                "PC1",
-                "VIA1",
-                "AppleTV"
-			]
+            "shareableDisplays": [
+            ]
 		}
 	],
 	"panels": [
@@ -80,7 +69,7 @@
 				"40\" Flatpanels"
 			],
 			"features": [
-                "display-to-all"
+                "share"
 			],
 			"independentAudios": [
 			]
@@ -93,7 +82,7 @@
 				"40\" Flatpanels"
 			],
 			"features": [
-                "display-to-all"
+                "share"
 			],
 			"independentAudios": [
 			]
