@@ -16,7 +16,15 @@
 				"D2"
 			],
 			"inputs": [
-                "AppleTV"
+                "AppleTV",
+                "VIA1",
+                "PC1",
+                "ChromeCast"
+			],
+            "shareableDisplays": [
+                "D3"
+            ],
+			"independentAudioDevices": [
 			]
 		},
 		{
@@ -31,6 +39,10 @@
 			"inputs": [
                 "ChromeCast",
                 "AppleTV"
+			],
+            "shareableDisplays": [
+            ],
+			"independentAudioDevices": [
 			]
 		},
 		{
@@ -47,24 +59,10 @@
                 "PC1",
                 "AppleTV",
                 "ChromeCast"
-			]
-		},
-		{
-			"name": "40\" Flatpanels",
-			"displays": [
-				"D2",
-				"D4"
 			],
-			"icon": "tv",
-			"audioDevices": [
-				"D2",
-				"D4"
-			],
-			"inputs": [
-                "ChromeCast",
-                "PC1",
-                "VIA1",
-                "AppleTV"
+            "shareableDisplays": [
+            ],
+			"independentAudioDevices": [
 			]
 		}
 	],
@@ -72,49 +70,31 @@
 		{
 			"hostname": "ITB-1101-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Joe Flatpanel",
-				"40\" Flatpanels"
-			],
+			"preset": "Joe Flatpanel",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP2",
 			"uipath": "/blueberry",
-			"presets": [
-				"Danny Flatpanel",
-				"40\" Flatpanels"
-			],
+			"preset": "Danny Flatpanel",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP3",
 			"uipath": "/blueberry",
-			"presets": [
-				"Clark/John Flatpanel"
-			],
+			"preset": "Clark/John Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1101-CP4",
 			"uipath": "/blueberry",
-			"presets": [
-				"Clark/John Flatpanel"
-			],
+			"preset": "Clark/John Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
 	],
