@@ -1,13 +1,9 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "ITB-1010-CP2.byu.edu",
-		"2": "ITB-1010-CP1.byu.edu",
-		"3": "localhost"
-	},
-    "ITB-1010-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [{
+	"api": [
+		"localhost"
+	],
+    "inputConfiguration": [
+        {
             "name": "VIA1",
             "icon": "settings_input_antenna"
         }, {
@@ -19,86 +15,68 @@
         }, {
             "name": "HDMI2",
             "icon": "settings_input_hdmi"
-        }],
-        "displays": [{
-            "name": "D1",
-            "icon": "tv",
-            "inputs": [
-                "VIA1",
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "South Display",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "HDMI1",
-                "VIA2",
-                "HDMI2"
-            ],
-            "defaultinput": "VIA1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            },
-            {
-                "displays": [
-                    "dta"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": ["display-to-all",
-            "power-off-all",
-            "group-input"
-        ]
-    },
-    "ITB-1010-CP2": {
-        "ui": "circle-default",
-        "inputdevices": [{
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI1",
-            "icon": "settings_input_hdmi"
-        },{
-            "name": "VIA2",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI2",
-            "icon": "settings_input_hdmi"
-        }],
-        "displays": [{
-            "name": "D2",
-            "icon": "tv",
-            "inputs": [
-                "VIA2",
                 "HDMI2",
                 "VIA1",
-                "HDMI1"
-            ],
-            "defaultinput": "VIA2"
-        }],
-        "audio": [{
-                "displays": [
-                    "D2"
-                ],
-                "audiodevices": [
-                    "D2"
-                ]
-            },
-            {
-                "displays": [
-                    "dta"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": ["display-to-all",
-            "power-off-all",
-            "group-input"
-        ]
-    }
+                "VIA2"
+			]
+		},
+		{
+			"name": "West Display",
+			"displays": [
+				"D2"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D2"
+			],
+			"inputs": [
+                "HDMI1",
+                "HDMI2",
+                "VIA1",
+                "VIA2"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "ITB-1010-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"West Display"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		},
+		{
+			"hostname": "ITB-1010-CP2",
+			"uipath": "/blueberry",
+			"presets": [
+				"South Display"
+			],
+			"features": [
+                "display-to-all"
+			],
+			"independentAudios": [
+			]
+		}
+    ]
 }
