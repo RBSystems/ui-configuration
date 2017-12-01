@@ -58,7 +58,7 @@
 			"hostname": "ITB-1010-CP1",
 			"uipath": "/blueberry",
 			"presets": [
-				"West Display"
+				"South Display"
 			],
 			"features": [
                 "display-to-all"
@@ -70,7 +70,7 @@
 			"hostname": "ITB-1010-CP2",
 			"uipath": "/blueberry",
 			"presets": [
-				"South Display"
+				"West Display"
 			],
 			"features": [
                 "display-to-all"
