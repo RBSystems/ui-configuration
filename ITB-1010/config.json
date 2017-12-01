@@ -25,7 +25,9 @@
             "icon": "tv",
             "inputs": [
                 "VIA1",
-                "HDMI1"
+                "HDMI1",
+                "VIA2",
+                "HDMI2"
             ],
             "defaultinput": "VIA1"
         }],
@@ -71,7 +73,9 @@
             "icon": "tv",
             "inputs": [
                 "VIA2",
-                "HDMI2"
+                "HDMI2",
+                "VIA1",
+                "HDMI1"
             ],
             "defaultinput": "VIA2"
         }],
