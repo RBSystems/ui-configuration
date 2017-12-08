@@ -22,7 +22,8 @@
                 "ChromeCast"
 			],
             "shareableDisplays": [
-                "D3"
+                "D3",
+                "D4"
             ],
 			"independentAudioDevices": [
 			]
