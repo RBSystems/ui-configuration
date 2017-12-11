@@ -1,0 +1,41 @@
+{
+	"api": [
+		"localhost"
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+    ],
+	"presets": [
+		{
+			"name": "Display",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1"
+			]
+		}
+	],
+	"panels": [
+		{
+			"hostname": "SWKT-1153-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Display"
+			],
+			"features": [
+			],
+			"independentAudios": [
+			]
+		}
+	]
+}
