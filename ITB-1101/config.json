@@ -89,6 +89,7 @@
 			"uipath": "/blueberry",
 			"preset": "Clark/John Flatpanel",
 			"features": [
+                "share"
 			]
 		},
 		{
@@ -96,6 +97,7 @@
 			"uipath": "/blueberry",
 			"preset": "Clark/John Flatpanel",
 			"features": [
+                "share"
 			]
 		}
 	],
