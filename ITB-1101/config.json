@@ -42,6 +42,8 @@
                 "AppleTV"
 			],
             "shareableDisplays": [
+                "D2",
+                "D4"
             ],
 			"independentAudioDevices": [
 			]
