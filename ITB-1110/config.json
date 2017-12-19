@@ -32,6 +32,8 @@
                 "PC1",
                 "IPTV",
                 "AppleTV"
+			],
+			"independentAudioDevices": [
 			]
 		}
 	],
@@ -43,8 +45,6 @@
 				"Flatpanel"
 			],
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
 	]

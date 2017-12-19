@@ -12,6 +12,15 @@
 			"audioDevices": [
 				"D1"
 			],
+            "shareableDisplays": [
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"inputs": [
                 "HDMI1",
                 "VIA1"
@@ -22,6 +31,15 @@
 			"displays": [
 				"D2"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D2"
@@ -36,6 +54,15 @@
 			"displays": [
 				"D3"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D3"
@@ -50,6 +77,15 @@
 			"displays": [
 				"D4"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D4"
@@ -64,6 +100,15 @@
 			"displays": [
 				"D5"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D5"
@@ -78,6 +123,15 @@
 			"displays": [
 				"D6"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D6"
@@ -92,6 +146,15 @@
 			"displays": [
 				"D7"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D7"
@@ -106,6 +169,15 @@
 			"displays": [
 				"D8"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D8"
