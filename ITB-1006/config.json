@@ -13,6 +13,10 @@
             {
                 "name": "Overflow",
                 "icon": "people"
+            },
+            {
+                "name": "Via1",
+                "icon": "settings_input_antenna"
             }
         ],
         "displays": [{
@@ -20,9 +24,10 @@
             "icon": "tv",
             "inputs": [
                 "HDMI1",
-                "Overflow"
+                "Overflow",
+                "Via1"
             ],
-            "defaultinput": "HDMI1"
+            "defaultinput": "Via1"
         }],
         "audio": [{
                 "displays": [
