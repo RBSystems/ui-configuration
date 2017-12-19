@@ -120,97 +120,65 @@
 		{
 			"hostname": "ITB-1108-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 1"
-			],
-			"features": [
+			"preset": "Station 1",
+            "features": [
                 "display-to-all"
-			],
-			"independentAudios": [
-			]
+            ]
 		},
 		{
 			"hostname": "ITB-1108-CP2",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 2"
-			],
+			"preset": "Station 2",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP3",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 3"
-			],
+			"preset": "Station 3",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP4",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 4"
-			],
+			"preset": "Station 4",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP5",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 5"
-			],
+			"preset": "Station 5",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP6",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 6"
-			],
+			"preset": "Station 6",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP7",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 7"
-			],
+			"preset": "Station 7",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		},
 		{
 			"hostname": "ITB-1108-CP8",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 8"
-			],
+			"preset": "Station 8",
 			"features": [
                 "display-to-all"
-			],
-			"independentAudios": [
 			]
 		}
 	],
