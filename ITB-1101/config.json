@@ -1,5 +1,6 @@
 {
 	"api": [
+        "localhost",
 		"ITB-1101-CP1.byu.edu",
 		"ITB-1101-CP2.byu.edu",
 		"ITB-1101-CP3.byu.edu",
