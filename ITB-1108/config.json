@@ -122,7 +122,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 1",
             "features": [
-                "display-to-all"
+                "share"
             ]
 		},
 		{
@@ -130,7 +130,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 2",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -138,7 +138,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 3",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -146,7 +146,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 4",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -154,7 +154,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 5",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -162,7 +162,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 6",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -170,7 +170,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 7",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		},
 		{
@@ -178,7 +178,7 @@
 			"uipath": "/blueberry",
 			"preset": "Station 8",
 			"features": [
-                "display-to-all"
+                "share"
 			]
 		}
 	],
