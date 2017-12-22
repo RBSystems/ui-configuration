@@ -31,9 +31,7 @@
 		{
 			"hostname": "ITB-1101test-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
+			"preset": "Projector",
 			"features": [
 			],
 			"independentAudios": [
@@ -42,9 +40,7 @@
 		{
 			"hostname": "ITB-1101test-CP2",
 			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
+			"preset": "Projector",
 			"features": [
 			],
 			"independentAudios": [
