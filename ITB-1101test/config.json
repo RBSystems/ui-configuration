@@ -20,6 +20,8 @@
 			"audioDevices": [
 				"D1"
 			],
+            "shareableDisplays": [
+            ],
 			"inputs": [
                 "HDMI1"
 			]
@@ -48,6 +50,8 @@
 			"independentAudios": [
 			]
 		}
-	]
+	],
+    "roomWideAudios": [
+    ]
 }
 
