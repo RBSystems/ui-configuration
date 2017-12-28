@@ -29,9 +29,7 @@
 		{
 			"hostname": "SWKT-1151-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Display"
-			],
+			"preset": "Display",
 			"features": [
 			],
 			"independentAudios": [
