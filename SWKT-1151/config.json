@@ -2,30 +2,36 @@
 	"api": [
 		"localhost"
 	],
-	"presets": [
-		{
-			"name": "Display",
-			"displays": [
-				"D1"
-			],
-			"icon": "tv",
-			"audioDevices": [
-				"D1"
-			],
-			"inputs": [
-                "HDMI1"
-			]
-		}
-	],
 	"panels": [
 		{
 			"hostname": "SWKT-1151-CP1",
 			"uipath": "/blueberry",
 			"preset": "Display",
-            "features": [
-            ]
+            		"features": [
+            		]
 		}
 	],
+	"presets": [
+		{
+			"name": "Display",
+			"icon": "tv",
+			"displays": [
+				"D1"
+			],
+			"shareableDisplays": [
+			],
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                		"HDMI1"
+			],
+			"independentAudioDevices": [
+				"D1"
+			]
+		}
+	],
+	
     "inputConfiguration": [
         {
             "name": "HDMI1",
