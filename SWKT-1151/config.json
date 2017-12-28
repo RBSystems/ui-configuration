@@ -2,14 +2,6 @@
 	"api": [
 		"localhost"
 	],
-    "inputConfiguration": [
-        {
-            "name": "HDMI1",
-            "icon": "settings_input_hdmi"
-        }
-    ],
-    "roomWideAudios": [
-    ],
 	"presets": [
 		{
 			"name": "Display",
@@ -36,4 +28,12 @@
 			]
 		}
 	]
+	"inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "roomWideAudios": [
+    ],
 }
