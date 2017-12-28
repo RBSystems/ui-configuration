@@ -22,18 +22,16 @@
 			"hostname": "SWKT-1151-CP1",
 			"uipath": "/blueberry",
 			"preset": "Display",
-			"features": [
-			],
-			"independentAudios": [
-			]
+            "features": [
+            ]
 		}
 	],
-	"inputConfiguration": [
+    "inputConfiguration": [
         {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
+    "roomWideAudio": [
     ]
 }
