@@ -27,7 +27,7 @@
 			"independentAudios": [
 			]
 		}
-	]
+	],
 	"inputConfiguration": [
         {
             "name": "HDMI1",
@@ -35,5 +35,5 @@
         }
     ],
     "roomWideAudios": [
-    ],
+    ]
 }
