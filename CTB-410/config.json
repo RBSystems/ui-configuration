@@ -1,6 +1,6 @@
 {
 	"api": [
-		"CTB-410-CP1.byu.edu"
+		"localhost"
 	],
 	"presets": [
 		{
@@ -12,6 +12,15 @@
 			"audioDevices": [
 				"D1"
 			],
+            "shareableDisplays": [
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"inputs": [
                 "PC1",
                 "HDMI1",
@@ -23,6 +32,15 @@
 			"displays": [
 				"D2"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D2"
@@ -37,6 +55,15 @@
 			"displays": [
 				"D3"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D4",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D3"
@@ -51,6 +78,15 @@
 			"displays": [
 				"D4"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D5",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D4"
@@ -65,12 +101,20 @@
 			"displays": [
 				"D5"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D6",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D5"
 			],
 			"inputs": [
-                "HDMI5",
                 "VIA5"
 			]
 		},
@@ -79,6 +123,15 @@
 			"displays": [
 				"D6"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D7",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D6"
@@ -93,6 +146,15 @@
 			"displays": [
 				"D7"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D8"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D7"
@@ -107,6 +169,15 @@
 			"displays": [
 				"D8"
 			],
+            "shareableDisplays": [
+                "D1",
+                "D2",
+                "D3",
+                "D4",
+                "D5",
+                "D6",
+                "D7"
+            ],
 			"icon": "tv",
 			"audioDevices": [
 				"D8"
@@ -121,97 +192,65 @@
 		{
 			"hostname": "CTB-410-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 1"
-			],
-			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
-			]
+			"preset": "Station 1",
+            "features": [
+                "share"
+            ]
 		},
 		{
 			"hostname": "CTB-410-CP2",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 2"
-			],
+			"preset": "Station 2",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP3",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 3"
-			],
+			"preset": "Station 3",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP4",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 4"
-			],
+			"preset": "Station 4",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP5",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 5"
-			],
+			"preset": "Station 5",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP6",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 6"
-			],
+			"preset": "Station 6",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP7",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 7"
-			],
+			"preset": "Station 7",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "CTB-410-CP8",
 			"uipath": "/blueberry",
-			"presets": [
-				"Station 8"
-			],
+			"preset": "Station 8",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		}
 	],
@@ -255,10 +294,6 @@
         {
             "name": "VIA5",
             "icon": "settings_input_antenna"
-        },
-        {
-            "name": "HDMI5",
-            "icon": "settings_input_hdmi"
         },
         {
             "name": "VIA6",
