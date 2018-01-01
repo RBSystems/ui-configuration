@@ -320,7 +320,13 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudio": [
-        "D1"
+    "audioConfiguration": [
+        {
+            "display": "D1",
+            "audioDevices": [
+                "D1"
+            ],
+            "roomWide": true
+        }
     ]
 }
