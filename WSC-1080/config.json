@@ -2,14 +2,17 @@
 	"api": [
 		"localhost"
 	],
-    "inputConfiguration": [
-        {
-            "name": "HDMI1",
-            "icon": "settings_input_hdmi"
-        }
-    ],
-    "roomWideAudios": [
-    ],
+	"panels": [
+		{
+			"hostname": "WSC-1080-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Display"
+			],
+			"features": [
+			]
+		}
+	],
 	"presets": [
 		{
 			"name": "Display",
@@ -21,21 +24,18 @@
 				"D1"
 			],
 			"inputs": [
-                "HDMI1"
-			]
-		}
-	],
-	"panels": [
-		{
-			"hostname": "WSC-1080-CP1",
-			"uipath": "/blueberry",
-			"presets": [
-				"Display"
-			],
-			"features": [
+								"HDMI1"
 			],
 			"independentAudios": [
 			]
 		}
-	]
+	],
+  "inputConfiguration": [
+    {
+        "name": "HDMI1",
+        "icon": "settings_input_hdmi"
+    }
+  ],
+  "audioConfiguration": [
+  ]
 }
