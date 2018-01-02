@@ -2,6 +2,20 @@
     "api": [
         "localhost"
     ],
+    "inputConfiguration": [
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
+        },
+        {
+            "name": "AppleTV",
+            "icon": "airplay"
+        },
+        {
+            "name": "IPTV",
+            "icon": "settings_input_hdmi"
+        }
+    ],
     "presets": [
 		{
 			"name": "Flatpanel",
