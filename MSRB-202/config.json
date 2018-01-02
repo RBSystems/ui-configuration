@@ -1,156 +1,168 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "MSRB-202-CP1.byu.edu",
-		"2": "MSRB-202-CP2.byu.edu",
-		"3": "MSRB-202-CP3.byu.edu",
-		"4": "MSRB-202-CP4.byu.edu",
-		"5": "MSRB-202-CP5.byu.edu",
-		"6": "localhost"
-	},
-	"MSRB-202-CP1": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA1",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI1",
-            "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D1",
-			"icon": "videocam",
-			"inputs": [
-				"VIA1",
-				"HDMI1"	
-			],
-			"defaultinput": "VIA1"
-		}],
-		"audio": [{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+			{
+                "name": "VIA1",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "HDMI1",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "VIA2",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "HDMI2",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "VIA3",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "HDMI3",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "VIA4",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "HDMI4",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "VIA5",
+                "icon": "settings_input_antenna"
+            },
+			{
+                "name": "HDMI5",
+                "icon": "settings_input_hdmi"
+            }
+    ],
+    "presets": [
+		{
+			"name": "Station 1",
 			"displays": [
 				"D1"
 			],
-			"audiodevices": [
+			"icon": "tv",
+			"audioDevices": [
 				"D1"
-			]
-		}],
-		"features": [
-		]
-	},
-	"MSRB-202-CP2": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA2",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI2",
-            "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D2",
-			"icon": "tv",
-			"inputs": [
-				"VIA2",
-				"HDMI2"	
 			],
-			"defaultinput": "VIA2"
-		}],
-		"audio": [{
+			"inputs": [
+                "VIA1",
+                "HDMI1"
+			],
+			"independentAudioDevices": [
+			]
+		},
+        {
+			"name": "Station 2",
 			"displays": [
 				"D2"
 			],
-			"audiodevices": [
+			"icon": "tv",
+			"audioDevices": [
 				"D2"
-			]
-		}],
-		"features": [
-		]
-	},
-	"MSRB-202-CP3": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA3",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI3",
-            "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D3",
-			"icon": "tv",
-			"inputs": [
-				"VIA3",
-				"HDMI3"	
 			],
-			"defaultinput": "VIA3"
-		}],
-		"audio": [{
+			"inputs": [
+                "VIA2",
+                "HDMI2"
+			],
+			"independentAudioDevices": [
+			]
+		},
+        {
+			"name": "Station 3",
 			"displays": [
 				"D3"
 			],
-			"audiodevices": [
+			"icon": "tv",
+			"audioDevices": [
 				"D3"
-			]
-		}],
-		"features": [
-		]
-	},
-	"MSRB-202-CP4": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA4",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI4",
-            "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D4",
-			"icon": "tv",
-			"inputs": [
-				"VIA4",
-				"HDMI4"	
 			],
-			"defaultinput": "VIA4"
-		}],
-		"audio": [{
+			"inputs": [
+                "VIA3",
+                "HDMI3"
+			],
+			"independentAudioDevices": [
+			]
+		},
+        {
+			"name": "Station 4",
 			"displays": [
 				"D4"
 			],
-			"audiodevices": [
-				"D4"
-			]
-		}],
-		"features": [
-		]
-	},
-	"MSRB-202-CP5": {
-		"ui": "circle-default",
-        "inputdevices": [{
-           	"name": "VIA5",
-            "icon": "settings_input_antenna"
-        }, {
-            "name": "HDMI5",
-            "icon": "settings_input_hdmi"
-        }],
-		"displays": [{
-			"name": "D5",
 			"icon": "tv",
-			"inputs": [
-				"VIA5",
-				"HDMI5"	
+			"audioDevices": [
+				"D4"
 			],
-			"defaultinput": "VIA5"
-		}],
-		"audio": [{
+			"inputs": [
+                "VIA4",
+                "HDMI4"
+			],
+			"independentAudioDevices": [
+			]
+		},
+        {
+			"name": "Station 5",
 			"displays": [
 				"D5"
 			],
-			"audiodevices": [
+			"icon": "tv",
+			"audioDevices": [
 				"D5"
+			],
+			"inputs": [
+                "VIA5",
+                "HDMI5"
+			],
+			"independentAudioDevices": [
 			]
-		}],
-		"features": [
-		]
-	}
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "MSRB-202-CP1",
+			"uipath": "/blueberry",
+			"preset": "Station 1",
+			"features": [
+			]
+		},
+		{
+			"hostname": "MSRB-202-CP2",
+			"uipath": "/blueberry",
+			"preset": "Station 2",
+			"features": [
+			]
+		},
+		{
+			"hostname": "MSRB-202-CP3",
+			"uipath": "/blueberry",
+			"preset": "Station 3",
+			"features": [
+			]
+		},
+		{
+			"hostname": "MSRB-202-CP4",
+			"uipath": "/blueberry",
+			"preset": "Station 4",
+			"features": [
+			]
+		},
+		{
+			"hostname": "MSRB-202-CP5",
+			"uipath": "/blueberry",
+			"preset": "Station 5",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }

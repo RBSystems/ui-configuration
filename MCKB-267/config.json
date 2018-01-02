@@ -1,11 +1,8 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "localhost"
-	},
-    "MCKB-267-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
 			{
                 "name": "HDMI1",
                 "icon": "settings_input_hdmi"
@@ -18,27 +15,36 @@
                 "name": "PC1",
                 "icon": "computer"
             }
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "videocam",
-            "inputs": [
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "HDMI1",
                 "AppleTV",
                 "PC1"
-            ],
-            "defaultinput": "HDMI1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-        ]
-    }
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "MCKB-267-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }
+

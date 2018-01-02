@@ -1,34 +1,44 @@
 {
-	"apiconfig": {
-		"enabled": false
-	},
-    "ITB-3310-CP2": {
-        "ui": "circle-default",
-        "inputdevices": [{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+    {
             "name": "Table",
             "icon": "byu_table_input"
         },
         {
             "name": "VIA1",
             "icon": "settings_input_antenna"
-        }],
-        "displays": [{
-            "name": "D1",
-            "icon": "tv",
-            "inputs": [
+        }    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "Table",
                 "VIA1"
-            ],
-            "defaultinput": "Table"
-        }],
-        "audio": [{
-            "displays": [
-                "D1"
-            ],
-            "audiodevices": [
-                "D1"
-            ]
-        }],
-        "features": []
-    }
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ITB-3310-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }
+

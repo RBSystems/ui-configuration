@@ -1,16 +1,14 @@
 {
-	"api": [
-		"localhost"
-	],
+    "api": [
+        "localhost"
+    ],
     "inputConfiguration": [
         {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-    ],
-	"presets": [
+    "presets": [
 		{
 			"name": "Flatpanel",
 			"displays": [
@@ -22,21 +20,21 @@
 			],
 			"inputs": [
                 "HDMI1"
+			],
+			"independentAudioDevices": [
 			]
 		}
-	],
+    ],
 	"panels": [
 		{
 			"hostname": "MCKB-341-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Flatpanel"
-			],
+			"preset": "Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
-	]
+	],
+    "audioConfiguration": [
+    ]
 }
 

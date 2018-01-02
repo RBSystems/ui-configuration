@@ -1,7 +1,7 @@
 {
-	"api": [
-		"localhost"
-	],
+    "api": [
+        "localhost"
+    ],
     "inputConfiguration": [
         {
             "name": "HDMI1",
@@ -12,11 +12,9 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-    ],
-	"presets": [
+    "presets": [
 		{
-			"name": "Display",
+			"name": "Flatpanel",
 			"displays": [
 				"D1"
 			],
@@ -27,20 +25,21 @@
 			"inputs": [
                 "HDMI1",
                 "HDMI2"
+			],
+			"independentAudioDevices": [
 			]
 		}
-	],
+    ],
 	"panels": [
 		{
 			"hostname": "ITB-3024-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Display"
-			],
+			"preset": "Flatpanel",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
-	]
+	],
+    "audioConfiguration": [
+    ]
 }
+

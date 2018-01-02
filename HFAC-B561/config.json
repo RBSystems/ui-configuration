@@ -1,34 +1,41 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "localhost"
-	},
-    "HFAC-B561-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [
-			{
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-            }
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "videocam",
-            "inputs": [
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "HDMI1"
-            ],
-            "defaultinput": "HDMI1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-        ]
-    }
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "HFAC-B561-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }
+
+

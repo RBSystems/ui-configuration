@@ -1,44 +1,49 @@
 {
-	"apiconfig": {
-		"enabled": false,
-		"1": "localhost"
-	},
-    "ITB-1006-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [
-			{
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-            },
-            {
-                "name": "Overflow",
-                "icon": "people"
-            },
-            {
-                "name": "Via1",
-                "icon": "settings_input_antenna"
-            }
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "tv",
-            "inputs": [
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "Overflow",
+            "icon": "people" 
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "HDMI1",
-                "Overflow",
-                "Via1"
-            ],
-            "defaultinput": "Via1"
-        }],
-        "audio": [{
-                "displays": [
-                    "D1"
-                ],
-                "audiodevices": [
-                    "D1"
-                ]
-            }
-        ],
-        "features": [
-        ]
-    }
+                "VIA1"
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ITB-1106-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }
+

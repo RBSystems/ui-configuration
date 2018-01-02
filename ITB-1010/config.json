@@ -17,8 +17,6 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-    ],
 	"presets": [
 		{
 			"name": "South Display",
