@@ -8,8 +8,6 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-    ],
 	"presets": [
 		{
 			"name": "Projector",
@@ -29,14 +27,9 @@
 		{
 			"hostname": "TMCB-104-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
+			"preset": "Projector",
 			"features": [
-			],
-			"independentAudios": [
 			]
 		}
 	]
 }
-
