@@ -1,24 +1,22 @@
 {
-	"api": [
-		"ITB-1110-CP1.byu.edu"
-	],
+    "api": [
+        "localhost"
+    ],
     "inputConfiguration": [
         {
             "name": "PC1",
-            "icon": "computer"
-        },
-        {
-            "name": "IPTV",
-            "icon": "live_tv"
+            "icon": "desktop_windows"
         },
         {
             "name": "AppleTV",
             "icon": "airplay"
+        },
+        {
+            "name": "IPTV",
+            "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-    ],
-	"presets": [
+    "presets": [
 		{
 			"name": "Flatpanel",
 			"displays": [
@@ -36,16 +34,16 @@
 			"independentAudioDevices": [
 			]
 		}
-	],
+    ],
 	"panels": [
 		{
 			"hostname": "ITB-1110-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Flatpanel"
-			],
+			"preset": "Flatpanel",
 			"features": [
 			]
 		}
-	]
+	],
+    "audioConfiguration": [
+    ]
 }
