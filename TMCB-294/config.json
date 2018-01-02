@@ -2,14 +2,18 @@
 	"api": [
 		"localhost"
 	],
-    "inputConfiguration": [
-        {
-            "name": "HDMI1",
-            "icon": "settings_input_hdmi"
-        }
-    ],
-    "roomWideAudios": [
-    ],
+	"panels": [
+		{
+			"hostname": "TMCB-294-CP1",
+			"uipath": "/blueberry",
+			"presets": [
+				"Projector"
+			],
+			"features": [
+			],
+
+		}
+	],
 	"presets": [
 		{
 			"name": "Projector",
@@ -22,21 +26,17 @@
 			],
 			"inputs": [
                 "HDMI1"
-			]
-		}
-	],
-	"panels": [
-		{
-			"hostname": "TMCB-294-CP1",
-			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
-			"features": [
 			],
 			"independentAudios": [
 			]
 		}
-	]
+	],
+  "inputConfiguration": [
+      {
+          "name": "HDMI1",
+          "icon": "settings_input_hdmi"
+      }
+  ],
+  "audioConfiguration": [
+  ]
 }
-
