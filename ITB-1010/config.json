@@ -6,13 +6,16 @@
         {
             "name": "VIA1",
             "icon": "settings_input_antenna"
-        }, {
+        }, 
+        {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
-        },{
+        },
+        {
             "name": "VIA2",
             "icon": "settings_input_antenna"
-        }, {
+        },
+        {
             "name": "HDMI2",
             "icon": "settings_input_hdmi"
         }
@@ -55,25 +58,17 @@
 		{
 			"hostname": "ITB-1010-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"South Display"
-			],
+			"preset": "South Display",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		},
 		{
 			"hostname": "ITB-1010-CP2",
 			"uipath": "/blueberry",
-			"presets": [
-				"West Display"
-			],
+			"preset": "West Display",
 			"features": [
-                "display-to-all"
-			],
-			"independentAudios": [
+                "share"
 			]
 		}
     ]

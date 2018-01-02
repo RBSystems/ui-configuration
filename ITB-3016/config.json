@@ -1,46 +1,52 @@
 {
-	"apiconfig": {
-		"enabled": false
-	},
-    "ITB-3016-CP1": {
-        "ui": "circle-default",
-        "inputdevices": [
-			{
-                "name": "AppleTV",
-                "icon": "airplay"
-            },
-            {
-                "name": "VIA1",
-                "icon": "settings_input_antenna"
-            },
-			{
-                "name": "HDMI2",
-                "icon": "laptop_mac"
-			},
-			{
-                "name": "HDMI1",
-                "icon": "settings_input_hdmi"
-			}
-        ],
-        "displays": [{
-            "name": "D1",
-            "icon": "tv",
-            "inputs": [
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+		{
+            "name": "AppleTV",
+            "icon": "airplay"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+		{
+            "name": "HDMI2",
+            "icon": "laptop_mac"
+		},
+		{
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+		}
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
                 "AppleTV",
                 "VIA1",
 				"HDMI1",
 				"HDMI2"
-            ],
-            "defaultinput": "AppleTV"
-        }],
-        "audio": [{
-            "displays": [
-                "D1"
-            ],
-            "audiodevices": [
-                "D1"
-            ]
-        }],
-        "features": []
-    }
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ITB-3016-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
 }
