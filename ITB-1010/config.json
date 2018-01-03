@@ -60,7 +60,6 @@
 			"uipath": "/blueberry",
 			"preset": "South Display",
 			"features": [
-                "share"
 			]
 		},
 		{
@@ -68,7 +67,6 @@
 			"uipath": "/blueberry",
 			"preset": "West Display",
 			"features": [
-                "share"
 			]
 		}
     ]
