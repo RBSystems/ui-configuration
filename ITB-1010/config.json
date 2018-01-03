@@ -30,6 +30,9 @@
 			"audioDevices": [
 				"D1"
 			],
+            "shareableDisplays": [
+                "D2"
+            ],
 			"inputs": [
                 "HDMI1",
                 "HDMI2",
@@ -46,6 +49,9 @@
 			"audioDevices": [
 				"D2"
 			],
+            "shareableDisplays": [
+                "D1"
+            ],
 			"inputs": [
                 "HDMI1",
                 "HDMI2",
