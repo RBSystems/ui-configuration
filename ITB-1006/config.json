@@ -36,7 +36,7 @@
     ],
 	"panels": [
 		{
-			"hostname": "ITB-1106-CP1",
+			"hostname": "ITB-1006-CP1",
 			"uipath": "/blueberry",
 			"preset": "Flatpanel",
 			"features": [
