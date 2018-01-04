@@ -6,9 +6,7 @@
 		{
 			"hostname": "WSC-1080-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Display"
-			],
+			"preset": "Display",
 			"features": [
 			]
 		}
@@ -23,8 +21,8 @@
 			"audioDevices": [
 				"D1"
 			],
-			"inputs": [
-								"HDMI1"
+		"inputs": [
+    			"HDMI1"
 			],
 			"independentAudios": [
 			]
