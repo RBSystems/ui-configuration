@@ -6,11 +6,9 @@
 		{
 			"hostname": "TMCB-294-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
+			"preset":"Projector",
 			"features": [
-			],
+			]
 
 		}
 	],
