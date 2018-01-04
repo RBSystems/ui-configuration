@@ -6,9 +6,7 @@
 		{
 			"hostname": "TMCB-235-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Projector"
-			],
+			"preset": "Projector",
 			"features": [
 			]
 		}
