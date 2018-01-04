@@ -6,9 +6,7 @@
 		{
 			"hostname": "TNRB-290-CP1",
 			"uipath": "/blueberry",
-			"presets": [
-				"Flatpanel"
-			],
+			"preset": "Flatpanel",
 			"features": [
 			]
 		}
