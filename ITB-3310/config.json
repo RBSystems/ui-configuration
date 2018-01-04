@@ -31,7 +31,7 @@
     ],
 	"panels": [
 		{
-			"hostname": "ITB-3310-CP1",
+			"hostname": "ITB-3310-CP2",
 			"uipath": "/blueberry",
 			"preset": "Flatpanel",
 			"features": [
