@@ -46,8 +46,8 @@
 				"D2"
 			],
 			"inputs": [
-                "HDMI2",
-                "VIA2"
+                "VIA2",
+                "HDMI2"
 			]
 		},
 		{
@@ -69,8 +69,8 @@
 				"D3"
 			],
 			"inputs": [
-                "HDMI3",
-                "VIA3"
+                "VIA3",
+                "HDMI3"
 			]
 		},
 		{
@@ -92,8 +92,8 @@
 				"D4"
 			],
 			"inputs": [
-                "HDMI4",
-                "VIA4"
+                "VIA4",
+                "HDMI4"
 			]
 		},
 		{
@@ -137,8 +137,8 @@
 				"D6"
 			],
 			"inputs": [
-                "HDMI6",
-                "VIA6"
+                "VIA6",
+                "HDMI6"
 			]
 		},
 		{
@@ -160,8 +160,8 @@
 				"D7"
 			],
 			"inputs": [
-                "HDMI7",
-                "VIA7"
+                "VIA7",
+                "HDMI7"
 			]
 		},
 		{
@@ -183,8 +183,8 @@
 				"D8"
 			],
 			"inputs": [
-                "HDMI8",
-                "VIA8"
+                "VIA8",
+                "HDMI8"
 			]
 		}
 	],
