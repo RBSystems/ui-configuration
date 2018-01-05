@@ -1,0 +1,40 @@
+{
+	"api": [
+		"localhost"
+	],
+	"panels": [
+		{
+			"hostname": "TMCB-244-CP1",
+			"uipath": "/blueberry",
+			"preset":"Projector",
+			"features": [
+			]
+
+		}
+	],
+	"presets": [
+		{
+			"name": "Projector",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1"
+			],
+			"independentAudios": [
+			]
+		}
+	],
+  "inputConfiguration": [
+      {
+          "name": "HDMI1",
+          "icon": "settings_input_hdmi"
+      }
+  ],
+  "audioConfiguration": [
+  ]
+}
