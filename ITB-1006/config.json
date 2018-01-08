@@ -39,7 +39,7 @@
 		{
 			"hostname": "ITB-1006-CP1",
 			"uipath": "/blueberry",
-			"preset": "Flatpanel",
+			"preset": "Projector",
 			"features": [
 			]
 		}
