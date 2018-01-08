@@ -18,7 +18,7 @@
     ],
     "presets": [
 		{
-			"name": "Flatpanel",
+			"name": "Projector",
 			"displays": [
 				"D1"
 			],
@@ -28,7 +28,8 @@
 			],
 			"inputs": [
                 "HDMI1",
-                "VIA1"
+                "VIA1",
+                "Overflow"
 			],
 			"independentAudioDevices": [
 			]
