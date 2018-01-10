@@ -187,6 +187,10 @@
         {
             "name": "VIA5",
             "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI5",
+            "icon": "settings_input_hdmi"
         }
     ],
     "audioConfiguration": [
