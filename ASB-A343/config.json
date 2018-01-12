@@ -9,7 +9,7 @@
         },
         {
             "name": "HDMI1",
-            "icon": "byu_table_input"
+            "icon": "settings_input_hdmi"
         }
     ],
     "presets": [
