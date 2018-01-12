@@ -1,0 +1,45 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
+        },
+        {
+            "name": "HDMI1",
+            "icon": "byu_table_input"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "PC1"
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ASB-A343-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
+}
+
