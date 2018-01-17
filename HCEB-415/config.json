@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "HECB-415-CP1",
+			"hostname": "HCEB-415-CP1",
 			"uipath": "/blueberry",
 			"preset":"Flatpanel",
 			"features": [
