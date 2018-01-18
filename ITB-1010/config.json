@@ -38,7 +38,11 @@
                 "HDMI2",
                 "VIA1",
                 "VIA2"
-			]
+			],
+            "independentAudioDevices": [
+                "MIC1",
+                "MIC2"
+            ]
 		},
 		{
 			"name": "West Display",
