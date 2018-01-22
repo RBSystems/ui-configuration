@@ -14,12 +14,7 @@
 			],
             "shareableDisplays": [
                 "D2",
-                "D3",
-                "D4",
-                "D5",
-                "D6",
-                "D7",
-                "D8"
+                "D3"
             ],
 			"inputs": [
                 "HDMI1",
@@ -33,12 +28,7 @@
 			],
             "shareableDisplays": [
                 "D1",
-                "D3",
-                "D4",
-                "D5",
-                "D6",
-                "D7",
-                "D8"
+                "D3"
             ],
 			"icon": "tv",
 			"audioDevices": [
@@ -56,12 +46,7 @@
 			],
             "shareableDisplays": [
                 "D1",
-                "D2",
-                "D4",
-                "D5",
-                "D6",
-                "D7",
-                "D8"
+                "D2"
             ],
 			"icon": "tv",
 			"audioDevices": [
@@ -78,13 +63,7 @@
 				"D4"
 			],
             "shareableDisplays": [
-                "D1",
-                "D2",
-                "D3",
-                "D5",
-                "D6",
-                "D7",
-                "D8"
+                "D5"
             ],
 			"icon": "tv",
 			"audioDevices": [
@@ -101,13 +80,7 @@
 				"D5"
 			],
             "shareableDisplays": [
-                "D1",
-                "D2",
-                "D3",
-                "D4",
-                "D6",
-                "D7",
-                "D8"
+                "D4"
             ],
 			"icon": "tv",
 			"audioDevices": [
@@ -124,11 +97,6 @@
 				"D6"
 			],
             "shareableDisplays": [
-                "D1",
-                "D2",
-                "D3",
-                "D4",
-                "D5",
                 "D7",
                 "D8"
             ],
@@ -147,11 +115,6 @@
 				"D7"
 			],
             "shareableDisplays": [
-                "D1",
-                "D2",
-                "D3",
-                "D4",
-                "D5",
                 "D6",
                 "D8"
             ],
@@ -170,11 +133,6 @@
 				"D8"
 			],
             "shareableDisplays": [
-                "D1",
-                "D2",
-                "D3",
-                "D4",
-                "D5",
                 "D6",
                 "D7"
             ],
