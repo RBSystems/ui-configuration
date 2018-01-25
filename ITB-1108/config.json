@@ -24,7 +24,10 @@
 			"inputs": [
                 "HDMI1",
                 "VIA1"
-			]
+			],
+            "independentAudioDevices": [
+                "MIC1"
+            ]
 		},
 		{
 			"name": "Station 2",
