@@ -1,0 +1,150 @@
+{
+  "api": [
+    "localhost"
+  ],
+  "presets": [
+    {
+      "name": "Ballroom A",
+      "displays": [
+        "D1"
+      ],
+      "icon": "tv",
+      "audioDevices": [
+        "D1"
+      ],
+      "shareableDisplays": [],
+      "inputs": [
+        "HDMI1",
+        "HDMI2",
+        "HDMI3",
+        "VIA1",
+        "Overflow1"
+      ]
+    },
+    {
+      "name": "Ballroom B",
+      "displays": [
+        "D2"
+      ],
+      "icon": "tv",
+      "audioDevices": [
+        "D2"
+      ],
+      "shareableDisplays": [],
+      "inputs": [
+        "HDMI4",
+        "HDMI5",
+        "HDMI6",
+        "VIA2",
+        "Overflow2"
+      ]
+    },
+    {
+      "name": "Ballroom A",
+      "displays": [
+        "D3"
+      ],
+      "icon": "tv",
+      "audioDevices": [
+        "D3"
+      ],
+      "shareableDisplays": [],
+      "inputs": [
+        "HDMI7",
+        "HDMI8",
+        "HDMI9",
+        "VIA3",
+        "Overflow3"
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "hostname": "HCEB-BALLRM-CP1",
+      "uipath": "/blueberry",
+      "preset": "Ballroom A",
+      "features": [
+        "share"
+      ]
+    },
+    {
+      "hostname": "HCEB-BALLRM-CP2",
+      "uipath": "/blueberry",
+      "preset": "Ballroom B",
+      "features": [
+        "share"
+      ]
+    },
+    {
+      "hostname": "HCEB-BALLRM-CP1",
+      "uipath": "/blueberry",
+      "preset": "Ballroom A",
+      "features": [
+        "share"
+      ]
+    }
+  ],
+  "inputConfiguration": [
+    {
+      "name": "HDMI1",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI2",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI3",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI4",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI5",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI6",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI7",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI8",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "HDMI9",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "VIA1",
+      "icon": "settings_input_antenna"
+    },
+    {
+      "name": "VIA2",
+      "icon": "settings_input_antenna"
+    },
+    {
+      "name": "VIA3",
+      "icon": "settings_input_antenna"
+    },
+    {
+      "name": "Overflow1",
+      "icon": "people"
+    },
+    {
+      "name": "Overflow2",
+      "icon": "people"
+    },
+    {
+      "name": "Overflow3",
+      "icon": "people"
+    }
+  ],
+  "audioConfiguration": []
+}
