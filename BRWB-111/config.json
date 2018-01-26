@@ -4,25 +4,26 @@
 	],
 	"panels": [
 		{
-			"hostname": "TMCB-235-CP1",
+			"hostname": "BRWB-111-CP1",
 			"uipath": "/blueberry",
-			"preset": "Projector",
+			"preset": "Flatpanel",
 			"features": [
 			]
 		}
 	],
 	"presets": [
 		{
-			"name": "Projector",
+			"name": "Flatpanel",
 			"displays": [
 				"D1"
 			],
-			"icon": "videocam",
+			"icon": "tv",
 			"audioDevices": [
 				"D1"
 			],
 			"inputs": [
                 "HDMI1"
+                "HDMI2"
 			],
 			"independentAudios": [
 			]
@@ -32,6 +33,10 @@
     {
         "name": "HDMI1",
         "icon": "settings_input_hdmi"
+    }
+    {
+      "name": "HDMI2",
+      "icon": "settings_input_hdmi"
     }
   ],
   "audioConfiguration": [
