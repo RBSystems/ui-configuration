@@ -19,6 +19,14 @@
         "HDMI3",
         "VIA1",
         "Overflow1"
+      ],
+      "independentAudioDevices": [
+        "MIC1",
+        "MIC2",
+        "MICJK1",
+        "MICJK2",
+        "MICJK3",
+        "LIN1"
       ]
     },
     {
@@ -37,10 +45,18 @@
         "HDMI6",
         "VIA2",
         "Overflow2"
+      ],
+      "independentAudioDevices": [
+        "MIC3",
+        "MIC4",
+        "MICJK4",
+        "MICJK5",
+        "MICJK6",
+        "LIN2"
       ]
     },
     {
-      "name": "Ballroom A",
+      "name": "Ballroom C",
       "displays": [
         "D3"
       ],
@@ -55,6 +71,14 @@
         "HDMI9",
         "VIA3",
         "Overflow3"
+      ],
+      "independentAudioDevices": [
+        "MIC5",
+        "MIC6",
+        "MICJK7",
+        "MICJK8",
+        "MICJK9",
+        "LIN3"
       ]
     }
   ],
