@@ -100,9 +100,9 @@
       ]
     },
     {
-      "hostname": "HCEB-BALLRM-CP1",
+      "hostname": "HCEB-BALLRM-CP3",
       "uipath": "/blueberry",
-      "preset": "Ballroom A",
+      "preset": "Ballroom C",
       "features": [
         "share"
       ]
