@@ -22,7 +22,7 @@
 				"D1"
 			],
 			"inputs": [
-                "HDMI1"
+                "HDMI1",
                 "HDMI2"
 			],
 			"independentAudios": [
@@ -33,7 +33,7 @@
     {
         "name": "HDMI1",
         "icon": "settings_input_hdmi"
-    }
+    },
     {
       "name": "HDMI2",
       "icon": "settings_input_hdmi"
