@@ -1,0 +1,44 @@
+{
+	"api": [
+		"localhost"
+	],
+	"panels": [
+		{
+			"hostname": "HCEB-419G-CP1",
+			"uipath": "/blueberry",
+			"preset":"Flatpanel",
+			"features": [
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "PC1"
+			],
+			"independentAudios": [
+			]
+		}
+	],
+  "inputConfiguration": [
+      {
+          "name": "HDMI1",
+          "icon": "settings_input_hdmi"
+      },
+      {
+          "name": "PC1",
+          "icon": "desktop_windows"
+      }
+  ],
+  "audioConfiguration": [
+  ]
+}
