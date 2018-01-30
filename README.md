@@ -1,3 +1,5 @@
+> This is NOT the long term home - this is being moved to one of the DBs once we find a home for it. 
+
 # ui-configuration
 Contains the JSON Object for our UI Configuration. 
 
