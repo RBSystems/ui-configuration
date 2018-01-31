@@ -3,7 +3,7 @@
   ],
   "presets": [
     {
-      "name": "209 A",
+      "name": "Ballroom A",
       "displays": [
         "D1"
       ],
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "name": "211 B",
+      "name": "Ballroom B",
       "displays": [
         "D2"
       ],
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "name": "213 C",
+      "name": "Ballroom C",
       "displays": [
         "D3"
       ],
@@ -93,7 +93,7 @@
     {
       "hostname": "HCEB-BALLRM-CP2",
       "uipath": "/blueberry",
-      "preset": "211 B",
+      "preset": "Ballroom B",
       "features": [
         "share"
       ]
@@ -101,7 +101,7 @@
     {
       "hostname": "HCEB-BALLRM-CP3",
       "uipath": "/blueberry",
-      "preset": "213 C",
+      "preset": "Ballroom C",
       "features": [
         "share"
       ]
