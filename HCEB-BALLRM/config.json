@@ -4,7 +4,7 @@
   ],
   "presets": [
     {
-      "name": "Ballroom A",
+      "name": "209 A",
       "displays": [
         "D1"
       ],
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "name": "Ballroom B",
+      "name": "211 B",
       "displays": [
         "D2"
       ],
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "name": "Ballroom C",
+      "name": "213 C",
       "displays": [
         "D3"
       ],
