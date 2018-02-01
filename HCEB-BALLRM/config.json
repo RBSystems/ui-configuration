@@ -44,9 +44,7 @@
         "HDMI6",
         "VIA2",
         "Overflow2"
-      ],
-      "independentAudioDevices": [
-        "MIC3",
+      ], "independentAudioDevices": [ "MIC3",
         "MIC4",
         "MICJK4",
         "MICJK5",
@@ -85,7 +83,7 @@
     {
       "hostname": "HCEB-BALLRM-CP1",
       "uipath": "/blueberry",
-      "preset": "209 A",
+      "preset": "Ballroom A",
       "features": [
         "share"
       ]
