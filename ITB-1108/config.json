@@ -185,7 +185,7 @@
 		{
 			"hostname": "ITB-1108-CP5",
 			"uipath": "/blueberry",
-			"preset": "Station 5",
+			"preset": "Station 4",
 			"features": [
                 "share"
 			]
@@ -193,7 +193,7 @@
 		{
 			"hostname": "ITB-1108-CP6",
 			"uipath": "/blueberry",
-			"preset": "Station 6",
+			"preset": "Station 3",
 			"features": [
                 "share"
 			]
@@ -201,7 +201,7 @@
 		{
 			"hostname": "ITB-1108-CP7",
 			"uipath": "/blueberry",
-			"preset": "Station 7",
+			"preset": "Station 2",
 			"features": [
                 "share"
 			]
@@ -209,7 +209,7 @@
 		{
 			"hostname": "ITB-1108-CP8",
 			"uipath": "/blueberry",
-			"preset": "Station 8",
+			"preset": "Station 1",
 			"features": [
                 "share"
 			]
