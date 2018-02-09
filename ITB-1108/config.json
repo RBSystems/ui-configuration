@@ -213,7 +213,15 @@
 			"features": [
                 "share"
 			]
-		}
+		},
+		{
+			"hostname": "ITB-1108-CP0",
+			"uipath": "/blueberry",
+			"preset": "Station 1",
+			"features": [
+                "share"
+			]
+        }
 	],
     "inputConfiguration": [
         {
