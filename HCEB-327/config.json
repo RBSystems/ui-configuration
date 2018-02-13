@@ -22,7 +22,9 @@
 				"D1"
 			],
 			"inputs": [
-                "HDMI1"
+                "HDMI1",
+                "PC1",
+                "VIA1"
 			],
 			"independentAudios": [
 			]
@@ -32,7 +34,15 @@
       {
           "name": "HDMI1",
           "icon": "settings_input_hdmi"
-      }
+      },
+      {
+          "name": "PC1",
+          "icon": "desktop_windows"
+      },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        }
   ],
   "audioConfiguration": [
   ]
