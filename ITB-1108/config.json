@@ -80,14 +80,15 @@
 		{
 			"name": "Station 5",
 			"displays": [
-				"D5"
+				"D6"
+				"D7"
 			],
             "shareableDisplays": [
-                "D4"
             ],
 			"icon": "tv",
 			"audioDevices": [
-				"D5"
+				"D6",
+                "D7"
 			],
 			"inputs": [
                 "HDMI5",
@@ -185,9 +186,8 @@
 		{
 			"hostname": "ITB-1108-CP5",
 			"uipath": "/blueberry",
-			"preset": "Station 4",
+			"preset": "Station 5",
 			"features": [
-                "share"
 			]
 		},
 		{
