@@ -80,7 +80,7 @@
 		{
 			"name": "Station 5",
 			"displays": [
-				"D6"
+				"D6",
 				"D7"
 			],
             "shareableDisplays": [
