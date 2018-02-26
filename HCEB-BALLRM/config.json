@@ -1,6 +1,5 @@
 {
-  "api": [ "localhost"
-  ],
+  "api": [ "localhost"  ],
   "presets": [
     {
       "name": "Ballroom A",
@@ -103,7 +102,32 @@
       "features": [
         "share"
       ]
+    },
+    {
+      "hostname": "HCEB-BALLRM-CP4",
+      "uipath": "/blueberry",
+      "preset": "Ballroom A",
+      "features": [
+        "share"
+      ]
+    },
+    {
+      "hostname": "HCEB-BALLRM-CP5",
+      "uipath": "/blueberry",
+      "preset": "Ballroom B",
+      "features": [
+        "share"
+      ]
+    },
+    {
+      "hostname": "HCEB-BALLRM-CP6",
+      "uipath": "/blueberry",
+      "preset": "Ballroom C",
+      "features": [
+        "share"
+      ]
     }
+  ]
   ],
   "inputConfiguration": [
     {
