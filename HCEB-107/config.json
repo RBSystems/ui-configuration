@@ -9,6 +9,13 @@
 			"preset":"Flatpanel",
 			"features": [
 			]
+		},
+		{
+			"hostname": "HCEB-107-CP2",
+			"uipath": "/blueberry",
+			"preset":"Flatpanel",
+			"features": [
+			]
 		}
 	],
 	"presets": [
