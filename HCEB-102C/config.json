@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "HCEB-409-CP1",
+			"hostname": "HCEB-102C-CP1",
 			"uipath": "/blueberry",
 			"preset":"Flatpanel",
 			"features": [
@@ -23,7 +23,7 @@
 			],
 			"inputs": [
                 "HDMI1",
-                "VIA1"
+                "PC1"
 			],
 			"independentAudios": [
 			]
@@ -35,8 +35,8 @@
           "icon": "settings_input_hdmi"
       },
       {
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
+          "name": "PC1",
+          "icon": "computer"
       }
   ],
   "audioConfiguration": [

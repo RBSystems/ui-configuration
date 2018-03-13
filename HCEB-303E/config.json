@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "HCEB-409-CP1",
+			"hostname": "HCEB-303E-CP1",
 			"uipath": "/blueberry",
 			"preset":"Flatpanel",
 			"features": [
@@ -35,8 +35,8 @@
           "icon": "settings_input_hdmi"
       },
       {
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
+          "name": "VIA1",
+          "icon": "settings_input_antenna"
       }
   ],
   "audioConfiguration": [

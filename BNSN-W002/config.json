@@ -4,16 +4,17 @@
 	],
 	"panels": [
 		{
-			"hostname": "HCEB-409-CP1",
+			"hostname": "BNSN-W002-CP1",
 			"uipath": "/blueberry",
-			"preset":"Flatpanel",
+			"preset":"Projector",
 			"features": [
 			]
+
 		}
 	],
 	"presets": [
 		{
-			"name": "Flatpanel",
+			"name": "Projector",
 			"displays": [
 				"D1"
 			],
@@ -22,8 +23,7 @@
 				"D1"
 			],
 			"inputs": [
-                "HDMI1",
-                "VIA1"
+                "HDMI1"
 			],
 			"independentAudios": [
 			]
@@ -33,10 +33,6 @@
       {
           "name": "HDMI1",
           "icon": "settings_input_hdmi"
-      },
-      {
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
       }
   ],
   "audioConfiguration": [
