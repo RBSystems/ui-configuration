@@ -24,8 +24,11 @@ func main() {
 	}
 
 	router.GET("/get/:building/:room", handlers.GetUIConfig)
+	router.PUT("/put/:building/:room", handlers.PutUIConfig)
 
-	router.Static("/", "html")
+	router.GET("/touchpanels/:building/:room", handlers.GetTouchPanels)
+
+	router.Static("/", "web")
 
 	router.StartServer(&server)
 }
