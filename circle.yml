@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: Docker 18.02.0
+            - image: docker 18.02.0
               environment:
                 GOROOT: ""
                 GOPATH: "${HOME}/.go_project"
