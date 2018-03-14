@@ -1,33 +1,37 @@
 version: 2
 jobs:
     build:
-        services:
-            - docker
-        environment:
-            GOROOT: ""
-            GOPATH: "${HOME}/.go_project"
-            PATH: "${GOPATH}/bin:${PATH}"
-            BUILD_PATH: "${GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}"
-
-        dependencies:
-            pre:
-                - rm -rf ~/.go_workspace
-                - go get -u github.com/FiloSottile/gvt
-            override:
-                - mkdir -p ~/.go_project/src/github.com/${CIRCLE_PROJECT_USERNAME}
-                - ln -s ${HOME}/${CIRCLE_PROJECT_REPONAME} ${BUILD_PATH}
-                - cd $BUILD_PATH && make deps
-
-        compile:
-            override:
-                - cd $BUILD_PATH && make build
-
-        test:
-            override:
-                - cd $BUILD_PATH && make test
-
-        deployment:
-            deploy:
-                branch: [master, testing, stage, prod]
-                commands:
-                    - cd $BUILD_PATH && make docker
+        docker:
+            - image: Docker 18.02.0
+              environment:
+                GOROOT: ""
+                GOPATH: "${HOME}/.go_project"
+                PATH: "${GOPATH}/bin:${PATH}"
+                BUILD_PATH: "${GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}"
+              auth: 
+                username: $DOCKER_USERNAME
+                password: $DOCKER_PASSWORD
+        branches:
+            only:
+                - master
+                - testing
+                - stage
+                - prod
+        steps:
+            - run:
+                command: rm -rf ~/.go_workspace
+            - run:
+                command: go get -u github.com/FiloSottile/gvt
+            - checkout
+            - run:
+                command: mkdir -p ~/.go_project/src/github.com/${CIRCLE_PROJECT_USERNAME}
+            - run:
+                command: ln -s ${HOME}/${CIRCLE_PROJECT_REPONAME} ${BUILD_PATH}
+            - run:
+                command: cd $BUILD_PATH && make deps
+            - run:
+                command: cd $BUILD_PATH && make build
+            - run:
+                command: cd $BUILD_PATH && make test
+            - deploy:
+                command: $BUILD_PATH && make docker
