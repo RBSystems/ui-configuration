@@ -89,6 +89,8 @@ ifeq "$(BRANCH)" "development"
 	$(eval BRANCH=master)
 endif
 
+deploy: ./deploy.sh
+
 ### deps
 $(NAME)-bin:
 	$(MAKE) build-x86
