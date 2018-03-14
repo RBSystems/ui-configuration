@@ -66,7 +66,6 @@
 				"D4"
 			],
             "shareableDisplays": [
-                "D5"
             ],
 			"icon": "tv",
 			"audioDevices": [
@@ -81,14 +80,14 @@
 			"name": "Station 5",
 			"displays": [
 				"D6",
-				"D7"
+				"D5"
 			],
             "shareableDisplays": [
             ],
 			"icon": "tv",
 			"audioDevices": [
 				"D6",
-                "D7"
+                "D5"
 			],
 			"inputs": [
                 "HDMI5",
