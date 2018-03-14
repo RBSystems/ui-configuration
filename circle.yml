@@ -2,36 +2,13 @@ version: 2
 jobs:
     build:
         docker:
-            - image: docker 18.02.0
-              environment:
-                GOROOT: ""
-                GOPATH: "${HOME}/.go_project"
-                PATH: "${GOPATH}/bin:${PATH}"
-                BUILD_PATH: "${GOPATH}/src/github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}"
-              auth: 
-                username: $DOCKER_USERNAME
-                password: $DOCKER_PASSWORD
-        branches:
-            only:
-                - master
-                - testing
-                - stage
-                - prod
+            - image: byuoitav/build-env:master
+
+        working_directory: /go/src/github.com/byuoitav/ui-configuration
+
         steps:
-            - run:
-                command: rm -rf ~/.go_workspace
-            - run:
-                command: go get -u github.com/FiloSottile/gvt
             - checkout
-            - run:
-                command: mkdir -p ~/.go_project/src/github.com/${CIRCLE_PROJECT_USERNAME}
-            - run:
-                command: ln -s ${HOME}/${CIRCLE_PROJECT_REPONAME} ${BUILD_PATH}
-            - run:
-                command: cd $BUILD_PATH && make deps
-            - run:
-                command: cd $BUILD_PATH && make build
-            - run:
-                command: cd $BUILD_PATH && make test
-            - deploy:
-                command: $BUILD_PATH && make docker
+            - run: |
+                gvt fetch github.com/byuoitav/authmiddleware
+            - setup_remote_docker
+            - run: make docker
