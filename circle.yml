@@ -11,4 +11,4 @@ jobs:
             - setup_remote_docker
             - run: make deps
             - run: make docker
-            - run: make deploy
+            - run: ./deploy.sh $CIRCLE_PROJECT_REPONAME $CIRCLE_SHA1

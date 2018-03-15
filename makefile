@@ -89,7 +89,7 @@ ifeq "$(BRANCH)" "development"
 	$(eval BRANCH=master)
 endif
 
-deploy: ./deploy.sh $(CIRCLE_PROJECT_REPONAME) $(CIRCLE_SHA1)
+
 
 ### deps
 $(NAME)-bin:
