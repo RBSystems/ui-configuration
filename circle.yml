@@ -11,3 +11,4 @@ jobs:
             - setup_remote_docker
             - run: make deps
             - run: make docker
+            - run: make deploy
