@@ -53,6 +53,8 @@ clean:
 run: $(NAME)-bin
 	./$(NAME)-bin
 
+deploy: ./deploy.sh
+
 deps:
 	$(GOGET) -d -v
 ifneq "$(BRANCH)" "master"
@@ -88,8 +90,6 @@ endif
 ifeq "$(BRANCH)" "development"
 	$(eval BRANCH=master)
 endif
-
-deploy: ./deploy.sh
 
 ### deps
 $(NAME)-bin:
