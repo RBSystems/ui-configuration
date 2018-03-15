@@ -5,7 +5,7 @@
         "Key": ".dockercfg"
     },
     "Image": {
-        "Name": "byuoitav/ui-configuration:latest",
+        "Name": "byuoitav/ui-configuration:production",
         "Update": "true"
     },
     "Ports": [{
