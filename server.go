@@ -16,7 +16,7 @@ func main() {
 
 	router.Pre(middleware.RemoveTrailingSlash())
 	router.Use(middleware.CORS())
-	router.Use(echo.WrapMiddleware(authmiddleware.Authenticate))
+	router.Use(echo.WrapMiddleware(authmiddleware.AuthenticateUser))
 
 	server := http.Server{
 		Addr:           port,
