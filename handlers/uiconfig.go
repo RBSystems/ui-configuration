@@ -30,21 +30,21 @@ func GetUIConfig(context echo.Context) error {
 	resp, err := http.Get(url)
 	if err != nil {
 		log.Printf("GET request failed for %s: %s", url, err)
-		return context.JSON(http.StatusInternalServerError, msg)
+		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - request error", msg))
 	}
 	defer resp.Body.Close()
 
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Printf("Cannot read body from %s: %s", url, err)
-		return context.JSON(http.StatusBadRequest, msg)
+		return context.JSON(http.StatusBadRequest, fmt.Sprintf("%s - read error", msg))
 	}
 
 	var config uiconfig.UIConfig
 	err = json.Unmarshal(body, &config)
 	if err != nil {
 		log.Printf("Cannot unmarshal body from %s: %s", url, err)
-		return context.JSON(http.StatusInternalServerError, msg)
+		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - JSON error", msg))
 	}
 
 	return context.JSONPretty(http.StatusOK, config, "   ")
