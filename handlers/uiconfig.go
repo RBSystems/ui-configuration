@@ -44,7 +44,7 @@ func GetUIConfig(context echo.Context) error {
 	err = json.Unmarshal(body, &config)
 	if err != nil {
 		log.Printf("Cannot unmarshal body from %s: %s", url, err)
-		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - JSON error", msg))
+		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - JSON error - %s", msg, err.Error()))
 	}
 
 	return context.JSONPretty(http.StatusOK, config, "   ")
