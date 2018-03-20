@@ -1,0 +1,50 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "Overflow",
+            "icon": "people" 
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Projector",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1",
+                "Overflow"
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "TNRB-W237-CP1",
+			"uipath": "/blueberry",
+			"preset": "Projector",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
+}
+
