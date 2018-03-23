@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  overflow: auto;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #002255;
+  color: white;
+}
+
+.header h1 {
+  font-size: 25px;
+}
+
+/* NAVBAR */
+.navbar {
+  overflow: hidden;
+  background-color: #bfbfbf;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #809fff;
+  color: black;
+}
+
+/* FOOTER */
+.footer {
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  line-height: 12px;
+  color: #595959;
+  background-color: #bfbfbf;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+}
+
+.main-wrapper {
+  padding: 0 0 100px;
+  position: relative;
+  min-height: 100%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide */
+@media (max-width: 800px) {
+  .navbar a {
+    width: 15%;
+  }
+  .footer {
+    height: 50px;
+    line-height: 2px;
+  }
+}

@@ -1,0 +1,30 @@
+
+<div class='nr-container'>
+    <div class="nr-location">
+      <div class="nr-building-fields">
+        <div class="nr-bldg">
+          <label>Building: </label>
+        </div>
+          <div class="nr-box">
+            <input [(ngModel)]="space.building" name="building"  type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+          </div>
+      </div>
+      <div class="nr-room-fields">
+        <div class="nr-room">
+          <label>Room: </label>
+        </div>
+        <div class="nr-box">
+          <input [(ngModel)]="space.room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+        </div>
+      </div>
+      <div class="nr-location-btn">
+          <button class="button" id="baking" (click)="GetTouchPanels()">Start Baking!</button>
+       </div>
+    </div>
+
+    <div *ngIf="CPList.length > 0" class="nr-container2">
+      <div *ngFor="let cp of CPList; let i = index" class="nr-controlp">
+        <control-processor [cp]="cp" [CPList]="CPList"></control-processor>
+      </div>
+    </div>
+</div>
