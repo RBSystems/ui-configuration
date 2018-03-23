@@ -26,7 +26,7 @@ func main() {
 	router.GET("/get/:building/:room", handlers.GetUIConfig)
 	router.PUT("/put/:building/:room", handlers.PutUIConfig)
 
-	router.GET("/touchpanels/:building/:room", handlers.GetTouchPanels)
+	router.GET("/devices/:building/:room/:role", handlers.GetDevicesInRoomByRole)
 
 	router.Static("/", "web")
 
