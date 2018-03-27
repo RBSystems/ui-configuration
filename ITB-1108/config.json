@@ -222,7 +222,7 @@
 			]
         }
 	],
-    "displayConfiguration": [
+    "outputConfiguration": [
         {
             "name": "D1",
             "icon": "tv"
