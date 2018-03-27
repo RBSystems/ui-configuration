@@ -222,6 +222,40 @@
 			]
         }
 	],
+    "displayConfiguration": [
+        {
+            "name": "D1",
+            "icon": "tv"
+        },
+        {
+            "name": "D2",
+            "icon": "tv"
+        },
+        {
+            "name": "D3",
+            "icon": "tv"
+        },
+        {
+            "name": "D4",
+            "icon": "tv"
+        },
+        {
+            "name": "D5",
+            "icon": "tv"
+        },
+        {
+            "name": "D6",
+            "icon": "tv"
+        },
+        {
+            "name": "D7",
+            "icon": "tv"
+        },
+        {
+            "name": "D8",
+            "icon": "tv"
+        },
+    ],
     "inputConfiguration": [
         {
             "name": "VIA1",
