@@ -273,6 +273,10 @@
         {
             "name": "D8",
             "icon": "tv"
+        },
+        {
+            "name": "MIC1",
+            "icon": "mic"
         }
     ],
     "inputConfiguration": [
