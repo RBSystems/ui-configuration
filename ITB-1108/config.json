@@ -156,7 +156,8 @@
                 "D3",
                 "D4"
 			],
-			"audioDevices": [
+			"independentAudioDevices": [
+                "MIC1"
 			],
 			"inputs": [
                 "HDMI1",
