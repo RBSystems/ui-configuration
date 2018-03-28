@@ -147,7 +147,25 @@
                 "HDMI8",
                 "VIA8"
 			]
-		}
+		},
+		{
+			"name": "Testing",
+			"displays": [
+				"D1",
+                "D2",
+                "D3",
+                "D4"
+			],
+			"audioDevices": [
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1",
+                "HDMI2",
+                "VIA2",
+                "VIA5"
+			]
+        }
 	],
 	"panels": [
 		{
@@ -208,7 +226,7 @@
 		{
 			"hostname": "ITB-1108-CP8",
 			"uipath": "/blueberry",
-			"preset": "Station 1",
+			"preset": "Testing",
 			"features": [
                 "share"
 			]
