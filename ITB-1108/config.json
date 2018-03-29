@@ -159,6 +159,9 @@
 			"independentAudioDevices": [
                 "MIC1"
 			],
+            "audioDevices": [
+                "D1"
+            ],
 			"inputs": [
                 "HDMI1",
                 "VIA1",
