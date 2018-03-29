@@ -156,8 +156,15 @@
                 "D3",
                 "D4"
 			],
-			"audioDevices": [
+			"independentAudioDevices": [
+                "MIC1"
 			],
+            "audioDevices": [
+				"D1",
+                "D2",
+                "D3",
+                "D4"
+            ],
 			"inputs": [
                 "HDMI1",
                 "VIA1",
@@ -272,6 +279,10 @@
         {
             "name": "D8",
             "icon": "tv"
+        },
+        {
+            "name": "MIC1",
+            "icon": "mic"
         }
     ],
     "inputConfiguration": [
