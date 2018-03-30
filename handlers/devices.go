@@ -9,6 +9,7 @@ import (
 	"github.com/labstack/echo"
 )
 
+// GetDevicesByRoom finds all devices in a room.
 func GetDevicesByRoom(context echo.Context) error {
 	building := context.Param("building")
 	room := context.Param("room")
@@ -21,6 +22,7 @@ func GetDevicesByRoom(context echo.Context) error {
 	return context.JSON(http.StatusOK, devices)
 }
 
+// GetDevicesInRoomByRole finds all devices of a specific role in that room.
 func GetDevicesInRoomByRole(context echo.Context) error {
 	log.Print("Trying to get touchpanels")
 	building := context.Param("building")
