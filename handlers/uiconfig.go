@@ -25,18 +25,19 @@ func GetUIConfig(context echo.Context) error {
 	url = strings.Replace(url, "ROOM", room, 1)
 
 	//Prepared response in case the file is not found.
-	msg := fmt.Sprintf("Config file not found for %s %s", building, room)
 
 	client := &http.Client{}
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		log.Printf("GET request failed for %s: %s", url, err)
+		msg := fmt.Sprintf("GET request failed for %s: %s", url, err)
 		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - request error", msg))
 	}
 	req.Header.Set("Content Type", "application/json")
 	resp, err := client.Do(req)
 	if err != nil {
 		log.Printf("GET request failed for %s: %s", url, err)
+		msg := fmt.Sprintf("GET request failed for %s: %s", url, err)
 		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - request error", msg))
 	}
 	defer resp.Body.Close()
@@ -44,6 +45,7 @@ func GetUIConfig(context echo.Context) error {
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Printf("Cannot read body from %s: %s", url, err)
+		msg := fmt.Sprintf("Cannot read body from %s: %s", url, err)
 		return context.JSON(http.StatusBadRequest, fmt.Sprintf("%s - read error", msg))
 	}
 
@@ -51,6 +53,7 @@ func GetUIConfig(context echo.Context) error {
 	err = json.Unmarshal(body, &config)
 	if err != nil {
 		log.Printf("Cannot unmarshal body from %s: %s", url, err)
+		msg := fmt.Sprintf("Cannot unmarshal body from %s: %s", url, err)
 		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - JSON error - %s", msg, err.Error()))
 	}
 
