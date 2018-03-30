@@ -33,7 +33,7 @@ func GetUIConfig(context echo.Context) error {
 		msg := fmt.Sprintf("GET request failed for %s: %s", url, err)
 		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - request error", msg))
 	}
-	req.Header.Set("Content Type", "application/json")
+	req.Header.Set("Content-Type", "application/json")
 	resp, err := client.Do(req)
 	if err != nil {
 		log.Printf("GET request failed for %s: %s", url, err)
