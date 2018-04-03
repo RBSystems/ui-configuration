@@ -1,0 +1,41 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "desktop_windows"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1",
+                "D2",
+                "D3"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1",
+                "D2",
+                "D3"
+			],
+			"inputs": [
+                "HDMI1"
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ITB-1108B-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
+}
