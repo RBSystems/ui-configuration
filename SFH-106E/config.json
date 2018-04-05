@@ -1,0 +1,50 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+			{
+                "name": "HDMI1",
+                "icon": "settings_input_hdmi"
+            },
+			{
+                "name": "HDMI2",
+                "icon": "live_tv"
+            },
+			{
+                "name": "VIA1",
+                "icon": "settings_input_antenna"
+            }
+    ],
+    "presets": [
+		{
+			"name": "Flatpanel",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "HDMI2",
+                "VIA1"
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "SFH-106E-CP1",
+			"uipath": "/blueberry",
+			"preset": "Flatpanel",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
+}
+
