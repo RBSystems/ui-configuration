@@ -232,10 +232,9 @@
 		},
 		{
 			"hostname": "ITB-1108-CP8",
-			"uipath": "/blueberry",
+			"uipath": "/cherry",
 			"preset": "Testing",
 			"features": [
-                "share"
 			]
 		},
 		{
