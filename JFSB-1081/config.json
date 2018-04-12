@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "JFSB-1801-CP1",
+			"hostname": "JFSB-1081-CP1",
 			"uipath": "/blueberry",
 			"preset": "Projector",
 			"features": [
