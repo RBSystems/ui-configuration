@@ -2,21 +2,14 @@
     "api": [
         "localhost"
     ],
-    "inputConfiguration": [
-        {
-            "name": "HDMI1",
-            "icon": "desktop_windows"
-        }
-    ],
     "presets": [
 		{
-			"name": "Flatpanel",
+			"name": "Projectors",
 			"displays": [
 				"D1",
                 "D2",
                 "D3"
 			],
-			"icon": "tv",
 			"audioDevices": [
 				"D1",
                 "D2",
@@ -30,12 +23,32 @@
 	"panels": [
 		{
 			"hostname": "ITB-1108B-CP1",
-			"uipath": "/blueberry",
-			"preset": "Flatpanel",
+			"uipath": "/cherry",
+			"preset": "Projectors",
 			"features": [
 			]
 		}
 	],
     "audioConfiguration": [
-    ]
+    ],
+    "outputConfiguration": [
+        {
+            "name": "D1",
+            "icon": "videocam"
+        },
+        {
+            "name": "D2",
+            "icon": "videocam"
+        },
+        {
+            "name": "D3",
+            "icon": "videocam"
+        }
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "desktop_windows"
+        }
+    ],
 }
