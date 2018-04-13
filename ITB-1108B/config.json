@@ -16,7 +16,8 @@
                 "D3"
 			],
 			"inputs": [
-                "HDMI1"
+                "HDMI1",
+                "HDMI2"
 			]
 		}
     ],
@@ -49,6 +50,10 @@
         {
             "name": "HDMI1",
             "icon": "desktop_windows"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
         }
     ]
 }
