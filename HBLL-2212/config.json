@@ -1,0 +1,79 @@
+{
+    "api": ["localhost"],
+    "presets": [{
+            "name": "HBLL 2212",
+            "displays": [
+                "D1"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D1"
+            ],
+            "shareableDisplays": [],
+            "inputs": [
+                "HDMI1",
+                "HDMI2",
+                "VIA1",
+                "PC1"
+            ]
+        },
+        {
+            "name": "HBLL 2210",
+            "displays": [
+                "D2"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D2"
+            ],
+            "shareableDisplays": [],
+            "inputs": [
+                "HDMI3",
+                "VIA2"
+            ]
+        }
+    ],
+    "panels": [{
+            "hostname": "HBLL-2212-CP1",
+            "uipath": "/blueberry",
+            "preset": "HBLL 2212",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "HBLL-2212-CP2",
+            "uipath": "/blueberry",
+            "preset": "HBLL 2210",
+            "features": [
+                "share"
+            ]
+        }
+    ],
+    "inputConfiguration": [{
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "VIA2",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
+        }
+    ],
+    "audioConfiguration": []
+}
