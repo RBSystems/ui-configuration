@@ -1,0 +1,56 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "outputConfiguration": [
+        {
+            "name": "D1",
+            "icon": "tv"
+        },
+        {
+            "name": "D2",
+            "icon": "tv"
+        }
+    ],
+    "inputConfiguration": [
+        {
+            "name": "PC1",
+            "icon": "windows_computer"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Default",
+			"displays": [
+				"D1",
+                "D2"
+			],
+            "audioDevices": [
+				"D1",
+                "D2"
+            ],
+			"inputs": [
+                "PC1",
+                "VIA1",
+                "HDMI1"
+			]
+        }
+    ],
+    "panels": [
+		{
+			"hostname": "ITB-1101-CP1",
+			"uipath": "/cherry",
+			"preset": "Default",
+			"features": [
+			]
+		}
+    ]
+}
