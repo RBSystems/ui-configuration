@@ -46,7 +46,7 @@
     ],
     "panels": [
 		{
-			"hostname": "ITB-1101-CP1",
+			"hostname": "ITB-1111-CP1",
 			"uipath": "/cherry",
 			"preset": "Default",
 			"features": [
