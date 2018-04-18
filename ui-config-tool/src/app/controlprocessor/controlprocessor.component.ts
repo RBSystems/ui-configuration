@@ -12,7 +12,7 @@ import { TemplateComponent } from 'app/template/template.component';
 })
 export class ControlProcessorComponent implements OnInit {
   @Input() cp: Panel;
-  @Input() CPList: ControlProcessor[];
+  @Input() CPList: Panel[];
   @Input() config: UIConfig;
   showTemp: boolean = false;
   TC: TemplateComponent;
