@@ -37,17 +37,13 @@
             "hostname": "HBLL-2212-CP1",
             "uipath": "/blueberry",
             "preset": "HBLL 2212",
-            "features": [
-                "share"
-            ]
+            "features": []
         },
         {
             "hostname": "HBLL-2212-CP2",
             "uipath": "/blueberry",
             "preset": "HBLL 2210",
-            "features": [
-                "share"
-            ]
+            "features": []
         }
     ],
     "inputConfiguration": [{
