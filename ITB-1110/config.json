@@ -14,7 +14,11 @@
         {
             "name": "IPTV",
             "icon": "settings_input_hdmi"
-        }
+        },
+      {
+          "name": "VIA1",
+          "icon": "settings_input_antenna"
+      }
     ],
     "presets": [
 		{
@@ -29,7 +33,8 @@
 			"inputs": [
                 "PC1",
                 "IPTV",
-                "AppleTV"
+                "AppleTV",
+                "VIA1"
 			]
 		}
     ],
