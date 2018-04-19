@@ -12,7 +12,6 @@
             "shareableDisplays": [],
             "inputs": [
                 "HDMI1",
-                "HDMI2",
                 "VIA1",
                 "PC1"
             ]
@@ -28,7 +27,7 @@
             ],
             "shareableDisplays": [],
             "inputs": [
-                "HDMI3",
+                "HDMI2",
                 "VIA2"
             ]
         }
