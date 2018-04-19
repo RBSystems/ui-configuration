@@ -1,253 +1,259 @@
 {
-	"api": [
-		"localhost"
-	],
-	"presets": [
-		{
-			"name": "Station 1",
-			"displays": [
-				"D1"
-			],
-			"icon": "tv",
-			"audioDevices": [
-				"D1"
-			],
+    "api": [
+        "localhost"
+    ],
+    "presets": [{
+            "name": "Station 1",
+            "displays": [
+                "D1"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D1"
+            ],
             "shareableDisplays": [
                 "D2",
                 "D3"
             ],
-			"inputs": [
+            "inputs": [
                 "HDMI1",
                 "VIA1"
-			],
+            ],
             "independentAudioDevices": [
                 "MIC1"
             ]
-		},
-		{
-			"name": "Station 2",
-			"displays": [
-				"D2"
-			],
+        },
+        {
+            "name": "Station 2",
+            "displays": [
+                "D2"
+            ],
             "shareableDisplays": [
                 "D1",
                 "D3"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D2"
-			],
-			"inputs": [
+            "icon": "tv",
+            "audioDevices": [
+                "D2"
+            ],
+            "inputs": [
                 "HDMI2",
                 "VIA2"
-			]
-		},
-		{
-			"name": "Station 3",
-			"displays": [
-				"D3"
-			],
+            ]
+        },
+        {
+            "name": "Station 3",
+            "displays": [
+                "D3"
+            ],
             "shareableDisplays": [
                 "D1",
                 "D2"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D3"
-			],
-			"inputs": [
+            "icon": "tv",
+            "audioDevices": [
+                "D3"
+            ],
+            "inputs": [
                 "HDMI3",
                 "VIA3"
-			]
-		},
-		{
-			"name": "Station 4",
-			"displays": [
-				"D4"
-			],
-            "shareableDisplays": [
+            ]
+        },
+        {
+            "name": "Station 4",
+            "displays": [
+                "D4"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D4"
-			],
-			"inputs": [
+            "shareableDisplays": [],
+            "icon": "tv",
+            "audioDevices": [
+                "D4"
+            ],
+            "inputs": [
                 "HDMI4",
                 "VIA4"
-			]
-		},
-		{
-			"name": "Station 5",
-			"displays": [
-				"D6",
-				"D5"
-			],
-            "shareableDisplays": [
-            ],
-			"icon": "tv",
-			"audioDevices": [
-				"D6",
+            ]
+        },
+        {
+            "name": "Station 5",
+            "displays": [
+                "D6",
                 "D5"
-			],
-			"inputs": [
+            ],
+            "shareableDisplays": [],
+            "icon": "tv",
+            "audioDevices": [
+                "D6",
+                "D5"
+            ],
+            "inputs": [
                 "HDMI5",
                 "VIA5"
-			]
-		},
-		{
-			"name": "Station 6",
-			"displays": [
-				"D6"
-			],
+            ]
+        },
+        {
+            "name": "Station 6",
+            "displays": [
+                "D6"
+            ],
             "shareableDisplays": [
                 "D7",
                 "D8"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D6"
-			],
-			"inputs": [
+            "icon": "tv",
+            "audioDevices": [
+                "D6"
+            ],
+            "inputs": [
                 "HDMI6",
                 "VIA6"
-			]
-		},
-		{
-			"name": "Station 7",
-			"displays": [
-				"D7"
-			],
+            ]
+        },
+        {
+            "name": "Station 7",
+            "displays": [
+                "D7"
+            ],
             "shareableDisplays": [
                 "D6",
                 "D8"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D7"
-			],
-			"inputs": [
+            "icon": "tv",
+            "audioDevices": [
+                "D7"
+            ],
+            "inputs": [
                 "HDMI7",
                 "VIA7"
-			]
-		},
-		{
-			"name": "Station 8",
-			"displays": [
-				"D8"
-			],
+            ]
+        },
+        {
+            "name": "Station 8",
+            "displays": [
+                "D8"
+            ],
             "shareableDisplays": [
                 "D6",
                 "D7"
             ],
-			"icon": "tv",
-			"audioDevices": [
-				"D8"
-			],
-			"inputs": [
+            "icon": "tv",
+            "audioDevices": [
+                "D8"
+            ],
+            "inputs": [
                 "HDMI8",
                 "VIA8"
-			]
-		},
-		{
-			"name": "Testing",
-			"displays": [
-				"D1",
-                "D2",
-                "D3",
-                "D4"
-			],
-			"independentAudioDevices": [
-                "MIC1"
-			],
-            "audioDevices": [
-				"D1",
+            ]
+        },
+        {
+            "name": "Testing",
+            "displays": [
+                "D1",
                 "D2",
                 "D3",
                 "D4"
             ],
-			"inputs": [
+            "independentAudioDevices": [
+                "MIC1"
+            ],
+            "audioDevices": [
+                "D1",
+                "D2",
+                "D3",
+                "D4"
+            ],
+            "inputs": [
                 "HDMI1",
                 "VIA1",
                 "HDMI2",
                 "VIA2",
                 "VIA5"
-			]
+            ]
+        },
+        {
+            "name": "Cherry Test",
+            "displays": [
+                "D3",
+                "D4"
+            ],
+            "audioDevices": [
+                "D3",
+                "D4"
+            ],
+            "inputs": [
+                "HDMI3",
+                "VIA3"
+            ]
         }
-	],
-	"panels": [
-		{
-			"hostname": "ITB-1108-CP1",
-			"uipath": "/blueberry",
-			"preset": "Station 1",
+    ],
+    "panels": [{
+            "hostname": "ITB-1108-CP1",
+            "uipath": "/blueberry",
+            "preset": "Station 1",
             "features": [
                 "share"
             ]
-		},
-		{
-			"hostname": "ITB-1108-CP2",
-			"uipath": "/blueberry",
-			"preset": "Station 2",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP3",
-			"uipath": "/blueberry",
-			"preset": "Station 3",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP4",
-			"uipath": "/blueberry",
-			"preset": "Station 4",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP5",
-			"uipath": "/blueberry",
-			"preset": "Station 5",
-			"features": [
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP6",
-			"uipath": "/blueberry",
-			"preset": "Station 3",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP7",
-			"uipath": "/blueberry",
-			"preset": "Station 2",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP8",
-			"uipath": "/cherry",
-			"preset": "Testing",
-			"features": [
-			]
-		},
-		{
-			"hostname": "ITB-1108-CP0",
-			"uipath": "/blueberry",
-			"preset": "Station 1",
-			"features": [
-                "share"
-			]
-        }
-	],
-    "outputConfiguration": [
+        },
         {
+            "hostname": "ITB-1108-CP2",
+            "uipath": "/blueberry",
+            "preset": "Station 2",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1108-CP3",
+            "uipath": "/cherry",
+            "preset": "Cherry Test",
+            "features": []
+        },
+        {
+            "hostname": "ITB-1108-CP4",
+            "uipath": "/blueberry",
+            "preset": "Station 4",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1108-CP5",
+            "uipath": "/blueberry",
+            "preset": "Station 5",
+            "features": []
+        },
+        {
+            "hostname": "ITB-1108-CP6",
+            "uipath": "/blueberry",
+            "preset": "Station 3",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1108-CP7",
+            "uipath": "/blueberry",
+            "preset": "Station 2",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1108-CP8",
+            "uipath": "/cherry",
+            "preset": "Testing",
+            "features": []
+        },
+        {
+            "hostname": "ITB-1108-CP0",
+            "uipath": "/blueberry",
+            "preset": "Station 1",
+            "features": [
+                "share"
+            ]
+        }
+    ],
+    "outputConfiguration": [{
             "name": "D1",
             "icon": "tv"
         },
@@ -284,8 +290,7 @@
             "icon": "mic"
         }
     ],
-    "inputConfiguration": [
-        {
+    "inputConfiguration": [{
             "name": "VIA1",
             "icon": "settings_input_antenna"
         },
@@ -350,13 +355,11 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "audioConfiguration": [
-        {
-            "display": "D1",
-            "audioDevices": [
-                "D1"
-            ],
-            "roomWide": true
-        }
-    ]
+    "audioConfiguration": [{
+        "display": "D1",
+        "audioDevices": [
+            "D1"
+        ],
+        "roomWide": true
+    }]
 }
