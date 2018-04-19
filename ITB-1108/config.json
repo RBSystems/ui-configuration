@@ -181,6 +181,7 @@
                 "D4"
             ],
             "inputs": [
+                "PC1",
                 "HDMI3",
                 "VIA3"
             ]
@@ -353,6 +354,10 @@
         {
             "name": "HDMI8",
             "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
         }
     ],
     "audioConfiguration": [{
