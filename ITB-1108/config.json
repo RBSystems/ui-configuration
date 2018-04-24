@@ -20,7 +20,8 @@
                 "VIA1"
             ],
             "independentAudioDevices": [
-                "MIC1"
+                "MIC1",
+                "MIC2"
             ]
         },
         {
@@ -288,6 +289,10 @@
         },
         {
             "name": "MIC1",
+            "icon": "mic"
+        },
+        {
+            "name": "MIC2",
             "icon": "mic"
         }
     ],
