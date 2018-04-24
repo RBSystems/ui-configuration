@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "HRCB-124-CP1",
+			"hostname": "HRCB-12t5-CP1",
 			"uipath": "/blueberry",
 			"preset": "Projector",
 			"features": [
