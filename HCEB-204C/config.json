@@ -1,0 +1,42 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "panels": [{
+        "hostname": "HCEB-204C-CP1",
+        "uipath": "/blueberry",
+        "preset": "TV",
+        "features": []
+
+    }],
+    "presets": [{
+        "name": "TV",
+        "displays": [
+            "D1"
+        ],
+        "icon": "tv",
+        "audioDevices": [
+            "D1"
+        ],
+        "inputs": [
+            "HDMI1",
+            "IPTV1",
+            "PC1"
+        ],
+        "independentAudios": []
+    }],
+    "inputConfiguration": [{
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "IPTV1",
+            "icon": "live_tv"
+        },
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
+        }
+    ],
+    "audioConfiguration": []
+}
