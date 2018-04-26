@@ -20,6 +20,7 @@
 			],
 			"icon": "tv",
 			"audioDevices": [
+                "D2",
 				"D1"
 			],
 			"inputs": [
