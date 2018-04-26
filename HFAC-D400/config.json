@@ -1,0 +1,50 @@
+{
+  "api": [ 
+      "localhost"
+  ],
+  "presets": [
+    {
+      "name": "Projector",
+      "displays": [
+        "D1"
+      ],
+      "icon": "tv",
+      "audioDevices": [
+        "D1"
+      ],
+      "shareableDisplays": [],
+      "inputs": [
+        "HDMI1"
+      ],
+      "independentAudioDevices": [
+        "MICJK1",
+        "MICJK2",
+        "MIC1",
+        "MIC2"
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "hostname": "HFAC-D400-CP1",
+      "uipath": "/blueberry",
+      "preset": "Projector",
+      "features": [
+      ]
+    },
+    {
+      "hostname": "HFAC-D400-CP2",
+      "uipath": "/blueberry",
+      "preset": "Projector",
+      "features": [
+      ]
+    }
+  ],
+  "inputConfiguration": [
+    {
+      "name": "HDMI1",
+      "icon": "settings_input_hdmi"
+    }
+  ],
+  "audioConfiguration": []
+}

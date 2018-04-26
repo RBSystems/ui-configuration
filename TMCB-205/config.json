@@ -5,12 +5,12 @@
     "panels": [{
         "hostname": "TMCB-205-CP1",
         "uipath": "/blueberry",
-        "preset": "Projector",
+        "preset": "Flatpanel",
         "features": []
 
     }],
     "presets": [{
-        "name": "Projector",
+        "name": "Flatpanel",
         "displays": [
             "D1"
         ],
