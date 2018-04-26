@@ -82,7 +82,7 @@
 			]
 		},
 		{
-			"hostname": "ITB-1101-CP2",
+			"hostname": "ITB-1101-CP5",
 			"uipath": "/blueberry",
 			"preset": "Joe Flatpanel",
 			"features": [
@@ -90,7 +90,7 @@
 			]
 		},
 		{
-			"hostname": "ITB-1101-CP3",
+			"hostname": "ITB-1101-CP6",
 			"uipath": "/blueberry",
 			"preset": "Joe Flatpanel",
 			"features": [
@@ -98,7 +98,7 @@
 			]
 		},
 		{
-			"hostname": "ITB-1101-CP4",
+			"hostname": "ITB-1101-CP7",
 			"uipath": "/blueberry",
 			"preset": "Joe Flatpanel",
 			"features": [
@@ -106,7 +106,7 @@
 			]
 		},
 		{
-			"hostname": "ITB-1101-CP2",
+			"hostname": "ITB-1101-CP8",
 			"uipath": "/blueberry",
 			"preset": "Danny Flatpanel",
 			"features": [
