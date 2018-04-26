@@ -84,6 +84,30 @@
 		{
 			"hostname": "ITB-1101-CP2",
 			"uipath": "/blueberry",
+			"preset": "Joe Flatpanel",
+			"features": [
+                "share"
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP3",
+			"uipath": "/blueberry",
+			"preset": "Joe Flatpanel",
+			"features": [
+                "share"
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP4",
+			"uipath": "/blueberry",
+			"preset": "Joe Flatpanel",
+			"features": [
+                "share"
+			]
+		},
+		{
+			"hostname": "ITB-1101-CP2",
+			"uipath": "/blueberry",
 			"preset": "Danny Flatpanel",
 			"features": [
                 "share"
