@@ -20,17 +20,28 @@
         ],
         "inputs": [
             "HDMI1",
-            "VIA1"
+            "HDMI2",
+            "HDMI3",
+            "HDMI4"
         ],
         "independentAudios": []
     }],
-    "inputConfiguration": [{
+    "inputConfiguration": [
+        {
             "name": "HDMI1",
             "icon": "settings_input_hdmi"
         },
         {
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI4",
+            "icon": "settings_input_hdmi"
         }
     ],
     "audioConfiguration": []
