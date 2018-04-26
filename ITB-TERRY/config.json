@@ -3,7 +3,7 @@
         "localhost"
     ],
     "panels": [{
-        "hostname": "TMCB-205-CP1",
+        "hostname": "ITB-TERRY-CP1",
         "uipath": "/blueberry",
         "preset": "Projector",
         "features": []
