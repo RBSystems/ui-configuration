@@ -29,11 +29,11 @@
     "inputConfiguration": [
         {
             "name": "HDMI1",
-            "icon": "settings_input_hdmi"
+            "icon": "desktop_windows"
         },
         {
             "name": "HDMI2",
-            "icon": "settings_input_hdmi"
+            "icon": "desktop_windows"
         },
         {
             "name": "HDMI3",
@@ -41,7 +41,7 @@
         },
         {
             "name": "HDMI4",
-            "icon": "settings_input_hdmi"
+            "icon": "movie"
         }
     ],
     "audioConfiguration": []
