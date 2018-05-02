@@ -40,7 +40,9 @@
 			],
 			"inputs": [
                 "ChromeCast",
-                "AppleTV"
+                "AppleTV",
+                "PC1",
+                "VIA1"
 			],
             "shareableDisplays": [
                 "D2",
