@@ -4,7 +4,7 @@
 	],
 	"panels": [
 		{
-			"hostname": "HBLL-5724-CP1",
+			"hostname": "SFH-280-CP1",
 			"uipath": "/blueberry",
 			"preset":"Flatpanel",
 			"features": [
@@ -23,8 +23,8 @@
 			],
 			"inputs": [
                 "HDMI1",
-                "PC1",
-                "VIA1"
+                "VIA1",
+                "IPTV"
 			],
 			"independentAudios": [
 			]
@@ -36,13 +36,13 @@
           "icon": "settings_input_hdmi"
       },
       {
-          "name": "PC1",
-          "icon": "desktop_windows"
+          "name": "VIA1",
+          "icon": "settings_input_antenna"
       },
-        {
-            "name": "VIA1",
-            "icon": "settings_input_antenna"
-        }
+      {
+          "name": "IPTV",
+          "icon": "live_tv"
+      }
   ],
   "audioConfiguration": [
   ]
