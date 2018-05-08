@@ -1,0 +1,44 @@
+{
+	"api": [
+		"localhost"
+	],
+	"panels": [
+		{
+			"hostname": "JRCB-274D-CP1",
+			"uipath": "/blueberry",
+			"preset": "Projector",
+			"features": [
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Projector",
+			"displays": [
+				"D1"
+			],
+			"icon": "videocam",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI1",
+                "VIA1"
+			],
+			"independentAudios": [
+			]
+		}
+	],
+  "inputConfiguration": [
+    {
+        "name": "HDMI1",
+        "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "VIA1",
+      "icon": "settings_input_antenna"
+    }
+  ],
+  "audioConfiguration": [
+  ]
+}
