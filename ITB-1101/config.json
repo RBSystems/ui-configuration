@@ -121,7 +121,7 @@
         {
             "hostname": "ITB-1101-CP3",
             "uipath": "/blueberry",
-            "preset": "Clark/John Flatpanel",
+            "preset": "Monstro",
             "features": [
                 "share"
             ]
@@ -129,7 +129,7 @@
         {
             "hostname": "ITB-1101-CP4",
             "uipath": "/blueberry",
-            "preset": "Clark/John Flatpanel",
+            "preset": "Monstro",
             "features": [
                 "share"
             ]
