@@ -3,7 +3,7 @@
         "localhost"
     ],
     "panels": [{
-        "hostname": "JRCB-274D-CP1",
+        "hostname": "JRCB-274A-CP1",
         "uipath": "/blueberry",
         "preset": "Flatpanel",
         "features": []
