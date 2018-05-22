@@ -1,0 +1,44 @@
+{
+    "api": "localhost",
+    "panels": [{
+        "hostname": "HBLL-1213-CP1",
+        "uipath": "/blueberry",
+        "preset": "Display",
+        "features": []
+    }],
+    "presets": [{
+        "name": "Display",
+        "icon": "tv",
+        "displays": [
+            "D1"
+        ],
+        "shareableDisplays": [],
+        "audioDevices": [
+            "D1"
+        ],
+        "inputs": [
+            "HDMI1",
+            "VIA1",
+            "PC1"
+        ],
+        "independentAudioDevices": []
+    }],
+    "inputConfiguration": [{
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "PC1",
+            "icon": "desktop_windows"
+        }
+    ],
+    "outputConfiguration": [{
+        "name": "D1",
+        "icon": "tv"
+    }],
+    "audioConfiguration": []
+}
