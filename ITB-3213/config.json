@@ -1,0 +1,36 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "panels": [{
+        "hostname": "ITB-3213-CP1",
+        "uipath": "/blueberry",
+        "preset": "Display",
+        "features": []
+    }],
+    "presets": [{
+        "name": "Display",
+        "displays": [
+            "D1"
+        ],
+        "icon": "tv",
+        "audioDevices": [
+            "D1"
+        ],
+        "inputs": [
+            "HDMI1",
+            "VIA1"
+        ],
+        "independentAudios": []
+    }],
+    "inputConfiguration": [{
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        }
+    ],
+    "audioConfiguration": []
+}
