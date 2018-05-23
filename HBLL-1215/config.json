@@ -1,5 +1,5 @@
 {
-    "api": "localhost",
+    "api": ["localhost"],
     "panels": [{
         "hostname": "HBLL-1215-CP1",
         "uipath": "/blueberry",
