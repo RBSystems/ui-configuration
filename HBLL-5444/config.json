@@ -36,9 +36,5 @@
             "icon": "desktop_windows"
         }
     ],
-    "outputConfiguration": [{
-        "name": "D1",
-        "icon": "tv"
-    }],
     "audioConfiguration": []
 }
