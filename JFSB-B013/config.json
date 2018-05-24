@@ -3,7 +3,7 @@
         "localhost"
     ],
     "panels": [{
-        "hostname": "ITB-3213-CP1",
+        "hostname": "JFSB-B013-CP1",
         "uipath": "/blueberry",
         "preset": "Display",
         "features": []
@@ -21,7 +21,11 @@
             "HDMI1",
             "VIA1"
         ],
-        "independentAudioDevices": []
+        "independentAudioDevices": [
+            "MICJK1",
+            "MICJK2",
+            "MIC1"
+        ]
     }],
     "inputConfiguration": [{
             "name": "HDMI1",
