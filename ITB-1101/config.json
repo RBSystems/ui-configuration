@@ -25,7 +25,9 @@
                 "D3",
                 "D4"
             ],
-            "independentAudioDevices": []
+            "independentAudioDevices": [
+                "MIC2"
+            ]
         },
         {
             "name": "Monstro",
@@ -46,7 +48,9 @@
                 "D2",
                 "D4"
             ],
-            "independentAudioDevices": []
+            "independentAudioDevices": [
+                "MIC2"
+            ]
         },
         {
             "name": "Joe Flatpanel",
@@ -67,7 +71,9 @@
                 "D3",
                 "D2"
             ],
-            "independentAudioDevices": []
+            "independentAudioDevices": [
+                "MIC2"
+            ]
         }
     ],
     "panels": [{
