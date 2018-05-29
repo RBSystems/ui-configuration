@@ -164,7 +164,28 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-        "D2"
-    ]
+    "outputConfiguration": [{
+            "name": "D1",
+            "icon": "tv"
+        },
+        {
+            "name": "D2",
+            "icon": "tv"
+        },
+        {
+            "name": "D3",
+            "icon": "tv"
+        },
+        {
+            "name": "D4",
+            "icon": "tv"
+        }
+    ],
+    "audioConfiguration": [{
+        "display": "D3",
+        "audioDevices": [
+            "D3"
+        ],
+        "roomWide": true
+    }]
 }
