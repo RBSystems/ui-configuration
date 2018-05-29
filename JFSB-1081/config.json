@@ -26,6 +26,8 @@
                 "VIA1"
 			],
 			"independentAudios": [
+                "MIC1",
+                "MICJK1"
 			]
 		}
 	],
