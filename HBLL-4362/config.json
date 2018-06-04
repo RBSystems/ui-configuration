@@ -1,7 +1,7 @@
 {
     "api": ["localhost"],
     "panels": [{
-        "hostname": "HBLL-4360-CP1",
+        "hostname": "HBLL-4362-CP1",
         "uipath": "/blueberry",
         "preset": "Display",
         "features": []
