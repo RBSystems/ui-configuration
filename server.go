@@ -24,7 +24,8 @@ func main() {
 	}
 
 	router.GET("/get/:building/:room", handlers.GetUIConfig)
-	router.PUT("/put/:building/:room", handlers.PutUIConfig)
+	router.PUT("/add/:building/:room", handlers.CreateUIConfig)
+	router.PUT("/update/:building/:room", handlers.UpdateUIConfig)
 
 	router.GET("/devices/:building/:room/:role", handlers.GetDevicesInRoomByRole)
 

@@ -1,97 +1,63 @@
 package handlers
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"log"
 	"net/http"
-	"os"
-	"strings"
 
-	"github.com/byuoitav/touchpanel-ui-microservice/uiconfig"
+	"github.com/byuoitav/common/db"
+	"github.com/byuoitav/common/log"
+	"github.com/byuoitav/common/structs"
+
 	"github.com/labstack/echo"
 )
 
-//GetUIConfig -- Handler to get a UI config file from the database.
+// GetUIConfig -- Handler to get a UI config file from the database.
 func GetUIConfig(context echo.Context) error {
-	log.Printf("-- We made it past Echo!! --")
 	building := context.Param("building")
 	room := context.Param("room")
-	url := os.Getenv("UI_CONFIGURATION_ADDRESS")
+	roomID := fmt.Sprintf("%s-%s", building, room)
 
-	url = strings.Replace(url, "BUILDING", building, 1)
-	url = strings.Replace(url, "ROOM", room, 1)
-
-	//Prepared response in case the file is not found.
-	msg := fmt.Sprintf("Config file not found for %s %s", building, room)
-
-	resp, err := http.Get(url)
+	config, err := db.GetDB().GetUIConfig(roomID)
 	if err != nil {
-		log.Printf("GET request failed for %s: %s", url, err)
-		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - request error", msg))
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Printf("Cannot read body from %s: %s", url, err)
-		return context.JSON(http.StatusBadRequest, fmt.Sprintf("%s - read error", msg))
-	}
-
-	var config uiconfig.UIConfig
-	err = json.Unmarshal(body, &config)
-	if err != nil {
-		log.Printf("Cannot unmarshal body from %s: %s", url, err)
-		return context.JSON(http.StatusInternalServerError, fmt.Sprintf("%s - JSON error", msg))
+		log.L.Errorf("[ui-config] Failed to get config file for %s : %s", roomID, err.Error())
+		return context.JSONPretty(http.StatusInternalServerError, err, "   ")
 	}
 
 	return context.JSONPretty(http.StatusOK, config, "   ")
 }
 
-//PutUIConfig -- Handler to put a UI config file into the database.
-func PutUIConfig(context echo.Context) error {
-	building := context.Param("building")
-	room := context.Param("room")
-	url := os.Getenv("UI_CONFIGURATION_ADDRESS")
+// CreateUIConfig -- Handler to put a UI config file into the database.
+func CreateUIConfig(context echo.Context) error {
+	roomID := fmt.Sprintf("%s-%s", context.Param("building"), context.Param("room"))
+	var ui structs.UIConfig
 
-	url = strings.Replace(url, "BUILDING", building, 1)
-	url = strings.Replace(url, "ROOM", room, 1)
+	err := context.Bind(&ui)
 
-	config, err := ioutil.ReadAll(context.Request().Body)
+	toReturn, err := db.GetDB().CreateUIConfig(roomID, ui)
 	if err != nil {
-		log.Printf("Cannot read JSON from request.")
+		log.L.Errorf("[ui-config] Failed to create config file for %s : %s", roomID, err.Error())
 		return context.JSON(http.StatusInternalServerError, err.Error())
 	}
 
-	client := &http.Client{}
-	req, err := http.NewRequest(http.MethodPut, url, bytes.NewReader(config))
-	if err != nil {
-		log.Printf("Failed to make PUT request for %s: %s", url, err)
-		return context.JSON(http.StatusBadRequest, err.Error())
-	}
+	log.L.Infof("[ui-config] Successfully created ui config for %s", roomID)
 
-	req.Header.Set("Content-Type", "application/json")
-	resp, err := client.Do(req)
+	return context.JSON(http.StatusOK, toReturn)
+}
+
+// UpdateUIConfig -- Handler to update a UIConfig file in the database.
+func UpdateUIConfig(context echo.Context) error {
+	roomID := fmt.Sprintf("%s-%s", context.Param("building"), context.Param("room"))
+	var ui structs.UIConfig
+
+	err := context.Bind(&ui)
+
+	toReturn, err := db.GetDB().UpdateUIConfig(roomID, ui)
 	if err != nil {
-		log.Printf("PUT request failed for %s: %s", url, err)
+		log.L.Errorf("[ui-config] Failed to update config file for %s : %s", ui.ID, err.Error())
 		return context.JSON(http.StatusInternalServerError, err.Error())
 	}
 
-	defer resp.Body.Close()
+	log.L.Infof("[ui-config] Successfully updated ui config for %s", ui.ID)
 
-	if resp.StatusCode/100 != 2 {
-		log.Printf("Non-200 response received: %v", resp.StatusCode)
-
-		body, err := ioutil.ReadAll(resp.Body)
-		if err != nil {
-			log.Printf("Could not read body: %v", err.Error())
-			return context.JSON(http.StatusInternalServerError, err.Error())
-		}
-
-		return context.JSON(http.StatusInternalServerError, body)
-	}
-
-	return context.JSON(http.StatusOK, fmt.Sprintf("Config file added for %s %s", building, room))
+	return context.JSON(http.StatusOK, toReturn)
 }
