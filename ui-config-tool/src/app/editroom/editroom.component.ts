@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { UIConfig, Space } from 'app/objects';
+import { UIConfig, Room } from 'app/objects';
 import { ApiService } from 'app/api.service';
 import { ControlProcessorComponent } from 'app/controlprocessor/controlprocessor.component';
 
@@ -14,7 +14,7 @@ import { ControlProcessorComponent } from 'app/controlprocessor/controlprocessor
 export class EditRoomComponent {
   config: UIConfig;
   configFile: string;
-  space: Space = new Space();
+  room: Room = new Room();
 
   constructor(private api: ApiService) {
 
@@ -26,7 +26,7 @@ export class EditRoomComponent {
 
   getUIConfig() {
     this.config = {};
-    return this.api.getUIConfig(this.space.building, this.space.room)
+    return this.api.getUIConfig(this.room.Building, this.room.Room)
         .subscribe(val =>{
           this.config = <UIConfig>val;
           console.log(this.config);

@@ -18,4 +18,12 @@ export class ApiService {
   getUIConfig(building: string, room: string): Observable<string> {
     return this.http.get(this.url + "/get/" + building + "/" + room).map(response => response.json());
   }
+
+  addUIConfig(building: string, room: string): Observable<string> {
+    return this.http.get(this.url + "/add/" + building + "/" + room).map(response => response.json());
+  }
+
+  updateUIConfig(building: string, room: string): Observable<string> {
+    return this.http.get(this.url + "/update/" + building + "/" + room).map(response => response.json());
+  }
 }

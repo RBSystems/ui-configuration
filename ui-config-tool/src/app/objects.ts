@@ -1,69 +1,47 @@
 import { Component } from '@angular/core';
 
-export class Space {
-  building?: string;
-  room?: string;
+export class UIConfig   {
+	ID?: 									string
+	Revision?:            string            
+	Api?:                 string[]          
+	Panels?:              Panel[]           
+	Presets?:             Preset[]     
+	InputConfiguration?:  IOConfiguration[]   
+	OutputConfiguration?: IOConfiguration[]   
+	AudioConfiguration?:  AudioConfiguration[]
 }
 
-export class ControlProcessor {
-  constructor(hostname: string, slave: boolean) {
-    this.hostname = hostname;
-    this.slave = slave;
-  }
-  hostname: string;
-  slave: boolean;
-  template: string;
-  configuration?: Template;
-  master?: string;
+export class Preset   {
+	Name?:                    string  
+	Icon?:                    string  
+	Displays?:                string[] 
+	ShareableDisplays?:       string[] 
+	AudioDevices?:            string[] 
+	Inputs?:                  string[] 
+	IndependentAudioDevices?: string[] 
 }
 
-export class Template {
-  name?: string;
-  icon?: string;
-  displays?: string[];
-  audioDevices?: string[];
-  inputs?: Input[];
-  indAudio?: string[];
-  features?: string[];
+export class Panel   {
+	Hostname?: string   
+	UIPath?:   string   
+	Preset?:   string   
+	Features?: string[] 
 }
 
-export class Input {
-  name: string;
-  icon: string;
+export class AudioConfiguration   {
+	Display?:      string   
+	AudioDevices?: string[] 
+	RoomWide?:     boolean     
 }
 
-export class UIConfig {
-	api?: string[];
-	panels?: Panel[];
-	presets?: Preset[];
-	inputConfiguration?: InputConfiguration[];
-	audioConfiguration?: AudioConfiguration[];
+export class IOConfiguration   {
+	Name?: string 
+	Icon?: string 
 }
 
-export class Preset {
-	name?: string;
-	icon?: string;
-	displays?: string[];
-	shareableDisplays?: string[];
-	audioDevices?: string[];
-	inputs?: string[];
-	independentAudioDevices?: string[];
-}
-
-export class Panel {
-	hostname?: string;
-	uipath?: string;
-	preset?: string;
-	features?: string[];
-}
-
-export class AudioConfiguration {
-	display?: string;
-	audioDevices?: string[];
-	roomWide?: boolean;
-}
-
-export class InputConfiguration {
-	name?: string;
-	icon?: string;
+export class Room {
+	ID?:            string
+	Building?: 		string
+	Room?: 			string
+	Template?:		string
 }

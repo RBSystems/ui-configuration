@@ -38,7 +38,13 @@ func GetDevicesInRoomByRole(context echo.Context) error {
 		return context.JSON(http.StatusInternalServerError, err.Error())
 	}
 
+	names := make([]string, len(devices))
+
+	for i, d := range devices {
+		names[i] = d.ID
+	}
+
 	log.L.Infof("Got devices for %s", roomID)
 
-	return context.JSON(http.StatusOK, devices)
+	return context.JSON(http.StatusOK, names)
 }

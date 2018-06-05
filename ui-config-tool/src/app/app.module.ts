@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NewRoomComponent } from './newroom/newroom.component';
 import { EditRoomComponent } from './editroom/editroom.component';
-import { ControlProcessorComponent } from './controlprocessor/controlprocessor.component';
+import { PanelComponent } from './panel/panel.component';
 import { TemplateComponent } from './template/template.component';
 import { ModalComponent } from './modal/modal.component';
 
@@ -19,7 +19,7 @@ import { ApiService } from './api.service';
     AppComponent,
     NewRoomComponent,
     EditRoomComponent,
-    ControlProcessorComponent,
+    PanelComponent,
     TemplateComponent,
     ModalComponent
   ],
