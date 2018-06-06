@@ -29,6 +29,7 @@
 				"D2"
 			],
 			"inputs": [
+								"PC2",
                 "HDMI1"
 			],
 			"independentAudios": [
@@ -58,7 +59,11 @@
       {
           "name": "PC1",
           "icon": "settings_input_hdmi"
-      }
+      },
+			{
+				"name": "PC2",
+				"icon": "desktop_windows"
+			}
   ],
   "audioConfiguration": [
   ]
