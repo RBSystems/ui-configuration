@@ -184,7 +184,7 @@
             "inputs": [
                 "PC1",
                 "HDMI3",
-                "VIA3"
+                "VIA"
             ]
         }
     ],
@@ -255,7 +255,8 @@
             ]
         }
     ],
-    "outputConfiguration": [{
+    "outputConfiguration": [
+        {
             "name": "D1",
             "icon": "tv"
         },
@@ -296,7 +297,8 @@
             "icon": "mic"
         }
     ],
-    "inputConfiguration": [{
+    "inputConfiguration": [
+        {
             "name": "VIA1",
             "icon": "settings_input_antenna"
         },
@@ -365,11 +367,32 @@
             "icon": "desktop_windows"
         }
     ],
-    "audioConfiguration": [{
-        "display": "D1",
-        "audioDevices": [
-            "D1"
-        ],
-        "roomWide": true
-    }]
+    "audioConfiguration": [
+        {
+            "display": "D1",
+            "audioDevices": [
+                "D1"
+            ],
+            "roomWide": true
+        }
+    ],
+    "pseudoInputs": [
+        {
+            "displayname": "VIA",
+            "config": [
+                {
+                    "input": "VIA1",
+                    "outputs": [
+                        "D1"
+                    ]
+                },
+                {
+                    "input": "VIA2",
+                    "outputs": [
+                        "D2"
+                    ]
+                }
+            ]
+        }
+    ]
 }
