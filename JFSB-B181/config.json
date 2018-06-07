@@ -3,7 +3,7 @@
         "localhost"
     ],
     "panels": [{
-        "hostname": "JFSB-B013-CP1",
+        "hostname": "JFSB-B181-CP1",
         "uipath": "/blueberry",
         "preset": "Display",
         "features": []
