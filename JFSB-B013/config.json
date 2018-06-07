@@ -20,11 +20,6 @@
         "inputs": [
             "HDMI1",
             "VIA1"
-        ],
-        "independentAudioDevices": [
-            "MICJK1",
-            "MICJK2",
-            "MIC1"
         ]
     }],
     "inputConfiguration": [{
