@@ -41,7 +41,7 @@ func GetDevicesInRoomByRole(context echo.Context) error {
 	names := make([]string, len(devices))
 
 	for i, d := range devices {
-		names[i] = d.ID
+		names[i] = d.Name
 	}
 
 	log.L.Infof("Got devices for %s", roomID)

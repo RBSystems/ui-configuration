@@ -17,21 +17,21 @@
             </div>
         </div>
         <div class="nr-location-btn">
-            <button class="button" id="baking" (click)="GetTouchPanels()">Start Baking!</button>
+            <button class="button" id="baking" (click)="GetRoomDevices()">Start Baking!</button>
         </div>
     </div>
 
-    <div *ngIf="CPList.length > 0" class="nr-container2">
-        <label class="nr-label">Which template does this room fit?  </label>
-        <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate">
+    <div *ngIf="panelNames.length > 0" class="nr-container2">
+        <label class="nr-label">Which template for this room?  </label>
+        <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate" (change)="FillUIConfig()">
           <option value="Apple" style="color: #e6ac00">Apple (1 pi, 1 display, 1 HDMI)</option>
           <option value="Mud" style="color: #534424cc">Mud (like Apple, but add a VIA)</option>
           <option value="Key Lime" style="color: #3c8213">Key Lime (like Apple, but add a VIA and a PC)</option>
           <option value="Custom">Something different...</option>
         </select>
         <div *ngIf="room.Template != null" style="margin-top: 2%">
-            <div *ngFor="let cp of CPList; let i = index" class="nr-controlp">
-                <app-panel [panel]="cp"></app-panel>
+            <div *ngFor="let cp of config.Panels; let i = index" class="nr-controlp">
+                <app-panel [panel]="cp" [config]="config" [iconlist]="iconlist"></app-panel>
             </div>
         </div>
     </div>

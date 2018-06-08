@@ -3,6 +3,7 @@ i {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
+    margin-right: 2px;
 }
 
 .panel-rightarrow {
@@ -25,4 +26,302 @@ i {
     cursor: pointer;
     display: inline-block;
     outline-color: #0066ff;
+}
+
+.panel-btn:hover {
+    background: #eee;
+    outline-color: #0066ff;
+}
+
+.panel-row {
+    position: relative;
+    float: left;
+    margin: auto;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.panel-row-short {
+    margin-left: 2%;
+    width: 50%;
+}
+
+.panel-row-display {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    max-width: 75%;
+}
+
+.panel-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.panel-label {
+    margin-left: 5%;
+    width: 15%;
+}
+
+.panel-label-2 {
+    width: 8%;
+}
+
+.panel-label-short {
+    width: 19%;
+    margin-right: 5px;
+}
+
+.panel-select {
+    width: 20%;
+    background-color: white;
+}
+
+.panel-select:focus,
+.panel-select:hover {
+    outline-color: #0066ff;
+}
+
+.panel-box {
+    margin: auto;
+    margin-top: 5px;
+    width: 20%;
+}
+
+.panel-icon-btn {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: none;
+    width: wrap;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.panel-displayIcon-btn {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: none;
+    width: wrap;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.modal-icon-btn {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: none;
+    width: wrap;
+    margin: 3%;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+.modal-icon-btn:hover,
+.panel-icon-btn:hover {
+    background: #999999;
+    color: white;
+}
+
+.wrapper {
+    margin-left: 2%;
+    width: 50%;
+}
+
+
+/* The container */
+
+.panel-check-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-left: 5px;
+    margin-right: 2%;
+    cursor: pointer;
+    width: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.panel-check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom checkbox */
+
+.panel-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    margin-top: 8px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.panel-check-container:hover input~.panel-checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.panel-check-container input:checked~.panel-checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.panel-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.panel-check-container input:checked~.panel-checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.panel-check-container .panel-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 1px solid #888;
+    width: 50%;
+    max-height: 100%;
+    overflow: auto;
+    align-content: center;
+}
+
+.modal-row {
+    position: relative;
+    float: left;
+    margin: auto;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide */
+
+@media (max-width: 800px) {
+    .panel-row {
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    .panel-label {
+        width: 38%;
+    }
+    .panel-label-2 {
+        width: 38%;
+    }
+    .panel-select {
+        width: 40%;
+    }
+    .panel-box {
+        width: 40%;
+    }
+    .panel-row-short {
+        margin-left: 5%;
+        display: block;
+        margin-top: 10px;
+    }
+    .panel-icon-btn {
+        margin-left: 38%;
+    }
+    .panel-row-display {
+        max-width: 70%;
+        margin-left: 17%;
+    }
+    .panel-check-container {
+        margin-right: 5%;
+    }
 }

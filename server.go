@@ -28,6 +28,8 @@ func main() {
 	router.PUT("/update/:building/:room", handlers.UpdateUIConfig)
 
 	router.GET("/devices/:building/:room/:role", handlers.GetDevicesInRoomByRole)
+	router.GET("/icons", handlers.GetIcons)
+	router.GET("/template/:id", handlers.GetTemplate)
 
 	router.Static("/", "web")
 

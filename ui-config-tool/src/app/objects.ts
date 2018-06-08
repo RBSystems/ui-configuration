@@ -1,36 +1,36 @@
 import { Component } from '@angular/core';
 
 export class UIConfig   {
-	ID?: 									string
-	Revision?:            string            
-	Api?:                 string[]          
-	Panels?:              Panel[]           
-	Presets?:             Preset[]     
-	InputConfiguration?:  IOConfiguration[]   
-	OutputConfiguration?: IOConfiguration[]   
-	AudioConfiguration?:  AudioConfiguration[]
+	_id?: 				  string
+	_rev?:            string            
+	Api?:                 string[] = [];     
+	Panels?:              Panel[] = [];    
+	Presets?:             Preset[] = [];
+	InputConfiguration?:  IOConfiguration[] = [];
+	OutputConfiguration?: IOConfiguration[] = [];
+	AudioConfiguration?:  AudioConfiguration[] = [];
 }
 
 export class Preset   {
 	Name?:                    string  
 	Icon?:                    string  
-	Displays?:                string[] 
-	ShareableDisplays?:       string[] 
-	AudioDevices?:            string[] 
-	Inputs?:                  string[] 
-	IndependentAudioDevices?: string[] 
+	Displays?:                string[] = [];
+	ShareableDisplays?:       string[] = [];
+	AudioDevices?:            string[] = [];
+	Inputs?:                  string[] = [];
+	IndependentAudioDevices?: string[] = [];
 }
 
 export class Panel   {
 	Hostname?: string   
 	UIPath?:   string   
 	Preset?:   string   
-	Features?: string[] 
+	Features?: string[] = [];
 }
 
 export class AudioConfiguration   {
 	Display?:      string   
-	AudioDevices?: string[] 
+	AudioDevices?: string[] = [];
 	RoomWide?:     boolean     
 }
 

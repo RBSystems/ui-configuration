@@ -101,6 +101,7 @@ label {
 
 .nr-label {
     margin-left: 15%;
+    margin-top: 5px;
     width: 35%;
 }
 
@@ -139,7 +140,7 @@ label {
         padding: 10px;
     }
     .nr-label {
-        margin-left: 2%;
+        margin-left: 5%;
         width: 45%;
     }
     .nr-select {
