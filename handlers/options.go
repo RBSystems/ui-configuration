@@ -19,6 +19,7 @@ func GetIcons(context echo.Context) error {
 	return context.JSON(http.StatusOK, iconList)
 }
 
+// GetTemplate returns a template of a UIConfig file.
 func GetTemplate(context echo.Context) error {
 	id := context.Param("id")
 	template, err := db.GetDB().GetTemplate(id)

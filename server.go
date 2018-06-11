@@ -24,14 +24,15 @@ func main() {
 	}
 
 	router.GET("/get/:building/:room", handlers.GetUIConfig)
-	router.PUT("/add/:building/:room", handlers.CreateUIConfig)
+	router.POST("/add/:building/:room", handlers.CreateUIConfig)
 	router.PUT("/update/:building/:room", handlers.UpdateUIConfig)
 
 	router.GET("/devices/:building/:room/:role", handlers.GetDevicesInRoomByRole)
 	router.GET("/icons", handlers.GetIcons)
 	router.GET("/template/:id", handlers.GetTemplate)
 
-	router.Static("/", "web")
+	router.Static("/", "ui-config-tool/dist")
+	router.Static("/newroom", "ui-config-tool/dist")
 
 	router.StartServer(&server)
 }

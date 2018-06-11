@@ -12,174 +12,279 @@ export class PanelComponent implements OnInit {
   @Input() panel: Panel;
   @Input() config: UIConfig;
   @Input() iconlist: string[];
-  preset: Preset = new Preset();
+  @Input() indyAudio: string[];
+  preset: Preset;
 
   defaultMainIcon: string = "tv"
   curModalCaller: string;
   
   constructor(private api: ApiService) {
-    this.preset.Icon = this.defaultMainIcon;
+    this.preset = new Preset();
+    this.preset.icon = this.defaultMainIcon;
    }
 
   ngOnInit() {
   }
 
   Toggle() {
-    if(document.getElementById(this.panel.Hostname).className == "panel-rightarrow") {
-      document.getElementById(this.panel.Hostname).className = "panel-downarrow";
-      document.getElementById('panelinfo'+this.panel.Hostname).className = "unhidden";
-      if(this.config.Panels.length <= 1) {
-        document.getElementById('preset'+this.panel.Hostname).className = "unhidden";
+    // Turn the panel button depending on its orientation, and reveal the other info.
+    if(document.getElementById(this.panel.hostname).className == "panel-rightarrow") {
+      document.getElementById(this.panel.hostname).className = "panel-downarrow";
+      document.getElementById('panelinfo'+this.panel.hostname).className = "unhidden";
+      if(this.config.panels.length <= 1) {
+        document.getElementById('preset'+this.panel.hostname).className = "unhidden";
       }
     }
-    else if(document.getElementById(this.panel.Hostname).className == "panel-downarrow") {
-      document.getElementById(this.panel.Hostname).className = "panel-rightarrow";
-      document.getElementById('panelinfo'+this.panel.Hostname).className = "hidden";
+    else if(document.getElementById(this.panel.hostname).className == "panel-downarrow") {
+      document.getElementById(this.panel.hostname).className = "panel-rightarrow";
+      document.getElementById('panelinfo'+this.panel.hostname).className = "hidden";
     }
   }
 
   SlaveStatus() {
-    if((<HTMLInputElement>document.getElementById("slave1"+this.panel.Hostname)).checked) {
-      document.getElementById('master'+this.panel.Hostname).className = "unhidden";
-      document.getElementById('preset'+this.panel.Hostname).className = "hidden";
-      var m = <HTMLSelectElement>document.getElementById('mastername'+this.panel.Hostname);
+    // Assign presets and show hidden info.
+    if((<HTMLInputElement>document.getElementById("slave1"+this.panel.hostname)).checked) {
+      document.getElementById('master'+this.panel.hostname).className = "unhidden";
+      document.getElementById('preset'+this.panel.hostname).className = "hidden";
+      var m = <HTMLSelectElement>document.getElementById('mastername'+this.panel.hostname);
       var pre = m.options[m.selectedIndex];
-      this.config.Panels.forEach(pan => {
-        if(pan.Hostname == pre.value) {
-          this.panel.UIPath = pan.UIPath
-          this.panel.Preset = pan.Preset
-          this.panel.Features = pan.Features
+      this.config.panels.forEach(pan => {
+        if(pan.hostname == pre.value) {
+          this.panel.uipath = pan.uipath
+          this.panel.preset = pan.preset
+          this.panel.features = pan.features
         }
       });
     }
     else {
-      document.getElementById('master'+this.panel.Hostname).className = "hidden";
-      document.getElementById('preset'+this.panel.Hostname).className = "unhidden";
+      document.getElementById('master'+this.panel.hostname).className = "hidden";
+      document.getElementById('preset'+this.panel.hostname).className = "unhidden";
     }
   }
 
   Sharing() {
-    if((<HTMLInputElement>document.getElementById("share1"+this.panel.Hostname)).checked) {
-      this.panel.Features[0] = "share";
-      console.log(this.config)
+    // Add or remove the Sharing feature.
+    if((<HTMLInputElement>document.getElementById("share1"+this.panel.hostname)).checked) {
+      this.panel.features[0] = "share";
     }
     else {
-      delete this.panel.Features[0];
-      console.log(this.config)
+      delete this.panel.features[0];
     }
+  }
 
-    if(this.panel.Features.includes("share") && this.panel.UIPath != "/blueberry") {
-      delete this.panel.Features[0];
+  SwitchUIPath() {
+    // Make changes that are necessary for switching UI paths.
+    if(this.panel.features.includes("share") && this.panel.uipath != "/blueberry") {
+      delete this.panel.features[0];
     }
   }
 
   LoadPreset() {
-    this.config.Presets.forEach(p => {
-      if(p.Name == this.panel.Preset) {
+    // Load a preset already in the list of presets.
+    this.config.presets.forEach(p => {
+      if(p.name == this.panel.preset) {
         this.preset = p;
-        console.log(this.config);
         return;
       }
     });
 
-    if(this.preset.Name == null) {
-      this.preset.Name = this.panel.Preset;
-      this.config.Presets.push(this.preset);
+    // Add the current preset to the list.
+    if(this.preset.name == null) {
+      this.preset.name = this.panel.preset;
+      this.config.presets.push(this.preset);
 
-      this.config.Panels.forEach(slave => {
-        var m = <HTMLSelectElement>document.getElementById('mastername'+slave.Hostname);
+      this.config.panels.forEach(slave => {
+        var m = <HTMLSelectElement>document.getElementById('mastername'+slave.hostname);
         var master = m.options[m.selectedIndex];
 
-        var slaveButton = <HTMLInputElement>document.getElementById("slave1"+slave.Hostname)
+        var slaveButton = <HTMLInputElement>document.getElementById("slave1"+slave.hostname)
 
-        if(this.panel.Hostname == master.value && slaveButton.checked) {
-          slave.UIPath = this.panel.UIPath
-          slave.Preset = this.panel.Preset
-          slave.Features = this.panel.Features
+        if(this.panel.hostname == master.value && slaveButton.checked) {
+          slave.uipath = this.panel.uipath
+          slave.preset = this.panel.preset
+          slave.features = this.panel.features
         }
       });
-      console.log(this.config);
     }
   }
-
   
-
-  // When the user clicks the button, open the modal
   IconShow(e) {
-      document.getElementById('myModal'+this.panel.Hostname).style.display = "block";
-      console.log(e.target.id);
-      this.curModalCaller = e.target.id;
+    // When the user clicks the button, open the modal
+    document.getElementById('myModal'+this.panel.hostname).style.display = "block";
+    this.curModalCaller = e.target.id;
   }
 
-  // When the user clicks on <span> (x), close the modal
   closeX() {
-      document.getElementById('myModal'+this.panel.Hostname).style.display = "none";
+    // When the user clicks on <span> (x), close the modal
+    document.getElementById('myModal'+this.panel.hostname).style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   closeAny(event) {
-      if (event.target == document.getElementById('myModal'+this.panel.Hostname)) {
-          document.getElementById('myModal'+this.panel.Hostname).style.display = "none";
-      }
+    // When the user clicks anywhere outside of the modal, close it
+    if (event.target != document.getElementById('myModal'+this.panel.hostname)) {
+        document.getElementById('myModal'+this.panel.hostname).style.display = "none";
+    }
   }
 
   changeIcon(newIcon: string) {
+    // Change the Preset icon
     if(this.curModalCaller.includes("preset")) {
-      this.config.Presets.forEach(p => {
-        if(p.Name == this.panel.Preset) {
-          p.Icon = newIcon;
+      this.config.presets.forEach(p => {
+        if(p.name == this.panel.preset) {
+          p.icon = newIcon;
         }
       });
     }
+    // Change the Output icon
     else if(this.curModalCaller.includes("display")) {
-      this.config.OutputConfiguration.forEach(out => {
-        if(out.Name == this.curModalCaller.split(".")[1]) {
-          out.Icon = newIcon;
+      this.config.outputConfiguration.forEach(out => {
+        if(out.name == this.curModalCaller.split(".")[1]) {
+          out.icon = newIcon;
         }
       });
     }
-    document.getElementById('myModal'+this.panel.Hostname).style.display = "none";
+    // Change the Input icon
+    else if(this.curModalCaller.includes("input")) {
+      this.config.inputConfiguration.forEach(input => {
+        if(input.name == this.curModalCaller.split(".")[1]) {
+          input.icon = newIcon;
+        }
+      })
+    }
+    // Close the modal
+    document.getElementById('myModal'+this.panel.hostname).style.display = "none";
     document.getElementById(this.curModalCaller).innerHTML = newIcon;
   }
 
-  UpdateDisplays(e) {
+  UpdateDeviceLists(e) {
+    // Update the device lists upon checking a box.
     var id = e.target.id;
     var box = <HTMLInputElement>document.getElementById(id);
     var dName = id.split(".")[2];
-    this.config.Presets.forEach(pre => {
-      if(pre.Name == this.panel.Preset) {
+    this.config.presets.forEach(pre => {
+      if(pre.name == this.panel.preset) {
         this.preset = pre;
       }
     });
     
+    // Add to the list of displays that the preset controls
+    if(id.includes("controls") && box.checked && !this.preset.displays.includes(dName)) {
 
-    if(id.includes("controls") && box.checked && !this.preset.Displays.includes(dName)) {
-      this.preset.Displays.push(dName);
-    }
-    else if(id.includes("controls") && !box.checked && this.preset.Displays.includes(dName)) {
-      delete this.preset.Displays[this.preset.Displays.indexOf(dName)];
-    }
-    else if(id.includes("shares") && box.checked && !this.preset.ShareableDisplays.includes(dName)) {
-      this.preset.ShareableDisplays.push(dName);
-    }
-    else if(id.includes("shares") && !box.checked && this.preset.ShareableDisplays.includes(dName)) {
-      delete this.preset.ShareableDisplays[this.preset.ShareableDisplays.indexOf(dName)];
-    }
+      this.preset.displays.push(dName);
+      var d: (string | null)[] = this.preset.displays;
+      this.preset.displays = d.filter(this.notEmpty).sort(this.sortAlphaNum);
 
-    var d: (string | null)[] = this.preset.Displays;
-    var s: (string | null)[] = this.preset.ShareableDisplays;
+      this.preset.audioDevices.push(dName);
+      var a: (string | null)[] = this.preset.audioDevices;
+      this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
 
-    this.preset.Displays = d.filter(this.notEmpty).sort(this.sortAlphaNum);
-    this.preset.ShareableDisplays = s.filter(this.notEmpty).sort(this.sortAlphaNum);
+      var audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
+      audioBox.checked = true;
+    
+    }
+    // Remove from the list of displays that the preset controls
+    else if(id.includes("controls") && !box.checked && this.preset.displays.includes(dName)) {
+      
+      delete this.preset.displays[this.preset.displays.indexOf(dName)];
+      var d: (string | null)[] = this.preset.displays;
+      this.preset.displays = d.filter(this.notEmpty).sort(this.sortAlphaNum);
 
-    console.log(this.config);
+      delete this.preset.audioDevices[this.preset.audioDevices.indexOf(dName)];
+      var a: (string | null)[] = this.preset.audioDevices;
+      this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
+
+      var audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
+      audioBox.checked = false;
+    
+    }
+    // Add to the list of the displays that the preset can share to
+    else if(id.includes("shares") && box.checked && !this.preset.shareableDisplays.includes(dName)) {
+      
+      this.preset.shareableDisplays.push(dName);
+      var s: (string | null)[] = this.preset.shareableDisplays;
+      this.preset.shareableDisplays = s.filter(this.notEmpty).sort(this.sortAlphaNum);
+    
+    }
+    // Remove from the list of displays that the preset can share to
+    else if(id.includes("shares") && !box.checked && this.preset.shareableDisplays.includes(dName)) {
+      
+      delete this.preset.shareableDisplays[this.preset.shareableDisplays.indexOf(dName)];
+      var s: (string | null)[] = this.preset.shareableDisplays;
+      this.preset.shareableDisplays = s.filter(this.notEmpty).sort(this.sortAlphaNum);
+    
+    }
+    // Add to the list of audio devices for the preset
+    else if(id.includes("audio") && box.checked && !this.preset.audioDevices.includes(dName)) {
+
+      this.preset.audioDevices.push(dName);
+      var a: (string | null)[] = this.preset.audioDevices;
+      this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
+
+    }
+    // Remove from the list of audio devices for the preset
+    else if(id.includes("audio") && !box.checked && this.preset.audioDevices.includes(dName)) {
+
+      delete this.preset.audioDevices[this.preset.audioDevices.indexOf(dName)];
+      var a: (string | null)[] = this.preset.audioDevices;
+      this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
+
+    }
+    // Add to the list of independent audio devices for the preset
+    else if(id.includes("independent") && box.checked && !this.preset.independentAudios.includes(dName)) {
+
+      this.preset.independentAudios.push(dName);
+      var i: (string | null)[] = this.preset.independentAudios;
+      this.preset.independentAudios = i.filter(this.notEmpty).sort(this.sortAlphaNum);
+
+    }
+    // Remove from the list of independent audio devices for the preset
+    else if(id.includes("independent") && !box.checked && this.preset.independentAudios.includes(dName)) {
+
+      delete this.preset.independentAudios[this.preset.independentAudios.indexOf(dName)];
+      var i: (string | null)[] = this.preset.independentAudios;
+      this.preset.independentAudios = i.filter(this.notEmpty).sort(this.sortAlphaNum);
+
+    }
+    // Add to the list of inputs for the preset
+    else if(id.includes("input") && box.checked && !this.preset.inputs.includes(dName)) {
+
+      this.preset.inputs.push(dName);
+      var i: (string | null)[] = this.preset.inputs;
+      this.preset.inputs = i.filter(this.notEmpty);
+
+    }
+    // Remove from the list of inputs for the preset
+    else if(id.includes("input") && !box.checked && this.preset.inputs.includes(dName)) {
+
+      delete this.preset.inputs[this.preset.inputs.indexOf(dName)];
+      var i: (string | null)[] = this.preset.inputs;
+      this.preset.inputs = i.filter(this.notEmpty);
+
+    }
   }
 
+  SetDefaultInput() {
+    // Remove the selected device from the list of inputs and put it back at the top of the list.
+    var dInputSelect = <HTMLSelectElement>document.getElementById("defaultInput"+this.panel.hostname);
+    var defaultInput = dInputSelect.options[dInputSelect.selectedIndex];
+
+    if(this.preset.inputs.includes(defaultInput.value)) {
+      delete this.preset.inputs[this.preset.inputs.indexOf(defaultInput.value)];
+      var i: (string | null)[] = this.preset.inputs;
+      this.preset.inputs = i.filter(this.notEmpty);
+    }
+
+    this.preset.inputs.unshift(defaultInput.value);
+  }
+
+
   notEmpty<TValue>(value: TValue | null | undefined): value is TValue {
+    // Remove all empty and null values from the array.
     return value !== null && value !== undefined;
   }
 
   sortAlphaNum(a,b) {
+    // Sort the array first alphabetically and then numerically.
     var reA: RegExp = /[^a-zA-Z]/g;
     var reN: RegExp = /[^0-9]/g;
     
@@ -193,5 +298,13 @@ export class PanelComponent implements OnInit {
     } else {
         return aA > bA ? 1 : -1;
     }
+  }
+
+  Finish() {
+    // Submit the new UIConfig file to the database.
+    var location = this.config._id.split("-");
+    var building = location[0];
+    var room = location[1];
+    this.api.updateUIConfig(building, room, this.config);
   }
 }

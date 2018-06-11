@@ -46,11 +46,17 @@ func CreateUIConfig(context echo.Context) error {
 
 // UpdateUIConfig -- Handler to update a UIConfig file in the database.
 func UpdateUIConfig(context echo.Context) error {
+	log.L.Info("start of update function")
 	roomID := fmt.Sprintf("%s-%s", context.Param("building"), context.Param("room"))
 	var ui structs.UIConfig
 
 	err := context.Bind(&ui)
+	if err != nil {
+		log.L.Errorf("[ui-config] Error binding to ui config : %v", err.Error())
+		return context.JSON(http.StatusBadRequest, err.Error())
+	}
 
+	log.L.Infof("The bound config is: %v", ui)
 	toReturn, err := db.GetDB().UpdateUIConfig(roomID, ui)
 	if err != nil {
 		log.L.Errorf("[ui-config] Failed to update config file for %s : %s", ui.ID, err.Error())

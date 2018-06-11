@@ -1,4 +1,5 @@
 <div class='nr-container'>
+    <!-- ROOM/LOCATION INFORMATION -->
     <div class="nr-location">
         <div class="nr-building-fields">
             <div class="nr-bldg">
@@ -21,17 +22,24 @@
         </div>
     </div>
 
+    <!-- TEMPLATE INFORMATION -->
     <div *ngIf="panelNames.length > 0" class="nr-container2">
-        <label class="nr-label">Which template for this room?  </label>
-        <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate" (change)="FillUIConfig()">
-          <option value="Apple" style="color: #e6ac00">Apple (1 pi, 1 display, 1 HDMI)</option>
-          <option value="Mud" style="color: #534424cc">Mud (like Apple, but add a VIA)</option>
-          <option value="Key Lime" style="color: #3c8213">Key Lime (like Apple, but add a VIA and a PC)</option>
-          <option value="Custom">Something different...</option>
-        </select>
-        <div *ngIf="room.Template != null" style="margin-top: 2%">
-            <div *ngFor="let cp of config.Panels; let i = index" class="nr-controlp">
-                <app-panel [panel]="cp" [config]="config" [iconlist]="iconlist"></app-panel>
+        <div class="nr-row">
+            <label class="nr-label">Which template for this room?  </label>
+            <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate" (change)="GetTemplate()">
+                    <option value="Apple" style="color: #e6ac00">Apple (1 pi, 1 display, 1 HDMI)</option>
+                    <option value="Mud" style="color: #534424cc">Mud (like Apple, but add a VIA)</option>
+                    <option value="KeyLime" style="color: #3c8213">Key Lime (like Apple, but add a VIA and a PC)</option>
+                    <option value="Custom">Something different...</option>
+                    </select>
+            <!-- FINISH BUTTON -->
+            <button class="button-2 nr-submit-btn" (click)="Finish()">Finish</button>
+        </div>
+
+        <!-- LIST OF PANELS -->
+        <div *ngIf="showPanels && config.panels.length > 0" style="margin-top: 2%">
+            <div *ngFor="let cp of config.panels" class="nr-controlp">
+                <app-panel [panel]="cp" [config]="config" [iconlist]="iconlist" [indyAudio]="audios"></app-panel>
             </div>
         </div>
     </div>

@@ -7,8 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NewRoomComponent } from './newroom/newroom.component';
 import { EditRoomComponent } from './editroom/editroom.component';
 import { PanelComponent } from './panel/panel.component';
-import { TemplateComponent } from './template/template.component';
-import { ModalComponent } from './modal/modal.component';
 
 import { AppComponent } from './app.component';
 import { AppRouterModule } from './app-router.module';
@@ -20,8 +18,6 @@ import { ApiService } from './api.service';
     NewRoomComponent,
     EditRoomComponent,
     PanelComponent,
-    TemplateComponent,
-    ModalComponent
   ],
   imports: [
     BrowserModule,

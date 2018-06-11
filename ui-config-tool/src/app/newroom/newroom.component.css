@@ -28,6 +28,15 @@ label {
     overflow: auto;
 }
 
+.nr-row {
+    position: relative;
+    float: left;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
 
 /* LOCATION INFORMATION */
 
@@ -71,10 +80,18 @@ label {
     width: 22%;
 }
 
+
+/* INPUT FIELDS */
+
 .nr-box {
     float: left;
     margin: auto;
     width: 45%;
+}
+
+.nr-select {
+    width: 25%;
+    background-color: white;
 }
 
 
@@ -93,21 +110,37 @@ label {
     cursor: pointer;
 }
 
+.button-2 {
+    background-color: #5fce0a;
+    border-radius: 7px;
+    color: #000000;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
 .nr-location-btn {
     float: left;
     margin: auto;
     width: 25%;
 }
 
-.nr-label {
-    margin-left: 15%;
+.nr-submit-btn {
+    width: 8%;
     margin-top: 5px;
-    width: 35%;
+    margin-left: 15%;
 }
 
-.nr-select {
-    width: 35%;
-    background-color: white;
+
+/* EXTRA STYLES */
+
+.nr-label {
+    margin-left: 10%;
+    margin-top: 5px;
+    width: 30%;
 }
 
 .nr-controlp {
@@ -138,12 +171,19 @@ label {
     }
     .nr-container2 {
         padding: 10px;
+        margin-left: 8%;
+        margin-right: 8%;
     }
     .nr-label {
-        margin-left: 5%;
-        width: 45%;
+        margin-left: 3%;
+        width: 38%;
     }
     .nr-select {
-        width: 45%;
+        width: 35%;
+    }
+    .nr-submit-btn {
+        width: 12%;
+        margin-right: 3%;
+        margin-left: 5%;
     }
 }

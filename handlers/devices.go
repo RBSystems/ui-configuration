@@ -26,12 +26,12 @@ func GetDevicesByRoom(context echo.Context) error {
 // GetDevicesInRoomByRole finds all the devices of a specific type in this room.
 // This one seems more effective for the config tool...
 func GetDevicesInRoomByRole(context echo.Context) error {
-	log.L.Info("Trying to get touchpanels")
 	building := context.Param("building")
 	room := context.Param("room")
 	role := context.Param("role")
-
 	roomID := fmt.Sprintf("%s-%s", building, room)
+
+	log.L.Infof("[ui-config] Trying to get %s devices in %s", role, roomID)
 
 	devices, err := db.GetDB().GetDevicesByRoomAndRole(roomID, role)
 	if err != nil {
@@ -44,7 +44,7 @@ func GetDevicesInRoomByRole(context echo.Context) error {
 		names[i] = d.Name
 	}
 
-	log.L.Infof("Got devices for %s", roomID)
+	log.L.Infof("[ui-config] Got %s devices for %s", role, roomID)
 
 	return context.JSON(http.StatusOK, names)
 }
