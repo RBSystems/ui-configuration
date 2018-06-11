@@ -1,0 +1,45 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "inputConfiguration": [
+        {
+            "name": "HDMI3",
+            "icon": "airplay"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "presets": [
+		{
+			"name": "Display",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+			"inputs": [
+                "HDMI3",
+                "HDMI2"
+			],
+			"independentAudioDevices": [
+			]
+		}
+    ],
+	"panels": [
+		{
+			"hostname": "ASB-D252-CP1",
+			"uipath": "/blueberry",
+			"preset": "Display",
+			"features": [
+			]
+		}
+	],
+    "audioConfiguration": [
+    ]
+}
+
