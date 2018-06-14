@@ -34,13 +34,18 @@ i {
     margin-top: 10px;
     margin-left: 5%;
     margin-bottom: 15px;
-    max-width: 85%;
+    max-width: 95%;
 }
 
 .panel-row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.panel-input-fields {
+    width: 10%;
+    margin-right: 2%;
 }
 
 
@@ -52,17 +57,18 @@ i {
 }
 
 .panel-label-2 {
-    width: 9%;
+    width: 10%;
 }
 
 .panel-label-input {
-    width: wrap;
+    width: 5%;
     margin-left: 3%;
 }
 
 .panel-label-short {
     width: 19%;
     margin-right: 5px;
+    margin-left: 2%;
 }
 
 .panel-label-big {
@@ -130,6 +136,20 @@ i {
     margin-right: 2%;
 }
 
+.panel-inputIcon-btn {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    border: none;
+    width: wrap;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+    margin-right: 3%;
+}
+
 .modal-icon-btn {
     background-color: #e6e6e6;
     border-radius: 5px;
@@ -144,7 +164,9 @@ i {
 }
 
 .modal-icon-btn:hover,
-.panel-icon-btn:hover {
+.panel-icon-btn:hover,
+.panel-displayIcon-btn:hover,
+.panel-inputIcon-btn:hover {
     background: #999999;
     color: white;
 }
@@ -162,7 +184,7 @@ i {
     margin-left: 5px;
     margin-right: 2%;
     cursor: pointer;
-    width: 50px;
+    width: 5%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -338,48 +360,49 @@ i {
 
 /* Responsive layout - when the screen is less than 800px wide */
 
-@media (max-width: 800px) {
-    .panel-row {
-        margin-left: 5%;
-        margin-top: 10px;
-    }
+@media (max-width: 1440px) {
     .panel-label {
-        width: 38%;
-    }
-    .panel-label-2 {
-        width: 38%;
-    }
-    .panel-label-big {
-        margin-left: 4%;
-    }
-    .panel-select {
-        width: 40%;
-    }
-    .panel-box {
-        width: 40%;
-    }
-    .panel-select-short {
         width: 20%;
     }
-    .panel-row-short {
-        margin-left: 5%;
-        display: block;
-        margin-top: 10px;
-    }
-    .panel-icon-btn {
-        margin-left: 38%;
-    }
+}
+
+@media (max-width: 1260px) {
     .panel-row-display {
-        max-width: 70%;
-        margin-left: 17%;
+        max-width: 91%;
     }
-    .panel-row-input {
-        max-width: 80%;
-        margin-left: 12%;
-        margin-bottom: 5%;
+    .panel-label {
+        width: 22%;
     }
-    .panel-check-container {
-        margin-right: 5%;
-        width: 70px;
+    .panel-label-2 {
+        width: 12%;
+    }
+    .panel-box {
+        width: 22%;
+    }
+    .panel-select {
+        width: 22%;
+    }
+    .panel-displayIcon-btn {
+        margin-right: 1%;
+    }
+    .panel-inputIcon-btn {
+        margin-right: 2%;
     }
 }
+
+@media (max-width: 960px) {
+    .panel-label {
+        width: 24%;
+    }
+    .panel-label-2 {
+        width: 13%;
+    }
+    .panel-box {
+        width: 25%;
+    }
+    .panel-select {
+        width: 25%;
+    }
+}
+
+@media (max-width: 870px) {}

@@ -34,7 +34,7 @@ label {
 .er-location {
     position: relative;
     margin: auto;
-    width: 75%;
+    width: 85%;
     min-height: 100%;
 }
 
@@ -47,14 +47,14 @@ label {
 .er-building-fields {
     float: left;
     margin: auto;
-    margin-left: 8%;
-    width: 33%;
+    margin-left: 13%;
+    width: 22%;
 }
 
 .er-room-fields {
     float: left;
     margin: auto;
-    width: 33%;
+    width: 22%;
 }
 
 .er-bldg {
@@ -67,13 +67,12 @@ label {
 .er-room {
     float: left;
     margin: auto;
-    margin-left: 10%;
+    margin-left: 5%;
     width: 22%;
 }
 
 .er-box {
     float: left;
-    margin: auto;
     width: 45%;
 }
 
@@ -108,13 +107,13 @@ label {
 .er-location-btn {
     float: left;
     margin: auto;
-    width: 25%;
+    width: 10%;
 }
 
 .er-submit-btn {
+    float: left;
+    margin-left: 5%;
     width: 8%;
-    margin-top: 5px;
-    margin-left: 15%;
 }
 
 .er-label {
@@ -149,35 +148,10 @@ label {
 
 /* Responsive layout - when the screen is less than 800px wide */
 
-@media (max-width: 800px) {
-    .er-bldg {
-        margin-left: 5%;
-    }
-    .er-room {
-        margin-left: -2%;
-        margin-right: -2%;
-    }
-    .er-box {
-        margin-left: 10%;
-    }
-    .er-location-btn {
-        margin-left: -5%;
-    }
-    .er-container2 {
-        padding: 10px;
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-    .er-label {
-        margin-left: 3%;
-        width: 38%;
-    }
-    .er-select {
-        width: 35%;
-    }
-    .er-submit-btn {
-        width: 12%;
-        margin-right: 3%;
-        margin-left: 5%;
-    }
-}
+@media (max-width: 1440px) {}
+
+@media (max-width: 1260px) {}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 870px) {}

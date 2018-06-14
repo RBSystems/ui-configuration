@@ -18,7 +18,7 @@ export class Preset   {
 	shareableDisplays?:       string[] = [];
 	audioDevices?:            string[] = [];
 	inputs?:                  string[] = [];
-	independentAudios?: string[] = [];
+	independentAudioDevices?: string[] = [];
 }
 
 export class Panel   {

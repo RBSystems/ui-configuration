@@ -20,6 +20,10 @@
         <div class="nr-location-btn">
             <button class="button" id="baking" (click)="GetRoomDevices()">Start Baking!</button>
         </div>
+        <!-- FINISH BUTTON -->
+        <div class="nr-submit-btn">
+            <button class="button-2 " (click)="Finish()">Finish</button>
+        </div>
     </div>
 
     <!-- TEMPLATE INFORMATION -->
@@ -27,13 +31,11 @@
         <div class="nr-row">
             <label class="nr-label">Which template for this room?  </label>
             <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate" (change)="GetTemplate()">
-                    <option value="Apple" style="color: #e6ac00">Apple (1 pi, 1 display, 1 HDMI)</option>
-                    <option value="Mud" style="color: #534424cc">Mud (like Apple, but add a VIA)</option>
-                    <option value="KeyLime" style="color: #3c8213">Key Lime (like Apple, but add a VIA and a PC)</option>
-                    <option value="Custom">Something different...</option>
+                    <option value="Apple" style="color: #e6ac00">Apple</option>
+                    <option value="Mud" style="color: #1b58ba">Blueberry</option>
+                    <option value="KeyLime" style="color: #b30505cc">Cherry</option>
+                    <option value="Custom">Custom</option>
                     </select>
-            <!-- FINISH BUTTON -->
-            <button class="button-2 nr-submit-btn" (click)="Finish()">Finish</button>
         </div>
 
         <!-- LIST OF PANELS -->

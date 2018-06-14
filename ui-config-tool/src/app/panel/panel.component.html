@@ -73,7 +73,7 @@
         <!-- BLUEBERRY DISPLAY LIST -->
         <div *ngIf="panel.uipath == '/blueberry'" class="panel-row-display">
             <ng-container *ngFor="let display of config.outputConfiguration">
-                <label class="panel-check-container" *ngIf="!preset.shareableDisplays.includes(display.name)" (click)="UpdateDeviceLists($event)">{{display.name}}
+                <label class="panel-check-container" *ngIf="(preset.shareableDisplays == null || !preset.shareableDisplays.includes(display.name)) && display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
                     <input type="checkbox" id="{{panel.hostname}}.controls.{{display.name}}">
                     <span class="panel-checkmark"></span>
                 </label>
@@ -84,15 +84,17 @@
         <!-- CHERRY DISPLAY LIST -->
         <div *ngIf="panel.uipath == '/cherry'" class="panel-row-display">
             <label *ngFor="let display of config.outputConfiguration">
-                <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{display.name}}
-                    <input type="checkbox" id="{{panel.hostname}}.cherrycontrols.{{display.name}}">
-                    <span class="panel-checkmark"></span>        
-                </label>
+                <ng-container *ngIf="display.name.includes('D')">
+                    <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{display.name}}
+                        <input type="checkbox" id="{{panel.hostname}}.cherrycontrols.{{display.name}}">
+                        <span class="panel-checkmark"></span>        
+                    </label>
             <!-- OUTPUT ICON -->
             <label class="panel-label-short">Icon:</label>
             <button type="button" class="panel-displayIcon-btn" id="icon.{{panel.hostname}}.{{display.name}}" (click)="IconShow($event)">
-                    <span class="material-icons" ngDefaultControl [(ngModel)]="display.icon" id="display.{{display.name}}">{{display.icon}}</span>
-                </button>
+                        <span class="material-icons" ngDefaultControl [(ngModel)]="display.icon" id="display.{{display.name}}">{{display.icon}}</span>
+                    </button>
+            </ng-container>
             </label>
         </div>
 
@@ -109,7 +111,7 @@
         </div>
         <div *ngIf="panel.features.includes('share')" class="panel-row-display">
             <ng-container *ngFor="let display of config.outputConfiguration">
-                <label class="panel-check-container" *ngIf="!preset.displays.includes(display.name)" (click)="UpdateDeviceLists($event)">{{display.name}}
+                <label class="panel-check-container" *ngIf="!preset.displays.includes(display.name) && display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
                     <input type="checkbox" id="{{panel.hostname}}.shares.{{display.name}}">
                     <span class="panel-checkmark"></span>
                 </label>
@@ -127,7 +129,7 @@
         </div>
         <div *ngIf="panel.uipath != null" class="panel-row-display">
             <ng-container *ngFor="let display of config.outputConfiguration">
-                <label class="panel-check-container" (click)="UpdateDeviceLists($event)">{{display.name}}
+                <label class="panel-check-container" *ngIf="display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
                     <input type="checkbox" id="{{panel.hostname}}.audio.{{display.name}}">
                     <span class="panel-checkmark"></span>
                 </label>
@@ -160,7 +162,7 @@
 
         <!-- INPUT LIST -->
         <div *ngIf="panel.uipath != null" class="panel-row-input">
-            <ng-container *ngFor="let input of config.inputConfiguration">
+            <ng-container *ngFor="let input of config.inputConfiguration" class="panel-input-fields">
                 <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{input.name}}
                     <input type="checkbox" id="{{panel.hostname}}.input.{{input.name}}">
                     <span class="panel-checkmark"></span>        
@@ -170,7 +172,7 @@
                 <input class="panel-box-short" type="text" value="{{input.name}}"> -->
                 <!-- INPUT ICON -->
                 <label class="panel-label-input">Icon:</label>
-                <button type="button" class="panel-displayIcon-btn" id="icon.{{panel.hostname}}.{{input.name}}" (click)="IconShow($event)">
+                <button type="button" class="panel-inputIcon-btn" id="icon.{{panel.hostname}}.{{input.name}}" (click)="IconShow($event)">
                     <span class="material-icons" ngDefaultControl [(ngModel)]="input.icon" id="input.{{input.name}}">{{input.icon}}</span>
                 </button>
             </ng-container>
