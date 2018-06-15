@@ -22,7 +22,39 @@
             "independentAudioDevices": [
                 "MIC1",
                 "MIC2"
-            ]
+            ],
+            "commands": {
+                "powerOn": [
+                    {
+                        "method": "PUT",
+                        "port": 8000,
+                        "endpoint": "buildings/ITB/rooms/1108",
+                        "body": {
+                            "displays": [
+                                {
+                                    "name": "D8",
+                                    "power": "on"
+                                }
+                            ] 
+                        }
+                    }
+                ],
+                "powerOff": [
+                    {
+                        "method": "PUT",
+                        "port": 8000,
+                        "endpoint": "buildings/ITB/rooms/1108",
+                        "body": {
+                            "displays": [
+                                {
+                                    "name": "D8",
+                                    "power": "standby"
+                                }
+                            ] 
+                        }
+                    }
+                ]
+            }
         },
         {
             "name": "Station 2",
