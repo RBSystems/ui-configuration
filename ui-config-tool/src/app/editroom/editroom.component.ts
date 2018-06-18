@@ -46,18 +46,17 @@ export class EditRoomComponent {
     console.log(this.audios);
 
     this.getUIConfig();
-    this.show = true;
   }
 
   GetTouchPanels() {
     this.panelNames = [];
-    return this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "ControlProcessor")
-        .subscribe(val =>{
-          this.panelNames = val;
-          for(var i = 0; i < this.panelNames.length; i++) {
-            this.panelNames[i] = this.room.Building.toUpperCase() + "-" + this.room.Room.toUpperCase() + "-" + this.panelNames[i];
-          }
-        });
+    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "ControlProcessor")
+      .subscribe(val =>{
+        this.panelNames = val;
+        for(var i = 0; i < this.panelNames.length; i++) {
+          this.panelNames[i] = this.room.Building.toUpperCase() + "-" + this.room.Room.toUpperCase() + "-" + this.panelNames[i];
+        }
+      });
   }
 
   GetInputDevices() {
@@ -101,21 +100,23 @@ export class EditRoomComponent {
 
   GetIconList() {
     this.iconlist = [];
-    return this.api.getIcons().subscribe(val => {
+    this.api.getIcons().subscribe(val => {
       this.iconlist = val;
     });
   }
 
   getUIConfig() {
     this.config = {};
-    return this.api.getUIConfig(this.room.Building, this.room.Room)
+    this.api.getUIConfig(this.room.Building, this.room.Room)
         .subscribe(val =>{
           this.config = <UIConfig>val;
           console.log(this.config);
+          this.show = true;
         });
   }
 
   Finish() {
-    this.panel.Finish();
+    console.log("I don't work, sucker!")
+    // this.panel.Finish();
   }
 }

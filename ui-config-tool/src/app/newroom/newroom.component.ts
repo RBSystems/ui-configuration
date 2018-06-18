@@ -173,6 +173,7 @@ export class NewRoomComponent implements OnInit {
   }
 
   Finish() {
-    this.panel.Finish();
+    console.log("I don't work, sucker!")
+    // this.panel.Finish();
   }
 }

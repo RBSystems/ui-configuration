@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Panel, UIConfig, Preset } from '../objects';
 import { ApiService } from 'app/api.service';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-panel',
@@ -13,17 +14,20 @@ export class PanelComponent implements OnInit {
   @Input() config: UIConfig;
   @Input() iconlist: string[];
   @Input() indyAudio: string[];
-  preset: Preset;
+  preset: Preset = new Preset();
 
   defaultMainIcon: string = "tv"
   curModalCaller: string;
   
   constructor(private api: ApiService) {
-    this.preset = new Preset();
-    this.preset.icon = this.defaultMainIcon;
+    
    }
 
   ngOnInit() {
+  }
+
+  ngOnChanges() {
+    
   }
 
   Toggle() {
@@ -34,6 +38,7 @@ export class PanelComponent implements OnInit {
       if(this.config.panels.length <= 1) {
         document.getElementById('preset'+this.panel.hostname).className = "unhidden";
       }
+      this.UpdatePageUI();
     }
     else if(document.getElementById(this.panel.hostname).className == "panel-downarrow") {
       document.getElementById(this.panel.hostname).className = "panel-rightarrow";
@@ -46,8 +51,8 @@ export class PanelComponent implements OnInit {
     if((<HTMLInputElement>document.getElementById("slave1"+this.panel.hostname)).checked) {
       document.getElementById('master'+this.panel.hostname).className = "unhidden";
       document.getElementById('preset'+this.panel.hostname).className = "hidden";
-      var m = <HTMLSelectElement>document.getElementById('mastername'+this.panel.hostname);
-      var pre = m.options[m.selectedIndex];
+      let m = <HTMLSelectElement>document.getElementById('mastername'+this.panel.hostname);
+      let pre = m.options[m.selectedIndex];
       this.config.panels.forEach(pan => {
         if(pan.hostname == pre.value) {
           this.panel.uipath = pan.uipath
@@ -94,10 +99,10 @@ export class PanelComponent implements OnInit {
       this.config.presets.push(this.preset);
 
       this.config.panels.forEach(slave => {
-        var m = <HTMLSelectElement>document.getElementById('mastername'+slave.hostname);
-        var master = m.options[m.selectedIndex];
+        let m = <HTMLSelectElement>document.getElementById('mastername'+slave.hostname);
+        let master = m.options[m.selectedIndex];
 
-        var slaveButton = <HTMLInputElement>document.getElementById("slave1"+slave.hostname)
+        let slaveButton = <HTMLInputElement>document.getElementById("slave1"+slave.hostname)
 
         if(this.panel.hostname == master.value && slaveButton.checked) {
           slave.uipath = this.panel.uipath
@@ -158,9 +163,9 @@ export class PanelComponent implements OnInit {
 
   UpdateDeviceLists(e) {
     // Update the device lists upon checking a box.
-    var id = e.target.id;
-    var box = <HTMLInputElement>document.getElementById(id);
-    var dName = id.split(".")[2];
+    let id = e.target.id;
+    let box = <HTMLInputElement>document.getElementById(id);
+    let dName = id.split(".")[2];
     this.config.presets.forEach(pre => {
       if(pre.name == this.panel.preset) {
         this.preset = pre;
@@ -171,14 +176,14 @@ export class PanelComponent implements OnInit {
     if(id.includes("controls") && box.checked && !this.preset.displays.includes(dName)) {
 
       this.preset.displays.push(dName);
-      var d: (string | null)[] = this.preset.displays;
+      let d: (string | null)[] = this.preset.displays;
       this.preset.displays = d.filter(this.notEmpty).sort(this.sortAlphaNum);
 
       this.preset.audioDevices.push(dName);
-      var a: (string | null)[] = this.preset.audioDevices;
+      let a: (string | null)[] = this.preset.audioDevices;
       this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
 
-      var audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
+      let audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
       audioBox.checked = true;
     
     }
@@ -186,14 +191,14 @@ export class PanelComponent implements OnInit {
     else if(id.includes("controls") && !box.checked && this.preset.displays.includes(dName)) {
       
       delete this.preset.displays[this.preset.displays.indexOf(dName)];
-      var d: (string | null)[] = this.preset.displays;
+      let d: (string | null)[] = this.preset.displays;
       this.preset.displays = d.filter(this.notEmpty).sort(this.sortAlphaNum);
 
       delete this.preset.audioDevices[this.preset.audioDevices.indexOf(dName)];
-      var a: (string | null)[] = this.preset.audioDevices;
+      let a: (string | null)[] = this.preset.audioDevices;
       this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
 
-      var audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
+      let audioBox = <HTMLInputElement>document.getElementById(this.panel.hostname+".audio."+dName);
       audioBox.checked = false;
     
     }
@@ -201,7 +206,7 @@ export class PanelComponent implements OnInit {
     else if(id.includes("shares") && box.checked && !this.preset.shareableDisplays.includes(dName)) {
       
       this.preset.shareableDisplays.push(dName);
-      var s: (string | null)[] = this.preset.shareableDisplays;
+      let s: (string | null)[] = this.preset.shareableDisplays;
       this.preset.shareableDisplays = s.filter(this.notEmpty).sort(this.sortAlphaNum);
     
     }
@@ -209,7 +214,7 @@ export class PanelComponent implements OnInit {
     else if(id.includes("shares") && !box.checked && this.preset.shareableDisplays.includes(dName)) {
       
       delete this.preset.shareableDisplays[this.preset.shareableDisplays.indexOf(dName)];
-      var s: (string | null)[] = this.preset.shareableDisplays;
+      let s: (string | null)[] = this.preset.shareableDisplays;
       this.preset.shareableDisplays = s.filter(this.notEmpty).sort(this.sortAlphaNum);
     
     }
@@ -217,7 +222,7 @@ export class PanelComponent implements OnInit {
     else if(id.includes("audio") && box.checked && !this.preset.audioDevices.includes(dName)) {
 
       this.preset.audioDevices.push(dName);
-      var a: (string | null)[] = this.preset.audioDevices;
+      let a: (string | null)[] = this.preset.audioDevices;
       this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
 
     }
@@ -225,31 +230,31 @@ export class PanelComponent implements OnInit {
     else if(id.includes("audio") && !box.checked && this.preset.audioDevices.includes(dName)) {
 
       delete this.preset.audioDevices[this.preset.audioDevices.indexOf(dName)];
-      var a: (string | null)[] = this.preset.audioDevices;
+      let a: (string | null)[] = this.preset.audioDevices;
       this.preset.audioDevices = a.filter(this.notEmpty).sort(this.sortAlphaNum);
 
     }
     // Add to the list of independent audio devices for the preset
-    else if(id.includes("independent") && box.checked && !this.preset.independentAudios.includes(dName)) {
+    else if(id.includes("independent") && box.checked && !this.preset.independentAudioDevices.includes(dName)) {
 
-      this.preset.independentAudios.push(dName);
-      var i: (string | null)[] = this.preset.independentAudios;
-      this.preset.independentAudios = i.filter(this.notEmpty).sort(this.sortAlphaNum);
+      this.preset.independentAudioDevices.push(dName);
+      let i: (string | null)[] = this.preset.independentAudioDevices;
+      this.preset.independentAudioDevices = i.filter(this.notEmpty).sort(this.sortAlphaNum);
 
     }
     // Remove from the list of independent audio devices for the preset
-    else if(id.includes("independent") && !box.checked && this.preset.independentAudios.includes(dName)) {
+    else if(id.includes("independent") && !box.checked && this.preset.independentAudioDevices.includes(dName)) {
 
-      delete this.preset.independentAudios[this.preset.independentAudios.indexOf(dName)];
-      var i: (string | null)[] = this.preset.independentAudios;
-      this.preset.independentAudios = i.filter(this.notEmpty).sort(this.sortAlphaNum);
+      delete this.preset.independentAudioDevices[this.preset.independentAudioDevices.indexOf(dName)];
+      let i: (string | null)[] = this.preset.independentAudioDevices;
+      this.preset.independentAudioDevices = i.filter(this.notEmpty).sort(this.sortAlphaNum);
 
     }
     // Add to the list of inputs for the preset
     else if(id.includes("input") && box.checked && !this.preset.inputs.includes(dName)) {
 
       this.preset.inputs.push(dName);
-      var i: (string | null)[] = this.preset.inputs;
+      let i: (string | null)[] = this.preset.inputs;
       this.preset.inputs = i.filter(this.notEmpty);
 
     }
@@ -257,7 +262,7 @@ export class PanelComponent implements OnInit {
     else if(id.includes("input") && !box.checked && this.preset.inputs.includes(dName)) {
 
       delete this.preset.inputs[this.preset.inputs.indexOf(dName)];
-      var i: (string | null)[] = this.preset.inputs;
+      let i: (string | null)[] = this.preset.inputs;
       this.preset.inputs = i.filter(this.notEmpty);
 
     }
@@ -265,12 +270,12 @@ export class PanelComponent implements OnInit {
 
   SetDefaultInput() {
     // Remove the selected device from the list of inputs and put it back at the top of the list.
-    var dInputSelect = <HTMLSelectElement>document.getElementById("defaultInput"+this.panel.hostname);
-    var defaultInput = dInputSelect.options[dInputSelect.selectedIndex];
+    let dInputSelect = <HTMLSelectElement>document.getElementById("defaultInput"+this.panel.hostname);
+    let defaultInput = dInputSelect.options[dInputSelect.selectedIndex];
 
     if(this.preset.inputs.includes(defaultInput.value)) {
       delete this.preset.inputs[this.preset.inputs.indexOf(defaultInput.value)];
-      var i: (string | null)[] = this.preset.inputs;
+      let i: (string | null)[] = this.preset.inputs;
       this.preset.inputs = i.filter(this.notEmpty);
     }
 
@@ -285,26 +290,126 @@ export class PanelComponent implements OnInit {
 
   sortAlphaNum(a,b) {
     // Sort the array first alphabetically and then numerically.
-    var reA: RegExp = /[^a-zA-Z]/g;
-    var reN: RegExp = /[^0-9]/g;
+    let reA: RegExp = /[^a-zA-Z]/g;
+    let reN: RegExp = /[^0-9]/g;
     
-    var aA = a.replace(reA, "");
-    var bA = b.replace(reA, "");
+    let aA = a.replace(reA, "");
+    let bA = b.replace(reA, "");
 
     if(aA === bA) {
-        var aN = parseInt(a.replace(reN, ""), 10);
-        var bN = parseInt(b.replace(reN, ""), 10);
+        let aN = parseInt(a.replace(reN, ""), 10);
+        let bN = parseInt(b.replace(reN, ""), 10);
         return aN === bN ? 0 : aN > bN ? 1 : -1;
     } else {
         return aA > bA ? 1 : -1;
     }
   }
 
+  // TODO: add a different finish method for submitting a new UIConfig file
   Finish() {
-    // Submit the new UIConfig file to the database.
-    var location = this.config._id.split("-");
-    var building = location[0];
-    var room = location[1];
-    this.api.updateUIConfig(building, room, this.config);
+    console.log("I don't work, sucker!")
+    // // Submit the new UIConfig file to the database.
+    // let location = this.config._id.split("-");
+    // let building = location[0];
+    // let room = location[1];
+    // this.api.updateUIConfig(building, room, this.config);
+  }
+
+  UpdatePageUI() {
+    this.config.presets.forEach(pre => {
+      if(this.panel.preset == pre.name) {
+        this.preset = pre;
+
+        if(this.preset.icon ==  null || this.preset.icon.length < 1) {
+          this.preset.icon = this.defaultMainIcon;
+        }
+
+        // Check/uncheck slave buttons
+        this.config.panels.some(pan => {
+          if(this.panel.hostname == pan.hostname) {
+            if((<HTMLInputElement>document.getElementById("slave2"+this.panel.hostname)) != null) {
+              (<HTMLInputElement>document.getElementById("slave2"+this.panel.hostname)).checked = true;
+              this.SlaveStatus();
+            }
+            return this.panel.hostname === pan.hostname;
+          }
+          else if(this.panel.preset == pan.preset) {
+            if((<HTMLInputElement>document.getElementById("slave1"+this.panel.hostname)) != null) {
+              (<HTMLInputElement>document.getElementById("slave1"+this.panel.hostname)).checked = true;
+              let m = <HTMLSelectElement>document.getElementById('mastername'+this.panel.hostname);
+              m.value = pan.hostname;
+              this.SlaveStatus();
+            }
+            return this.panel.preset === pan.preset;
+          }
+        });
+        
+
+        // Check/uncheck display buttons
+        if(this.preset.displays != null && this.preset.displays.length > 0) {
+          this.preset.displays.forEach(d => {
+            let id: string;
+            if(this.panel.uipath == '/blueberry') {
+              id = this.panel.hostname+".controls."+d;
+            }
+            else if(this.panel.uipath == '/cherry') {
+              id = this.panel.hostname+".cherrycontrols."+d;
+            }
+  
+            if((<HTMLInputElement>document.getElementById(id)) != null) {
+              (<HTMLInputElement>document.getElementById(id)).checked = true;
+            }
+          });
+        }
+        
+        // Check/uncheck sharing option and displays
+        if(this.panel.features != null && this.panel.features.includes("share")) {
+          if((<HTMLInputElement>document.getElementById("share1"+this.panel.hostname)) != null) {
+            (<HTMLInputElement>document.getElementById("share1"+this.panel.hostname)).checked = true;
+
+            this.preset.shareableDisplays.forEach(share => {
+              let id = this.panel.hostname+".shares."+share;
+  
+              if((<HTMLInputElement>document.getElementById(id)) != null) {
+                (<HTMLInputElement>document.getElementById(id)).checked = true;
+              }
+            });
+          }
+        }
+
+        // Check/uncheck audio devices
+        if(this.preset.audioDevices != null && this.preset.audioDevices.length > 0) {
+          this.preset.audioDevices.forEach(audio => {
+            let id = this.panel.hostname+".audio."+audio;
+  
+            if((<HTMLInputElement>document.getElementById(id)) != null) {
+              (<HTMLInputElement>document.getElementById(id)).checked = true;
+            }
+          });
+        }
+        
+        // Check/uncheck independent audio devices
+        if(this.preset.independentAudioDevices != null && this.preset.independentAudioDevices.length > 0) {
+          this.preset.independentAudioDevices.forEach(ia => {
+            let id = this.panel.hostname+".independent."+ia;
+  
+            if((<HTMLInputElement>document.getElementById(id)) != null) {
+              (<HTMLInputElement>document.getElementById(id)).checked = true;
+            }
+          });
+        }
+        
+        // Check/uncheck input devices
+        if(this.preset.inputs != null && this.preset.inputs.length > 0) {
+          this.preset.inputs.forEach(input => {
+            let id = this.panel.hostname+".input."+input;
+  
+            if((<HTMLInputElement>document.getElementById(id)) != null) {
+              (<HTMLInputElement>document.getElementById(id)).checked = true;
+            }
+          });
+        }
+      }
+    });
   }
 }
