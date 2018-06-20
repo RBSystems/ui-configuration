@@ -32,7 +32,7 @@
 		{
 			"hostname": "ITB-3306-CP1",
 			"uipath": "/blueberry",
-			"preset": "Flatpanel",
+			"preset": "Display",
 			"features": [
 			]
 		}
