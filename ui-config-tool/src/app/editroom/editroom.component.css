@@ -148,10 +148,71 @@ label {
 
 /* Responsive layout - when the screen is less than 800px wide */
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+    .er-container2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .er-bldg {
+        margin-right: 5%;
+    }
+    .er-room {
+        margin-right: 5%;
+    }
+}
 
-@media (max-width: 1260px) {}
+@media (max-width: 1260px) {
+    .er-container2 {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .er-bldg {
+        margin-right: 9%;
+    }
+    .er-room {
+        margin-right: 5%;
+    }
+    .er-location-btn {
+        width: 16%;
+    }
+    .er-submit-btn {
+        margin-left: 2%;
+    }
+}
 
-@media (max-width: 960px) {}
+@media (max-width: 960px) {
+    .er-container2 {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .er-bldg {
+        margin-right: 15%;
+        margin-left: 12%;
+    }
+    .er-room {
+        margin-right: 10%;
+    }
+    .er-box {
+        width: 47%;
+    }
+    .er-location-btn {
+        width: 18%;
+    }
+}
 
-@media (max-width: 870px) {}
+@media (max-width: 870px) {
+    .er-container2 {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .er-bldg {
+        margin-right: 17%;
+        margin-left: 4%;
+    }
+    .er-room {
+        margin-right: 12%;
+    }
+    .er-box {
+        width: 54%;
+    }
+}

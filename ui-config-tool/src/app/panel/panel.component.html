@@ -17,6 +17,17 @@
 
 </div>
 
+<div id="messageModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" align="center">
+        <span class="close" (click)="errorX()">&times;</span>
+        <div>
+            <p>{{message}}</p>
+        </div>
+    </div>
+
+</div>
 <!-- end pop-ups -->
 
 <button class="panel-btn" (click)="Toggle()"><i class="panel-rightarrow" id="{{panel.hostname}}"></i>  {{panel.hostname}}</button>
@@ -83,7 +94,7 @@
 
         <!-- CHERRY DISPLAY LIST -->
         <div *ngIf="panel.uipath == '/cherry'" class="panel-row-display">
-            <label *ngFor="let display of config.outputConfiguration">
+            <label *ngFor="let display of config.outputConfiguration" class="cherry-display">
                 <ng-container *ngIf="display.name.includes('D')">
                     <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{display.name}}
                         <input type="checkbox" id="{{panel.hostname}}.cherrycontrols.{{display.name}}">

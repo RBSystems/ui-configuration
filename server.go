@@ -33,6 +33,7 @@ func main() {
 
 	router.Static("/", "ui-config-tool/dist")
 	router.Static("/newroom", "ui-config-tool/dist")
+	router.Static("/editroom", "ui-config-tool/dist")
 
 	router.StartServer(&server)
 }

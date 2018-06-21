@@ -6,7 +6,7 @@
                 <label>Building: </label>
             </div>
             <div class="nr-box">
-                <input [(ngModel)]="room.Building" name="building" type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+                <input [(ngModel)]="api.room.Building" name="building" type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
             </div>
         </div>
         <div class="nr-room-fields">
@@ -14,7 +14,7 @@
                 <label>Room: </label>
             </div>
             <div class="nr-box">
-                <input [(ngModel)]="room.Room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+                <input [(ngModel)]="api.room.Room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
             </div>
         </div>
         <div class="nr-location-btn">
@@ -22,7 +22,7 @@
         </div>
         <!-- FINISH BUTTON -->
         <div class="nr-submit-btn">
-            <button class="button-2 " (click)="Finish()">Finish</button>
+            <button class="button-2 " (click)="panel.FinishNew()">Finish</button>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
     <div *ngIf="panelNames.length > 0" class="nr-container2">
         <div class="nr-row">
             <label class="nr-label">Which template for this room?  </label>
-            <select class="nr-select" [(ngModel)]="room.Template" id="roomTemplate" (change)="GetTemplate()">
+            <select class="nr-select" [(ngModel)]="api.room.Template" id="roomTemplate" (change)="GetTemplate()">
                     <option value="Apple" style="color: #e6ac00">Apple</option>
                     <option value="Mud" style="color: #1b58ba">Blueberry</option>
                     <option value="KeyLime" style="color: #b30505cc">Cherry</option>

@@ -1,13 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Panel, UIConfig, Preset } from '../objects';
+import { Panel, UIConfig, Preset, Room } from '../objects';
 import { ApiService } from 'app/api.service';
 import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-panel',
   templateUrl: './panel.component.html',
-  styleUrls: ['./panel.component.css'],
-  providers: [ApiService]
+  styleUrls: ['./panel.component.css']
 })
 export class PanelComponent implements OnInit {
   @Input() panel: Panel;
@@ -18,6 +17,7 @@ export class PanelComponent implements OnInit {
 
   defaultMainIcon: string = "tv"
   curModalCaller: string;
+  message: string;
   
   constructor(private api: ApiService) {
     
@@ -129,6 +129,24 @@ export class PanelComponent implements OnInit {
     if (event.target != document.getElementById('myModal'+this.panel.hostname)) {
         document.getElementById('myModal'+this.panel.hostname).style.display = "none";
     }
+  }
+
+  errorX() {
+    // When the user clicks on <span> (x), close the modal
+    document.getElementById("messageModal").style.display = "none";
+  }
+
+  errorCloseAny(event) {
+    // When the user clicks anywhere outside of the modal, close it
+    if (event.target != document.getElementById("messageModal")) {
+        document.getElementById("messageModal").style.display = "none";
+    }
+  }
+
+  ShowMessage(m: string) {
+    // When the user clicks the button, open the modal
+    this.message = m;
+    document.getElementById("messageModal").style.display = "block";
   }
 
   changeIcon(newIcon: string) {
@@ -305,14 +323,26 @@ export class PanelComponent implements OnInit {
     }
   }
 
-  // TODO: add a different finish method for submitting a new UIConfig file
-  Finish() {
-    console.log("I don't work, sucker!")
-    // // Submit the new UIConfig file to the database.
-    // let location = this.config._id.split("-");
-    // let building = location[0];
-    // let room = location[1];
-    // this.api.updateUIConfig(building, room, this.config);
+  FinishNew() {
+    console.log("New don't work")
+    // this.api.addUIConfig(this.api.room.Building, this.api.room.Room, this.config).subscribe(
+    //   success => {
+    //     this.ShowMessage("Successfully added new config file!");
+    //   },
+    //   error => {
+    //     this.ShowMessage("You cannot add a new config file for this room, there is already one in the database.");
+    //   });
+  }
+
+  FinishEdit() {
+    console.log("Edit don't work neither")
+    // this.api.updateUIConfig(this.api.room.Building, this.api.room.Room, this.config).subscribe(
+    //   success => {
+    //     this.ShowMessage("Successfully updated the config file!")
+    //   },
+    //   error => {
+    //     this.ShowMessage(error);
+    //   });
   }
 
   UpdatePageUI() {

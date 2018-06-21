@@ -2,21 +2,21 @@ import { Component, OnInit, Inject, Output, ViewChild, EventEmitter } from '@ang
 import { Http, HttpModule } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
+
 import { Room, Panel, UIConfig, IOConfiguration } from 'app/objects';
-import { ApiService } from 'app/api.service';
 import { PanelComponent } from 'app/panel/panel.component';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-newroom',
   templateUrl: './newroom.component.html',
   styleUrls: ['./newroom.component.css'],
-  providers: [ApiService],
 })
 export class NewRoomComponent implements OnInit {
   @ViewChild(PanelComponent)
   panel: PanelComponent;
-  room: Room = new Room();
   panelNames: string[] = [];
   config: UIConfig = new UIConfig();
   iconlist: string[];
@@ -26,9 +26,12 @@ export class NewRoomComponent implements OnInit {
   showPanels: boolean;
   
 
-  constructor(private api: ApiService) {
+  constructor(protected api: ApiService, private router: Router) {
     this.GetIconList();
     this.showPanels = false;
+    if(this.api.room.Building != null && this.api.room.Room != null) {
+      this.GetRoomDevices();
+    }
   }
 
   ngOnInit(): void {
@@ -37,6 +40,7 @@ export class NewRoomComponent implements OnInit {
 
   GetRoomDevices() {
     delete this.config;
+    this.getUIConfig();
     // Now we get our lists of devices from the database.
     this.GetTouchPanels();
     this.GetInputDevices();
@@ -46,25 +50,25 @@ export class NewRoomComponent implements OnInit {
 
   GetTouchPanels() {
     this.panelNames = [];
-    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "ControlProcessor")
+    this.api.getDevicesInRoomByRole(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase(), "ControlProcessor")
         .subscribe(val =>{
           this.panelNames = val;
           for(let i = 0; i < this.panelNames.length; i++) {
-            this.panelNames[i] = this.room.Building.toUpperCase() + "-" + this.room.Room.toUpperCase() + "-" + this.panelNames[i];
+            this.panelNames[i] = this.api.room.Building.toUpperCase() + "-" + this.api.room.Room.toUpperCase() + "-" + this.panelNames[i];
           }
         });
   }
 
   GetInputDevices() {
     this.inputs = [];
-    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "AudioIn")
+    this.api.getDevicesInRoomByRole(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase(), "AudioIn")
         .subscribe(val =>{
           val.forEach(i => {
             this.inputs.push(i)
           });
         });
     
-    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "VideoIn")
+    this.api.getDevicesInRoomByRole(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase(), "VideoIn")
       .subscribe(val =>{
         val.forEach(i => {
           if(!this.inputs.includes(i)) {
@@ -76,7 +80,7 @@ export class NewRoomComponent implements OnInit {
 
   GetOutputDevices() {
     this.displays = [];
-    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "VideoOut")
+    this.api.getDevicesInRoomByRole(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase(), "VideoOut")
         .subscribe(val =>{
           val.forEach(i => {
             this.displays.push(i)
@@ -86,7 +90,7 @@ export class NewRoomComponent implements OnInit {
 
   GetAudioDevices() {
     this.audios = [];
-    this.api.getDevicesInRoomByRole(this.room.Building.toUpperCase(), this.room.Room.toUpperCase(), "Microphone")
+    this.api.getDevicesInRoomByRole(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase(), "Microphone")
         .subscribe(val =>{
           val.forEach(i => {
             this.audios.push(i)
@@ -105,15 +109,24 @@ export class NewRoomComponent implements OnInit {
     this.showPanels = false;
     this.config = new UIConfig();
     
-    if(this.room.Template == "Custom") {
+    if(this.api.room.Template == "Custom") {
       this.FillUIConfig();
     }
     else {
-      this.api.getTemplate(this.room.Template).subscribe(val => {
+      this.api.getTemplate(this.api.room.Template).subscribe(val => {
         this.config = <UIConfig>val;
         setTimeout(() => this.FillUIConfig(), 0);
       })
     }
+  }
+
+  getUIConfig() {
+    this.config = {};
+    this.api.getUIConfig(this.api.room.Building.toUpperCase(), this.api.room.Room.toUpperCase())
+        .subscribe(val =>{
+          console.log("hello")
+          this.router.navigateByUrl('editroom');
+        });
   }
 
   FillUIConfig() {
@@ -122,11 +135,11 @@ export class NewRoomComponent implements OnInit {
       this.config.api.push("localhost");
     }
     
-    this.config._id = this.room.Building + "-" + this.room.Room;
+    this.config._id = this.api.room.Building + "-" + this.api.room.Room;
 
     // Add the Panels without overwriting template information.
     for(let i = 0; i < this.panelNames.length; i++) {
-      if(this.room.Template != "Custom" && i < this.config.panels.length) {
+      if(this.api.room.Template != "Custom" && i < this.config.panels.length) {
         this.config.panels[i].hostname = this.panelNames[i]
       }
       else {
@@ -168,12 +181,8 @@ export class NewRoomComponent implements OnInit {
       this.config.outputConfiguration.push(io);
     });
 
+    console.log("made it to the end")
     // Allow the panel list to be shown.
     this.showPanels = true;
-  }
-
-  Finish() {
-    console.log("I don't work, sucker!")
-    // this.panel.Finish();
   }
 }

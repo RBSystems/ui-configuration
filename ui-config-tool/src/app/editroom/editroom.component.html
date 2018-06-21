@@ -5,7 +5,7 @@
                 <label>Building: </label>
             </div>
             <div class="er-box">
-                <input [(ngModel)]="room.Building" name="building" type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+                <input [(ngModel)]="api.room.Building" name="building" type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
             </div>
         </div>
         <div class="er-room-fields">
@@ -13,7 +13,7 @@
                 <label>Room: </label>
             </div>
             <div class="er-box">
-                <input [(ngModel)]="room.Room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+                <input [(ngModel)]="api.room.Room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
             </div>
         </div>
         <div class="er-location-btn">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="er-submit-btn">
-            <button class="button-2 " (click)="Finish()">Finish</button>
+            <button class="button-2 " (click)="panel.FinishEdit()">Finish</button>
         </div>
     </div>
 
