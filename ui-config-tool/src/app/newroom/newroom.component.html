@@ -31,10 +31,12 @@
         <div class="nr-row">
             <label class="nr-label">Which template for this room?  </label>
             <select class="nr-select" [(ngModel)]="api.room.Template" id="roomTemplate" (change)="GetTemplate()">
-                    <option value="Apple" style="color: #e6ac00">Apple</option>
-                    <option value="Mud" style="color: #1b58ba">Blueberry</option>
-                    <option value="KeyLime" style="color: #b30505cc">Cherry</option>
-                    <option value="Custom">Custom</option>
+                    <option value="Apple" style="color: #ffa300; font-weight: bold;">Apple</option>
+                    <option value="Blueberry" style="color: #0004ff; font-weight: bold;">Blueberry</option>
+                    <option value="Chocolate" style="color: #502c17; font-weight: bold;">Chocolate</option>
+                    <option value="Dragonfruit" style="color: #d50053; font-weight: bold;">Dragonfruit</option>
+                    <option value="Elderberry" style="color: #480d80d8; font-weight: bold;">Elderberry</option>
+                    <option value="Custom" style="font-weight: bold;">Custom</option>
                     </select>
         </div>
 
