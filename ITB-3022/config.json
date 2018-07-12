@@ -1,0 +1,41 @@
+{
+    "_id": "ITB-3022",
+    "api": [
+        "localhost"
+    ],
+    "presets": [{
+        "name": "Flatpanel",
+        "displays": [
+            "D1"
+        ],
+        "icon": "tv",
+        "audioDevices": [
+            "D1"
+        ],
+        "inputs": [
+            "VIA1",
+            "HDMI1",
+            "HDMI2"
+        ]
+    }],
+    "panels": [{
+        "hostname": "ITB-3022-CP1",
+        "uipath": "/blueberry",
+        "preset": "Flatpanel",
+        "features": []
+    }],
+    "inputConfiguration": [{
+            "name": "VIA1",
+            "icon": "settings_input_antenna"
+        },
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "audioConfiguration": []
+}

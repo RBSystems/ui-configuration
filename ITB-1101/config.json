@@ -1,113 +1,147 @@
 {
-	"api": [
+    "api": [
         "localhost",
-		"ITB-1101-CP1.byu.edu",
-		"ITB-1101-CP2.byu.edu",
-		"ITB-1101-CP3.byu.edu",
-		"ITB-1101-CP4.byu.edu"
-	],
-	"presets": [
-		{
-			"name": "Danny Flatpanel",
-			"displays": [
-				"D2"
-			],
-			"icon": "tv",
-			"audioDevices": [
-				"D2"
-			],
-			"inputs": [
+        "ITB-1101-CP1.byu.edu",
+        "ITB-1101-CP2.byu.edu",
+        "ITB-1101-CP3.byu.edu",
+        "ITB-1101-CP4.byu.edu"
+    ],
+    "presets": [{
+            "name": "Danny Flatpanel",
+            "displays": [
+                "D2"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D2"
+            ],
+            "inputs": [
                 "AppleTV",
                 "VIA1",
                 "PC1",
                 "ChromeCast"
-			],
+            ],
             "shareableDisplays": [
                 "D3",
                 "D4"
             ],
-			"independentAudioDevices": [
-			]
-		},
-		{
-			"name": "Clark/John Flatpanel",
-			"displays": [
-				"D3"
-			],
-			"icon": "tv",
-			"audioDevices": [
-				"D3"
-			],
-			"inputs": [
+            "independentAudioDevices": [
+                "MIC2"
+            ]
+        },
+        {
+            "name": "Monstro",
+            "displays": [
+                "D3"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D3"
+            ],
+            "inputs": [
                 "ChromeCast",
-                "AppleTV"
-			],
+                "AppleTV",
+                "PC1",
+                "VIA1"
+            ],
             "shareableDisplays": [
                 "D2",
                 "D4"
             ],
-			"independentAudioDevices": [
-			]
-		},
-		{
-			"name": "Joe Flatpanel",
-			"displays": [
-				"D4"
-			],
-			"icon": "tv",
-			"audioDevices": [
-				"D4"
-			],
-			"inputs": [
+            "independentAudioDevices": [
+                "MIC2"
+            ]
+        },
+        {
+            "name": "Joe Flatpanel",
+            "displays": [
+                "D4"
+            ],
+            "icon": "tv",
+            "audioDevices": [
+                "D4"
+            ],
+            "inputs": [
                 "VIA1",
                 "PC1",
                 "AppleTV",
                 "ChromeCast"
-			],
+            ],
             "shareableDisplays": [
                 "D3",
                 "D2"
             ],
-			"independentAudioDevices": [
-			]
-		}
-	],
-	"panels": [
-		{
-			"hostname": "ITB-1101-CP1",
-			"uipath": "/blueberry",
-			"preset": "Joe Flatpanel",
-			"features": [
+            "independentAudioDevices": [
+                "MIC2"
+            ]
+        }
+    ],
+    "panels": [{
+            "hostname": "ITB-1101-CP1",
+            "uipath": "/blueberry",
+            "preset": "Joe Flatpanel",
+            "features": [
                 "share"
-			]
-		},
-		{
-			"hostname": "ITB-1101-CP2",
-			"uipath": "/blueberry",
-			"preset": "Danny Flatpanel",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1101-CP3",
-			"uipath": "/blueberry",
-			"preset": "Clark/John Flatpanel",
-			"features": [
-                "share"
-			]
-		},
-		{
-			"hostname": "ITB-1101-CP4",
-			"uipath": "/blueberry",
-			"preset": "Clark/John Flatpanel",
-			"features": [
-                "share"
-			]
-		}
-	],
-    "inputConfiguration": [
+            ]
+        },
         {
+            "hostname": "ITB-1101-CP2",
+            "uipath": "/blueberry",
+            "preset": "Danny Flatpanel",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP5",
+            "uipath": "/blueberry",
+            "preset": "Joe Flatpanel",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP6",
+            "uipath": "/blueberry",
+            "preset": "Joe Flatpanel",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP7",
+            "uipath": "/blueberry",
+            "preset": "Joe Flatpanel",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP8",
+            "uipath": "/blueberry",
+            "preset": "Danny Flatpanel",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP3",
+            "uipath": "/blueberry",
+            "preset": "Monstro",
+            "features": [
+                "share"
+            ]
+        },
+        {
+            "hostname": "ITB-1101-CP4",
+            "uipath": "/blueberry",
+            "preset": "Monstro",
+            "features": [
+                "share"
+            ]
+        }
+    ],
+    "inputConfiguration": [{
             "name": "VIA1",
             "icon": "settings_input_antenna"
         },
@@ -136,7 +170,28 @@
             "icon": "settings_input_hdmi"
         }
     ],
-    "roomWideAudios": [
-        "D2"
-    ]
+    "outputConfiguration": [{
+            "name": "D1",
+            "icon": "tv"
+        },
+        {
+            "name": "D2",
+            "icon": "tv"
+        },
+        {
+            "name": "D3",
+            "icon": "tv"
+        },
+        {
+            "name": "D4",
+            "icon": "tv"
+        }
+    ],
+    "audioConfiguration": [{
+        "display": "D3",
+        "audioDevices": [
+            "D3"
+        ],
+        "roomWide": true
+    }]
 }

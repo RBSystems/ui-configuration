@@ -29,7 +29,8 @@
 				"D2"
 			],
 			"inputs": [
-                "HDMI1"
+				"PC2",
+				"HDMI1"
 			],
 			"independentAudios": [
 			]
@@ -44,22 +45,26 @@
 				"D1"
 			],
 			"inputs": [
-                "PC1"
+				"PC1"
 			],
 			"independentAudios": [
 			]
 		}
 	],
-  "inputConfiguration": [
-      {
-          "name": "HDMI1",
-          "icon": "settings_input_hdmi"
-      },
-      {
-          "name": "PC1",
-          "icon": "settings_input_hdmi"
-      }
-  ],
-  "audioConfiguration": [
-  ]
+	"inputConfiguration": [
+		{
+			"name": "HDMI1",
+			"icon": "settings_input_hdmi"
+		},
+		{
+			"name": "PC1",
+			"icon": "settings_input_hdmi"
+		},
+		{
+			"name": "PC2",
+			"icon": "desktop_windows"
+		}
+	],
+	"audioConfiguration": [
+	]
 }

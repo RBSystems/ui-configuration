@@ -1,0 +1,48 @@
+{
+    "api": [
+        "localhost"
+    ],
+    "panels": [{
+        "hostname": "ITB-TERRY-CP1",
+        "uipath": "/blueberry",
+        "preset": "Projector",
+        "features": []
+
+    }],
+    "presets": [{
+        "name": "Projector",
+        "displays": [
+            "D1"
+        ],
+        "icon": "tv",
+        "audioDevices": [
+            "D1"
+        ],
+        "inputs": [
+            "HDMI1",
+            "HDMI2",
+            "HDMI3",
+            "HDMI4"
+        ],
+        "independentAudios": []
+    }],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "desktop_windows"
+        },
+        {
+            "name": "HDMI2",
+            "icon": "desktop_windows"
+        },
+        {
+            "name": "HDMI3",
+            "icon": "settings_input_hdmi"
+        },
+        {
+            "name": "HDMI4",
+            "icon": "movie"
+        }
+    ],
+    "audioConfiguration": []
+}

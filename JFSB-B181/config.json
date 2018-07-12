@@ -1,0 +1,47 @@
+{
+  "api": [ 
+      "localhost"
+  ],
+  "presets": [
+    {
+      "name": "Display",
+      "displays": [
+        "D1"
+      ],
+      "icon": "tv",
+      "audioDevices": [
+        "D1"
+      ],
+      "shareableDisplays": [],
+      "inputs": [
+        "HDMI1",
+        "VIA1"
+      ],
+      "independentAudioDevices": [
+        "MICJK1",
+        "MICJK2",
+        "MIC1"
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "hostname": "JFSB-B181-CP1",
+      "uipath": "/blueberry",
+      "preset": "Display",
+      "features": [
+      ]
+    }
+  ],
+  "inputConfiguration": [
+    {
+      "name": "HDMI1",
+      "icon": "settings_input_hdmi"
+    },
+    {
+      "name": "VIA1",
+      "icon": "settings_input_antenna"
+    }
+  ],
+  "audioConfiguration": []
+}

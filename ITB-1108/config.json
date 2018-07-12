@@ -22,7 +22,39 @@
             "independentAudioDevices": [
                 "MIC1",
                 "MIC2"
-            ]
+            ],
+            "commands": {
+                "powerOn": [
+                    {
+                        "method": "PUT",
+                        "port": 8000,
+                        "endpoint": "buildings/ITB/rooms/1108",
+                        "body": {
+                            "displays": [
+                                {
+                                    "name": "D8",
+                                    "power": "on"
+                                }
+                            ] 
+                        }
+                    }
+                ],
+                "powerOff": [
+                    {
+                        "method": "PUT",
+                        "port": 8000,
+                        "endpoint": "buildings/ITB/rooms/1108",
+                        "body": {
+                            "displays": [
+                                {
+                                    "name": "D8",
+                                    "power": "standby"
+                                }
+                            ] 
+                        }
+                    }
+                ]
+            }
         },
         {
             "name": "Station 2",
@@ -184,7 +216,7 @@
             "inputs": [
                 "PC1",
                 "HDMI3",
-                "VIA3"
+                "VIA"
             ]
         }
     ],
@@ -213,7 +245,7 @@
         {
             "hostname": "ITB-1108-CP4",
             "uipath": "/blueberry",
-            "preset": "Station 4",
+            "preset": "Station 1",
             "features": [
                 "share"
             ]
@@ -227,7 +259,7 @@
         {
             "hostname": "ITB-1108-CP6",
             "uipath": "/blueberry",
-            "preset": "Station 3",
+            "preset": "Station 6",
             "features": [
                 "share"
             ]
@@ -243,7 +275,7 @@
         {
             "hostname": "ITB-1108-CP8",
             "uipath": "/cherry",
-            "preset": "Testing",
+            "preset": "Cherry Test",
             "features": []
         },
         {
@@ -255,7 +287,8 @@
             ]
         }
     ],
-    "outputConfiguration": [{
+    "outputConfiguration": [
+        {
             "name": "D1",
             "icon": "tv"
         },
@@ -296,7 +329,8 @@
             "icon": "mic"
         }
     ],
-    "inputConfiguration": [{
+    "inputConfiguration": [
+        {
             "name": "VIA1",
             "icon": "settings_input_antenna"
         },
@@ -365,11 +399,32 @@
             "icon": "desktop_windows"
         }
     ],
-    "audioConfiguration": [{
-        "display": "D1",
-        "audioDevices": [
-            "D1"
-        ],
-        "roomWide": true
-    }]
+    "audioConfiguration": [
+        {
+            "display": "D1",
+            "audioDevices": [
+                "D1"
+            ],
+            "roomWide": true
+        }
+    ],
+    "pseudoInputs": [
+        {
+            "displayname": "VIA",
+            "config": [
+                {
+                    "input": "VIA1",
+                    "outputs": [
+                        "D1"
+                    ]
+                },
+                {
+                    "input": "VIA2",
+                    "outputs": [
+                        "D2"
+                    ]
+                }
+            ]
+        }
+    ]
 }

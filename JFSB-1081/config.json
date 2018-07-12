@@ -25,7 +25,9 @@
                 "HDMI1",
                 "VIA1"
 			],
-			"independentAudios": [
+            "independentAudioDevices": [
+                "MIC1",
+                "MICJK1"
 			]
 		}
 	],

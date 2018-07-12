@@ -1,29 +1,36 @@
-<div class="er-container">
-  <div class="er-location">
-    <div class="er-building-fields">
-      <div class="er-bldg">
-        <label>Building: </label>
-      </div>
-        <div class="er-box">
-          <input [(ngModel)]="space.building" name="building"  type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+<div class='er-container'>
+    <div class="er-location">
+        <div class="er-building-fields">
+            <div class="er-bldg">
+                <label>Building: </label>
+            </div>
+            <div class="er-box">
+                <input [(ngModel)]="api.room.Building" name="building" type="text" placeholder="ex: JFSB" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+            </div>
+        </div>
+        <div class="er-room-fields">
+            <div class="er-room">
+                <label>Room: </label>
+            </div>
+            <div class="er-box">
+                <input [(ngModel)]="api.room.Room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
+            </div>
+        </div>
+        <div class="er-location-btn">
+            <button class="button" id="baking" (click)="GetRoomDevices()">Start Baking!</button>
+        </div>
+
+        <div class="er-submit-btn">
+            <button class="button-2 " (click)="panel.FinishEdit()">Finish</button>
         </div>
     </div>
-    <div class="er-room-fields">
-      <div class="er-room">
-        <label>Room: </label>
-      </div>
-      <div class="er-box">
-        <input [(ngModel)]="space.room" name="room" type="text" placeholder="ex: B037" onkeydown="if(event.keyCode == 13) document.getElementById('baking').click()">
-      </div>
-    </div>
-    <div class="er-location-btn">
-        <button class="button" id="baking" (click)="getUIConfig()">Start Baking!</button>
-     </div>
-  </div>
 
-  <div *ngIf="config" class="er-container2">
-    <div *ngFor="let cp of config.panels" class="er-controlp">
-      <control-processor [cp]="cp" [config]="config"></control-processor>
+    <div *ngIf="panelNames.length > 0 && config != null" class="er-container2">
+        <div *ngIf="config.panels.length > 0 && show" style="margin-top: 2%">
+            <div *ngFor="let cp of config.panels; let i = index" class="er-controlp">
+                <app-panel #panel [panel]="cp" [config]="config" [iconlist]="iconlist" [indyAudio]="audios"></app-panel>
+            </div>
+        </div>
     </div>
-  </div>
+
 </div>

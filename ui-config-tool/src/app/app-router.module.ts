@@ -5,7 +5,7 @@ import { NewRoomComponent } from './newroom/newroom.component';
 import { EditRoomComponent } from './editroom/editroom.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/newroom', pathMatch: 'full' },
+  { path: '', redirectTo: 'editroom', pathMatch: 'full' },
   { path: 'newroom', component: NewRoomComponent },
   { path: 'editroom', component: EditRoomComponent }
 ]

@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"fmt"
-	"log"
 	"net/http"
 
-	"github.com/byuoitav/av-api/dbo"
+	"github.com/byuoitav/common/db"
+	"github.com/byuoitav/common/log"
 	"github.com/labstack/echo"
 )
 
@@ -15,7 +15,7 @@ func GetDevicesByRoom(context echo.Context) error {
 	building := context.Param("building")
 	room := context.Param("room")
 
-	devices, err := dbo.GetDevicesByRoom(building, room)
+	devices, err := db.GetDB().GetDevicesByRoom(fmt.Sprintf("%s-%s", building, room))
 	if err != nil {
 		return context.JSON(http.StatusInternalServerError, err.Error())
 	}
@@ -26,22 +26,25 @@ func GetDevicesByRoom(context echo.Context) error {
 // GetDevicesInRoomByRole finds all the devices of a specific type in this room.
 // This one seems more effective for the config tool...
 func GetDevicesInRoomByRole(context echo.Context) error {
-	log.Print("Trying to get touchpanels")
 	building := context.Param("building")
 	room := context.Param("room")
 	role := context.Param("role")
+	roomID := fmt.Sprintf("%s-%s", building, room)
 
-	devices, err := dbo.GetDevicesByBuildingAndRoomAndRole(building, room, role)
+	log.L.Infof("[ui-config] Trying to get %s devices in %s", role, roomID)
+
+	devices, err := db.GetDB().GetDevicesByRoomAndRole(roomID, role)
 	if err != nil {
 		return context.JSON(http.StatusInternalServerError, err.Error())
 	}
 
-	log.Printf("Got devices for %s %s", building, room)
+	names := make([]string, len(devices))
 
-	var addresses = make([]string, len(devices))
-	for i, device := range devices {
-		addresses[i] = fmt.Sprintf("%s-%s-%s", building, room, device.Name)
+	for i, d := range devices {
+		names[i] = d.Name
 	}
 
-	return context.JSON(http.StatusOK, addresses)
+	log.L.Infof("[ui-config] Got %s devices for %s", role, roomID)
+
+	return context.JSON(http.StatusOK, names)
 }

@@ -1,0 +1,36 @@
+{
+	"api": [
+		"localhost"
+	],
+	"panels": [
+		{
+			"hostname": "TLRA-103-CP1",
+			"uipath": "/blueberry",
+			"preset": "Display",
+			"features": []
+		}
+	],
+	"presets": [
+		{
+			"name": "Display",
+			"displays": [
+				"D1"
+			],
+			"icon": "tv",
+			"audioDevices": [
+				"D1"
+			],
+		    "inputs": [
+    	  		"HDMI1"
+		    ],
+		    "independentAudios": []
+	    }
+	],
+    "inputConfiguration": [
+        {
+            "name": "HDMI1",
+            "icon": "settings_input_hdmi"
+        }
+    ],
+    "audioConfiguration": []
+}

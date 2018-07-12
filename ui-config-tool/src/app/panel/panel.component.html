@@ -1,0 +1,192 @@
+<!-- pop-ups -->
+<!-- The Modal -->
+<div id="myModal{{panel.hostname}}" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" align="center">
+        <span class="close" (click)="closeX()">&times;</span>
+        <div class="modal-row">
+            <p>Choose an icon from the list</p>
+        </div>
+        <div class="modal-row">
+            <button class="modal-icon-btn" *ngFor="let icon of iconlist" (click)="changeIcon(icon)">
+                <span class="material-icons"> {{icon}}</span>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div id="messageModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" align="center">
+        <span class="close" (click)="errorX()">&times;</span>
+        <div>
+            <p>{{message}}</p>
+        </div>
+    </div>
+
+</div>
+<!-- end pop-ups -->
+
+<button class="panel-btn" (click)="Toggle()"><i class="panel-rightarrow" id="{{panel.hostname}}"></i>  {{panel.hostname}}</button>
+<div id="panelinfo{{panel.hostname}}" class="hidden">
+    <!-- MASTER STATUS -->
+    <div *ngIf="config.panels.length > 1" id="slavestatus{{panel.hostname}}" class="panel-row">
+        <label class="panel-label">Am I a slave?  </label>
+        <input type="radio" name="slave{{panel.hostname}}" id="slave1{{panel.hostname}}" value="true" (click)="SlaveStatus()"> Yes
+        <input type="radio" name="slave{{panel.hostname}}" id="slave2{{panel.hostname}}" value="false" (click)="SlaveStatus()"> No
+        <div id="master{{panel.hostname}}" class="hidden">
+            <label class="panel-label">Who is my master?  </label>
+            <select id="mastername{{panel.hostname}}" class="panel-select" (change)="SlaveStatus()">
+              <ng-container *ngFor="let p of config.panels" >
+                <option *ngIf="p.hostname != panel.hostname" [value]="p.hostname">{{p.hostname}}</option>
+              </ng-container>
+          </select>
+        </div>
+    </div>
+
+    <!-- PRESET -->
+    <div id="preset{{panel.hostname}}" class="panel-row hidden">
+
+        <!-- UI PATH -->
+        <div id="uistyle{{panel.hostname}}" class="panel-row">
+            <label class="panel-label">UI Style: </label>
+            <select id="uipath{{panel.hostname}}" class="panel-select" [(ngModel)]="panel.uipath" (change)="SwitchUIPath()">
+              <option value="/blueberry" style="color: #1b58ba">Blueberry (wheel UI)</option>
+              <option value="/cherry" style="color: #b30505cc">Cherry (darker, grittier, more intense)</option>
+            </select>
+        </div>
+
+        <!-- PRESET NAME -->
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label class="panel-label">Panel Display Name: </label>
+            <input [(ngModel)]="panel.preset" (focusout)="LoadPreset()" class="panel-box" name="presetName{{panel.hostname}}" type="text" placeholder="ex: Station 1, Flatpanel, etc.">
+            <!-- PRESET ICON -->
+            <span *ngIf="panel.uipath == '/blueberry'" class="panel-row-short">
+                <label class="panel-label-2">Main Icon: </label>
+            <button type="button" class="panel-icon-btn" id="icon.{{panel.hostname}}" (click)="IconShow($event)">
+                    <span class="material-icons" ngDefaultControl [(ngModel)]="preset.icon" id="preset.{{panel.hostname}}">{{preset.icon}}</span>
+            </button>
+            </span>
+        </div>
+
+        <!-- **** DISPLAYS **** -->
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label class="panel-label-big">Displays</label>
+        </div>
+
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label style="margin-left: 5%;">Select the displays that this panel controls:</label>
+        </div>
+
+        <!-- BLUEBERRY DISPLAY LIST -->
+        <div *ngIf="panel.uipath == '/blueberry'" class="panel-row-display">
+            <ng-container *ngFor="let display of config.outputConfiguration">
+                <label class="panel-check-container" *ngIf="(preset.shareableDisplays == null || !preset.shareableDisplays.includes(display.name)) && display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
+                    <input type="checkbox" id="{{panel.hostname}}.controls.{{display.name}}">
+                    <span class="panel-checkmark"></span>
+                </label>
+            </ng-container>
+
+        </div>
+
+        <!-- CHERRY DISPLAY LIST -->
+        <div *ngIf="panel.uipath == '/cherry'" class="panel-row-display">
+            <label *ngFor="let display of config.outputConfiguration" class="cherry-display">
+                <ng-container *ngIf="display.name.includes('D')">
+                    <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{display.name}}
+                        <input type="checkbox" id="{{panel.hostname}}.cherrycontrols.{{display.name}}">
+                        <span class="panel-checkmark"></span>        
+                    </label>
+            <!-- OUTPUT ICON -->
+            <label class="panel-label-short">Icon:</label>
+            <button type="button" class="panel-displayIcon-btn" id="icon.{{panel.hostname}}.{{display.name}}" (click)="IconShow($event)">
+                        <span class="material-icons" ngDefaultControl [(ngModel)]="display.icon" id="display.{{display.name}}">{{display.icon}}</span>
+                    </button>
+            </ng-container>
+            </label>
+        </div>
+
+        <!-- SCREEN SHARING STATUS -->
+        <div *ngIf="panel.uipath == '/blueberry'" class="panel-row">
+            <label style="margin-left: 5%;">Screen sharing from this panel?  </label>
+            <input type="radio" name="share{{panel.hostname}}" id="share1{{panel.hostname}}" value="true" (click)="Sharing()"> Yes
+            <input type="radio" name="share{{panel.hostname}}" id="share2{{panel.hostname}}" value="false" (click)="Sharing()"> No
+        </div>
+
+        <!-- SHAREABLE DISPLAY LIST -->
+        <div *ngIf="panel.features.includes('share')" class="panel-row">
+            <label style="margin-left: 5%;">Select the displays that this panel can share to:</label>
+        </div>
+        <div *ngIf="panel.features.includes('share')" class="panel-row-display">
+            <ng-container *ngFor="let display of config.outputConfiguration">
+                <label class="panel-check-container" *ngIf="!preset.displays.includes(display.name) && display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
+                    <input type="checkbox" id="{{panel.hostname}}.shares.{{display.name}}">
+                    <span class="panel-checkmark"></span>
+                </label>
+            </ng-container>
+        </div>
+
+        <!-- **** AUDIO DEVICES **** -->
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label class="panel-label-big">Audio</label>
+        </div>
+
+        <!-- AUDIO DEVICES LIST -->
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label style="margin-left: 5%;">Select the devices that will output sound from this panel's inputs:</label>
+        </div>
+        <div *ngIf="panel.uipath != null" class="panel-row-display">
+            <ng-container *ngFor="let display of config.outputConfiguration">
+                <label class="panel-check-container" *ngIf="display.name.includes('D')" (click)="UpdateDeviceLists($event)">{{display.name}}
+                    <input type="checkbox" id="{{panel.hostname}}.audio.{{display.name}}">
+                    <span class="panel-checkmark"></span>
+                </label>
+            </ng-container>
+        </div>
+
+        <!-- INDEPENDENT AUDIO LIST -->
+        <div *ngIf="panel.uipath != null && indyAudio.length > 0" class="panel-row">
+            <label style="margin-left: 5%;">Select the independent audio devices controlled from this panel:</label>
+        </div>
+        <div *ngIf="panel.uipath != null && indyAudio.length > 0" class="panel-row-display">
+            <ng-container *ngFor="let mic of indyAudio">
+                <label class="panel-check-container" (click)="UpdateDeviceLists($event)" style="width: 70px;">{{mic}}
+                    <input type="checkbox" id="{{panel.hostname}}.independent.{{mic}}">
+                    <span class="panel-checkmark"></span>
+                </label>
+            </ng-container>
+        </div>
+
+        <!-- **** INPUTS **** -->
+        <div *ngIf="panel.uipath != null" class="panel-row">
+            <label class="panel-label-big">Inputs</label>
+            <label *ngIf="preset.inputs.length > 0" style="margin-left: 5%;">Default Input:</label>
+            <select *ngIf="preset.inputs.length > 0" class="panel-select-short" id="defaultInput{{panel.hostname}}" (change)="SetDefaultInput()">
+                <ng-container *ngFor="let i of preset.inputs">
+                    <option [value]="i">{{i}}</option>
+                </ng-container>
+            </select>
+        </div>
+
+        <!-- INPUT LIST -->
+        <div *ngIf="panel.uipath != null" class="panel-row-input">
+            <ng-container *ngFor="let input of config.inputConfiguration" class="panel-input-fields">
+                <label class="panel-check-container" (click)="UpdateDeviceLists($event)"> {{input.name}}
+                    <input type="checkbox" id="{{panel.hostname}}.input.{{input.name}}">
+                    <span class="panel-checkmark"></span>        
+                </label>
+
+                <!-- <label class="panel-label-input">Display name:</label>
+                <input class="panel-box-short" type="text" value="{{input.name}}"> -->
+                <!-- INPUT ICON -->
+                <label class="panel-label-input">Icon:</label>
+                <button type="button" class="panel-inputIcon-btn" id="icon.{{panel.hostname}}.{{input.name}}" (click)="IconShow($event)">
+                    <span class="material-icons" ngDefaultControl [(ngModel)]="input.icon" id="input.{{input.name}}">{{input.icon}}</span>
+                </button>
+            </ng-container>
+        </div>
+    </div>
+</div>
