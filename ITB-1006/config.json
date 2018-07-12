@@ -28,8 +28,7 @@
 			],
 			"inputs": [
                 "HDMI1",
-                "VIA1",
-                "Overflow"
+                "VIA1"
 			],
 			"independentAudioDevices": [
 			]
