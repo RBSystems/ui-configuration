@@ -27,7 +27,7 @@
     ],
 	"panels": [
 		{
-			"hostname": "SWKT-1153-CP1",
+			"hostname": "KMBL-1153-CP1",
 			"uipath": "/blueberry",
 			"preset": "Flatpanel",
 			"features": [
